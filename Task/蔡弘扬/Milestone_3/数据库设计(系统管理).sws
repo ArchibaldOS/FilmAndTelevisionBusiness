@@ -8,7 +8,9 @@
 		<Model Expanded="Yes" ID="{88086B01-C9E1-11D4-9552-0090277716A9}" Loaded="No" Name="数据库设计（系统管理）" Type="{CDE44E21-9669-11D1-9914-006097355D9B}" URL="New PowerDesigner 15 Physical Data Model File.PDM"/>
 		<Model Expanded="Yes" ID="{A78F13AC-2E7B-4444-A580-CCAE7D33A428}" Loaded="No" Name="数据库设计（系统管理）" Type="{1E597170-9350-11D1-AB3C-0020AF71E433}" URL="数据库设计（系统管理）.cdm"/>
 		<Model Expanded="Yes" ID="{6993BB99-E7DC-43E4-BD21-4D7FA3A598FC}" Loaded="No" Name="数据库设计（系统管理）" Type="{5F45F978-C4F3-4E35-A3FC-AF3318663A0F}" URL="数据库设计（系统管理）.ldm"/>
-		<Model Expanded="Yes" ID="{88086B01-C9E1-11D4-9552-0090277716A9}" Name="数据库设计（系统管理）" Selected="Yes" Type="{CDE44E21-9669-11D1-9914-006097355D9B}" URL="New PowerDesigner 15 Physical Data Model File.PDM"/>
+		<Model Expanded="Yes" ID="{88086B01-C9E1-11D4-9552-0090277716A9}" Loaded="No" Name="数据库设计（系统管理）" Type="{CDE44E21-9669-11D1-9914-006097355D9B}" URL="New PowerDesigner 15 Physical Data Model File.PDM"/>
+		<Model Expanded="Yes" ID="{88086B01-C9E1-11D4-9552-0090277716A9}" Name="数据库设计（系统管理）" Type="{CDE44E21-9669-11D1-9914-006097355D9B}" URL="数据库设计（系统管理）.pdm"/>
+		<Model Expanded="Yes" ID="{291DCB60-BC29-434B-A890-1B7DC3D5DCAD}" Name="sys_manage" Selected="Yes" Type="{CDE44E21-9669-11D1-9914-006097355D9B}" URL="sys_manage.pdm"/>
 	</Local>
 	<BrowserModule Name="Repository"/>
 </Workspace>
