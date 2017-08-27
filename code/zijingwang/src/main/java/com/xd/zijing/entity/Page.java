@@ -4,15 +4,15 @@ import java.util.List;
 
 public class Page {
 
-	
+	//当前页
 	private int current;
-	
+	//每页多少数
 	private int size = 5;
-	
+	//总共多少条数据
 	private int count;
-	
+	//总共多少页
 	private int total;
-	
+	//
 	private int offset;
 	
 	

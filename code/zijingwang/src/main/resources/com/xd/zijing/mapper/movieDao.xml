@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.xd.zijing.mapper.MovieDao">
+
+    <select id="findAll" resultType="Movie" parameterType="int">
+        select
+            movieId,version,movieType,movieName,director,actor,region,
+            duration,released,releaseDate,stars,topped,clickRate,shortComment,
+            introduction,faceSPicture,faceBPicture,stills
+        from
+            sys_movie
+        order by movieId
+        limit #{offset},#{size}
+    </select>
+
+    <select id="count" resultType="int">
+        select
+            count(1)
+        from
+            sys_movie
+    </select>
+
+    <delete id="deleteById" parameterType="int">
+        delete
+        from
+            sys_movie
+        where
+            movieId=#{movieId}
+    </delete>
+
+    <select id="queryById" parameterType="int" resultType="Movie">
+        select
+            movieId,version,movieType,movieName,director,actor,region,
+            duration,released,releaseDate,stars,topped,clickRate,shortComment,
+            introduction,faceSPicture,faceBPicture,stills
+        from sys_movie
+        where movieId=#{movieId}
+    </select>
+
+    <update id="updateMovie" parameterType="Movie">
+        update
+          sys_movie
+        set
+          version=#{version},movieType=#{movieType},movieName=#{movieName},
+          director=#{director},actor=#{actor},region=#{region},duration=#{duration},
+          released=#{released},releaseDate=#{releaseDate},stars=#{stars},
+          topped=#{topped},clickRate=#{clickRate},shortComment=#{shortComment},
+          introduction=#{introduction},faceSPicture=#{faceSPicture},
+          faceBPicture=#{faceBPicture},stills=#{stills}
+        where movieId=#{movieId}
+    </update>
+
+    <insert id="addMovie" parameterType="Movie">
+        insert into
+           sys_movie(version,movieType,releaseDate,movieName,director,actor,region,
+            duration,released,stars,topped,clickRate,shortComment,
+            introduction,faceSPicture,faceBPicture,stills)
+        values
+           (#{version},#{movieType},#{releaseDate},#{movieName},#{director},#{actor},#{region},#{duration},
+           #{released},#{stars},#{topped},#{clickRate},#{shortComment},#{introduction},
+           #{faceSPicture},#{faceBPicture},#{stills})
+    </insert>
+</mapper>

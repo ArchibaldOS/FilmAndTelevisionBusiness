@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.xd.zijing.mapper.CinemaDao">
+
+    <select id="queryCinemaInfo" resultType="Cinema">
+        select
+            cinemaName,payOnline,address,telephone,introduction
+        from
+            sys_cinema
+        where
+            cinemaName='天地影视'
+    </select>
+
+    <update id="updateCinema" parameterType="Cinema" >
+        update
+            sys_cinema
+        set
+            cinemaName=#{cinemaName},
+            payOnline=#{payOnline},
+            address=#{address},
+            telephone=#{telephone},
+            introduction=#{introduction}
+    </update>
+
+</mapper>
