@@ -83,10 +83,10 @@
 			<!-- /.navbar-collapse --> </nav>
 		</div>
 		<div
-			style="margin: 0px 100px; height: 510px;">
+			style="margin: 0px 100px; height: 510px; width: 100%">
 			<div style="float: left;">
 				<form action="/zijingwang/message" method="post"
-					style="margin: 10px 200px 20px 300px;">
+					style="margin: 10px 200px 20px 200px;">
 					<div>
 						<h1>在线留言</h1>
 						<br />

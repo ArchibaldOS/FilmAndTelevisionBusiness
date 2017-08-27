@@ -31,14 +31,14 @@
         </property>
         <!-- <property name="configLocation" value="classpath:mybatis/mybatis-config.xml"></property> -->
         <!-- 别名 -->
-        <property name="typeAliasesPackage" value="com.xd.zijing.lbh.entity" />
-        <property name="mapperLocations" value="classpath:com/xd/zijing/lbh/mapper/*.xml" />
+        <property name="typeAliasesPackage" value="com.xd.zijing.entity" />
+        <property name="mapperLocations" value="classpath:com/xd/zijing/mapper/*.xml" />
     </bean>
     
     <!-- 配置扫描器 -->
     <bean class="org.mybatis.spring.mapper.MapperScannerConfigurer">
         <!-- 扫描cn.edu.uestc.ssm.dao这个包以及它的子包下的所有映射接口类 -->
-        <property name="basePackage" value="com.xd.zijing.lbh.mapper" />
+        <property name="basePackage" value="com.xd.zijing.mapper" />
         <property name="sqlSessionFactoryBeanName" value="sqlSessionFactory" />
     </bean>
     
@@ -50,7 +50,7 @@
 	<!-- 使用注解管理事务 -->
     <tx:annotation-driven transaction-manager="transactionManager"/>
 
-	<context:component-scan base-package="com.xd.zijing.lbh">
+	<context:component-scan base-package="com.xd.zijing">
 		<context:exclude-filter type="annotation" expression="org.springframework.stereotype.Controller"/>
 	</context:component-scan>
 
