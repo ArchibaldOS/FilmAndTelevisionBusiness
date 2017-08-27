@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.xd.zijing.mapper.VersionDao">
+    <select id="findAll" resultType="Version" parameterType="int">
+        select
+            versionId,versionName
+        from
+            sys_version
+        order by versionId
+        limit #{offset},#{size}
+    </select>
+
+    <select id="count" resultType="int">
+        select
+            count(1)
+        from
+            sys_version
+    </select>
+
+    <delete id="deleteById" parameterType="int">
+        delete
+        from
+            sys_version
+        where
+            versionId=#{versionId}
+    </delete>
+
+    <select id="queryById" parameterType="int" resultType="Version">
+        select versionId,versionName
+        from sys_version
+        where versionId=#{versionId}
+    </select>
+
+    <update id="updateVersion" parameterType="Version">
+        update
+            sys_version
+        set
+            versionName=#{versionName}
+        where
+            versionId=#{versionId}
+    </update>
+
+    <insert id="addVersion" parameterType="Version">
+        insert into
+            sys_version(versionName)
+        values (#{versionName})
+    </insert>
+
+</mapper>

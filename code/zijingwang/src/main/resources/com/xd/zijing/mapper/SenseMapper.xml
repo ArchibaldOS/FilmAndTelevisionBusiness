@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.xd.zijing.mapper.SenseMapper">
+	
+	<insert id="insertSense" parameterType="SenseWord" keyProperty="senseId">
+		insert into sensitive_word(senseContent)
+		values( #{senseContent} )
+	</insert>
+
+	<select id="count" resultType="int">
+		SELECT
+			count(1)
+		FROM
+			sensitive_word
+	</select>
+	
+	<select id="findAll" parameterType="int" resultType="SenseWord">
+		SELECT 
+			senseId,senseContent
+		FROM sensitive_word
+		ORDER BY senseId
+		LIMIT #{offset}, #{size}
+	</select>
+	
+	<select id="find" resultType="SenseWord">
+		SELECT 
+			senseId,senseContent
+		FROM sensitive_word
+		ORDER BY senseId
+	</select>
+		
+	<select id="findById" parameterType="int" resultType="SenseWord">
+		SELECT 
+			senseId,senseContent
+		FROM sensitive_word
+		WHERE senseId = ${senseId}
+	</select>
+	
+	<delete id="delete" parameterType="int">
+		delete from sensitive_word where senseId = ${senseId} 
+	</delete>
+	
+	<update id="update" parameterType="SenseWord">
+		update sensitive_word set senseContent = '${senseContent}'
+		where senseId = #{senseId} 
+	</update>
+
+</mapper>
