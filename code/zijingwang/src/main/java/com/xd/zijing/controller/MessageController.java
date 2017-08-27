@@ -88,14 +88,14 @@ public class MessageController {
 		if(set.size() != 0){
 			req.setAttribute("isSucceed", 0);
 			req.setAttribute("set", set);
-			return "forward:/message.jsp";
+			return "lbh/views/message";
 		}
 		else{
 			message.setUserId(5);
 			message.setMessageContent(messageContent);
 			messageService.insert(message);
 			req.setAttribute("isSucceed", 1);
-			return "forward:/message.jsp";
+			return "lbh/views/message";
 		}
 		
 		
