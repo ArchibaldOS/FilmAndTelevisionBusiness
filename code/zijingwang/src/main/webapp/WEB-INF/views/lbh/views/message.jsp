@@ -86,7 +86,7 @@
 			style="margin: 0px 100px; height: 510px; width: 100%">
 			<div style="float: left;">
 				<form action="/zijingwang/message" method="post"
-					style="margin: 10px 200px 20px 200px;">
+					style="margin: 10px 200px 20px 200px;" onsubmit="return check()">
 					<div>
 						<h1>在线留言</h1>
 						<br />
@@ -94,7 +94,7 @@
 						<br />
 					</div>
 					<div>
-						<textarea rows="10" cols="50" name="messageContent"></textarea>
+						<textarea id="content" rows="10" cols="50" name="messageContent"></textarea><span id="msg"></span>
 					</div>
 					<br />
 					<div id="wrapper">
@@ -174,6 +174,27 @@
 			}
 		
 			load(1);
+		</script>
+		<script type="text/javascript">
+		var content = document.getElementById("content");
+		var msg = document.getElementById("msg");
+		content.onblur = function( e ){
+			if(content.value == ""){
+				this.style.borderColor = "red";
+				msg.style.color = "red";
+				msg.innerHTML = "内容不能为空！";
+			}else{
+				this.style.borderColor = "green";
+				msg.innerHTML = "";
+			}
+		}
+			function check(){
+				if(content.value == ""){
+					alert("留言内容不能为空！");
+					return false;
+				}
+			}
+			
 		</script>
 <%
 	 if(request.getAttribute("isSucceed") != null){
