@@ -99,12 +99,15 @@
 						<h4><font color="gray" style="font-style: italic;">作者：${a.author }</font></h4>
 					</div>
 					<div class="content">${a.articleContent }</div>
-					<div class='form-actions'>
+					<div style="width: 100%;height:50px;"></div>
+					<div>
                          <button class='btn btn-primary' type='submit' onclick="javascript:history.go(-1)" style="width: 60px ">返回</button>
                     </div>
 				</div>
 		</div>
 
 </div>
+<div style="width: 100%;height:150px;"></div>
 </body>
+
 </html>

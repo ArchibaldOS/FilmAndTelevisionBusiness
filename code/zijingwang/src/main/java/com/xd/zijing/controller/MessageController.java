@@ -82,20 +82,18 @@ public class MessageController {
 		Message message = new Message();
 		List<SenseWord> list = senseService.findAll();
 		SensitivewordFilter filter = new SensitivewordFilter(list);
-		System.out.println("敏感词的数量：" + filter.sensitiveWordMap.size());
 		Set<String> set = filter.getSensitiveWord(messageContent, 1);
-		System.out.println("语句中包含敏感词的个数为：" + set.size() + "。包含：" + set);
 		if(set.size() != 0){
 			req.setAttribute("isSucceed", 0);
 			req.setAttribute("set", set);
-			return "forward:/message.jsp";
+			return "lbh/views/message";
 		}
 		else{
 			message.setUserId(5);
 			message.setMessageContent(messageContent);
 			messageService.insert(message);
 			req.setAttribute("isSucceed", 1);
-			return "forward:/message.jsp";
+			return "lbh/views/message";
 		}
 		
 		
