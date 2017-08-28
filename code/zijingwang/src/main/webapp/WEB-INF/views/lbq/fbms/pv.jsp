@@ -1,4 +1,3 @@
-<%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt" %>
 <%@ page language="java" contentType="text/html; charset=utf-8" %>
 <!DOCTYPE html>
 <html>
@@ -10,13 +9,16 @@
     <script src='/zijingwang/assets/javascripts/html5shiv.js' type='text/javascript'></script>
     <![endif]-->
     <link href='/zijingwang/assets/stylesheets/bootstrap/bootstrap2.css' media='all' rel='stylesheet' type='text/css'/>
-    <link href='/zijingwang/assets/stylesheets/bootstrap/bootstrap-responsive.css' media='all' rel='stylesheet' type='text/css'/>
+    <link href='/zijingwang/assets/stylesheets/bootstrap/bootstrap-responsive.css' media='all' rel='stylesheet'
+          type='text/css'/>
     <!-- / jquery ui -->
     <link href='/zijingwang/assets/stylesheets/jquery_ui/jquery-ui-1.10.0.custom.css' media='all' rel='stylesheet'
           type='text/css'/>
-    <link href='/zijingwang/assets/stylesheets/jquery_ui/jquery.ui.1.10.0.ie.css' media='all' rel='stylesheet' type='text/css'/>
+    <link href='/zijingwang/assets/stylesheets/jquery_ui/jquery.ui.1.10.0.ie.css' media='all' rel='stylesheet'
+          type='text/css'/>
     <!-- / switch buttons -->
-    <link href='/zijingwang/assets/stylesheets/plugins/bootstrap_switch/bootstrap-switch.css' media='all' rel='stylesheet'
+    <link href='/zijingwang/assets/stylesheets/plugins/bootstrap_switch/bootstrap-switch.css' media='all'
+          rel='stylesheet'
           type='text/css'/>
     <!-- / xeditable -->
     <link href='/zijingwang/assets/stylesheets/plugins/xeditable/bootstrap-editable.css' media='all' rel='stylesheet'
@@ -24,47 +26,59 @@
     <link href='/zijingwang/assets/stylesheets/plugins/common/bootstrap-wysihtml5.css' media='all' rel='stylesheet'
           type='text/css'/>
     <!-- / wysihtml5 (wysywig) -->
+
     <link href='/zijingwang/assets/stylesheets/plugins/common/bootstrap-wysihtml5.css' media='all' rel='stylesheet'
           type='text/css'/>
     <!-- / jquery file upload -->
-    <link href='/zijingwang/assets/stylesheets/plugins/jquery_fileupload/jquery.fileupload-ui.css' media='all' rel='stylesheet'
+    <link href='/zijingwang/assets/stylesheets/plugins/jquery_fileupload/jquery.fileupload-ui.css' media='all'
+          rel='stylesheet'
           type='text/css'/>
     <!-- / full calendar -->
-    <link href='/zijingwang/assets/stylesheets/plugins/fullcalendar/fullcalendar.css' media='all' rel='stylesheet'
-          type='text/css'/>
+    <link href='/zijingwang/assets/stylesheets/plugins/fullcalendar/fullcalendar.css' media='all' rel='s
+	tylesheet' type='text/css'/>
     <!-- / select2 -->
-    <link href='/zijingwang/assets/stylesheets/plugins/select2/select2.css' media='all' rel='stylesheet' type='text/css'/>
+    <link href='/zijingwang/assets/stylesheets/plugins/select2/select2.css' media='all' rel='stylesheet'
+          type='text/css'/>
     <!-- / mention -->
-    <link href='/zijingwang/assets/stylesheets/plugins/mention/mention.css' media='all' rel='stylesheet' type='text/css'/>
+    <link href='/zijingwang/assets/stylesheets/plugins/mention/mention.css' media='all' rel='stylesheet'
+          type='text/css'/>
     <!-- / tabdrop (responsive tabs) -->
-    <link href='/zijingwang/assets/stylesheets/plugins/tabdrop/tabdrop.css' media='all' rel='stylesheet' type='text/css'/>
+    <link href='/zijingwang/assets/stylesheets/plugins/tabdrop/tabdrop.css' media='all' rel='stylesheet'
+          type='text/css'/>
     <!-- / jgrowl notifications -->
-    <link href='/zijingwang/assets/stylesheets/plugins/jgrowl/jquery.jgrowl.min.css' media='all' rel='stylesheet' type='text/css'/>
+    <link href='/zijingwang/assets/stylesheets/plugins/jgrowl/jquery.jgrowl.min.css' media='all' rel='stylesheet'
+          type='text/css'/>
     <!-- / datatables -->
     <link href='/zijingwang/assets/stylesheets/plugins/datatables/bootstrap-datatable.css' media='all' rel='stylesheet'
           type='text/css'/>
     <!-- / dynatrees (file trees) -->
-    <link href='/zijingwang/assets/stylesheets/plugins/dynatree/ui.dynatree.css' media='all' rel='stylesheet' type='text/css'/>
+    <link href='/zijingwang/assets/stylesheets/plugins/dynatree/ui.dynatree.css' media='all' rel='stylesheet'
+          type='text/css'/>
     <!-- / color picker -->
     <link href='/zijingwang/assets/stylesheets/plugins/bootstrap_colorpicker/bootstrap-colorpicker.css' media='all'
           rel='stylesheet' type='text/css'/>
     <!-- / datetime picker -->
-    <link href='/zijingwang/assets/stylesheets/plugins/bootstrap_datetimepicker/bootstrap-datetimepicker.min.css' media='all'
+    <link href='/zijingwang/assets/stylesheets/plugins/bootstrap_datetimepicker/bootstrap-datetimepicker.min.css'
+          media='all'
           rel='stylesheet' type='text/css'/>
     <!-- / daterange picker) -->
-    <link href='/zijingwang/assets/stylesheets/plugins/bootstrap_daterangepicker/bootstrap-daterangepicker.css' media='all'
+    <link href='/zijingwang/assets/stylesheets/plugins/bootstrap_daterangepicker/bootstrap-daterangepicker.css'
+          media='all'
           rel='stylesheet' type='text/css'/>
     <!-- / flags (country flags) -->
     <link href='/zijingwang/assets/stylesheets/plugins/flags/flags.css' media='all' rel='stylesheet' type='text/css'/>
     <!-- / slider nav (address book) -->
-    <link href='/zijingwang/assets/stylesheets/plugins/slider_nav/slidernav.css' media='all' rel='stylesheet' type='text/css'/>
+    <link href='/zijingwang/assets/stylesheets/plugins/slider_nav/slidernav.css' media='all' rel='stylesheet'
+          type='text/css'/>
     <!-- / fuelux (wizard) -->
     <link href='/zijingwang/assets/stylesheets/plugins/fuelux/wizard.css' media='all' rel='stylesheet' type='text/css'/>
     <!-- / flatty theme -->
-    <link href='/zijingwang/assets/stylesheets/light-theme.css' id='color-settings-body-color' media='all' rel='stylesheet'
+    <link href='/zijingwang/assets/stylesheets/light-theme.css' id='color-settings-body-color' media='all'
+          rel='stylesheet'
           type='text/css'/>
     <!-- / demo -->
     <link href='/zijingwang/assets/stylesheets/demo.css' media='all' rel='stylesheet' type='text/css'/>
+    <link rel="stylesheet" href="/zijingwang/assets/css/style.css" media="screen" type="text/css">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
 </head>
 <body class='contrast-blue '>
@@ -260,202 +274,125 @@
     </div>
 </header>
 <div id='wrapper'>
-<div id='main-nav-bg'></div>
-    <%@include file="common/leftList.jsp"%>
+    <div id='main-nav-bg'></div>
+    <%@include file="common/leftList.jsp" %>
+    <section id='content'>
+        <div class='container-fluid'>
+            <div class='row-fluid' id='content-wrapper'>
+                <div class='span12'>
+                    <!--第一部分-->
+                    <div class='row-fluid'>
+                        <div class='span12'>
+                            <div class='page-header'>
+                                <h1 class='pull-left'>
+                                    <i class='icon-edit'></i>
+                                    <span>相关报表</span>
+                                </h1>
+                            </div>
+                        </div>
+                    </div>
+                    <!--第一部分-->
+
+                    <!--页面内标签-->
+                    <div class='row-fluid'>
+                        <div class='span12 box' style='margin-bottom: 0'>
+                            <div class='box-header blue-background'>
+                                <div class='title'>本年度网站访问量</div>
+                                <div class='actions'>
+                                    <a href="#" class="btn box-remove btn-mini btn-link"><i class='icon-remove'></i>
+                                    </a>
+                                    <a href="#" class="btn box-collapse btn-mini btn-link"><i></i>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class='box-content'>
+                                <div id="container"></div>
+                                <script src='http://d3js.org/d3.v3.js'></script>
+                                <script>
+
+                                    var url = "<%=request.getContextPath()%>/reportForm/PVJSON";
+                                    d3.json(url, function (data) {
+
+                                        var datas = [];
+                                        for (var i = 0; i < data.length; i++) {
+                                            datas[i] = data[i].pv;
+                                        }
+
+                                        var width = 1000,
+                                                height = 450,
+                                                margin = {left: 50, top: 30, right: 20, bottom: 20},
+                                                g_width = width - margin.left - margin.right,
+                                                g_height = height - margin.top - margin.bottom;
+
+//svg
+                                        var svg = d3.select("#container")
+                                                .append("svg")
+//width,height
+                                                .attr("width", width)
+                                                .attr("height", height)
+
+                                        var g = d3.select("svg")
+                                                .append("g")
+                                                .attr("transform", "translate(" + margin.left + "," + margin.top + ")")
+
+                                        var scale_x = d3.scale.linear()
+                                                .domain([0, datas.length - 1])
+                                                .range([0, g_width])
+                                        var scale_y = d3.scale.linear()
+                                                .domain([0, d3.max(datas)])
+                                                .range([g_height, 0])
 
 
-<!--核心显示区-->
-<section id='content'>
-    <div class='container-fluid'>
-        <div class='row-fluid' id='content-wrapper'>
-            <div class='span12'>
-                <!--第一部分-->
-                <div class='row-fluid'>
-                    <div class='span12'>
-                        <div class='page-header'>
-                            <h1 class='pull-left'>
-                                <i class='icon-edit'></i>
-                                <span>影片详细信息修改页面</span>
-                            </h1>
+                                        var line_generator = d3.svg.line()
+                                                .x(function (d, i) {
+                                                    return scale_x(i);
+                                                })
+                                                .y(function (d) {
+                                                    return scale_y(d);
+                                                })
+                                                .interpolate("cardinal")
+                                        g
+                                                .append("path")
+                                                .attr("d", line_generator(datas))
+
+                                        var x_axis = d3.svg.axis().scale(scale_x),
+                                                y_axis = d3.svg.axis().scale(scale_y).orient("left");
+
+                                        g.append("g")
+                                                .call(x_axis)
+                                                .attr("transform", "translate(0," + g_height + ")")
+
+                                        g.append("g")
+                                                .call(y_axis)
+                                                .append("text")
+                                                .text("访问量（百万）")
+                                                .attr("transform", "rotate(-90)")
+                                                .attr("text-anchor", "end")
+                                                .attr("dy", "1em")
+
+
+                                    })
+                                </script>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <!--第一部分-->
-
-                <!--页面内标签-->
-                <div class='row-fluid'>
-                    <div class="tab-pane active" id="retab1">
-                        <form accept-charset="UTF-8" action="/zijingwang/movie/movieUpdate"
-                              class="form form-horizontal" method="post"
-                              style="margin-bottom: 0;">
-                            <div style="margin:0;padding:0;display:inline">
-                                <input name="utf8" type="hidden" value="&#x2713;"/>
-                                <input name="authenticity_token" type="hidden"
-                                       value="CFC7d00LWKQsSahRqsfD+e/mHLqbaVIXBvlBGe/KP+I="/>
-                            </div>
-                            <div class='control-group'>
-                                <label class='control-label' for='movieName'>片名</label>
-
-                                <div class='controls'>
-                                    <input id="movieId" type="hidden" name="movieId" value="${movie.movieId}">
-                                    <input id='movieName' type='text' name="movieName" value="${movie.movieName}"
-                                            /><!--修改name与数据库英文名称统一-->
-                                </div>
-                            </div>
-                            <hr class='hr-normal'/>
-                            <div class='control-group'>
-                                <label class='control-label' for='director'>导演</label>
-
-                                <div class='controls'>
-                                    <input id='director' type='text' name="director" value="${movie.director}"
-                                            />
-                                </div>
-
-                            </div>
-                            <div class='control-group'>
-                                <label class='control-label' for='actor'>主演</label>
-
-                                <div class='controls'>
-                                    <input id='actor' type='text' name="actor" value="${movie.actor}"/>
-                                </div>
-                            </div>
-                            <div class='control-group'>
-                                <label class='control-label' for='movieType'>类型</label>
-
-                                <div class='controls'>
-                                    <input id='movieType' type='text' name="movieType" value="${movie.movieType}"
-                                            />
-                                </div>
-                            </div>
-                            <div class='control-group'>
-                                <label class='control-label' for='version'>版本</label>
-
-                                <div class='controls'>
-                                    <input id='version' type='text' name="version" value="${movie.version}"
-                                            />
-                                </div>
-                            </div>
-                            <div class='control-group'>
-                                <label class='control-label' for='region'>国家/地区</label>
-
-                                <div class='controls'>
-                                    <input id='region' type='text' name="region" value="${movie.region}"
-                                            />
-                                </div>
-                            </div>
-                            <div class='control-group'>
-                                <label class='control-label' for='duration'>片长</label>
-
-                                <div class='controls'>
-                                    <input id='duration' type='text' name="duraion" value="${duration}"
-                                            />
-                                </div>
-                            </div>
-                            <div class='control-group'>
-                                <label class='control-label' for='released'>是否上映</label>
-
-                                <div class='controls'>
-                                    <input id='released' type='text' name="released" value="${movie.released}"
-                                            />
-                                </div>
-                            </div>
-                            <div class='control-group'>
-                                <label class='control-label' for='releaseDate'>上映日期</label>
-
-                                <div class='controls'>
-                                    <input id='releaseDate' type='date' name="releaseDate" pattern="yyyy-MM-dd"
-                                           value="<fmt:formatDate value='${movie.releaseDate}' pattern='yyyy-MM-dd'/>"
-                                            />
-                                </div>
-                            </div>
-                            <div class='control-group'>
-                                <label class='control-label' for='stars'>星级</label>
-
-                                <div class='controls'>
-                                    <input id='stars' type='text' name="stars" value="${movie.stars}"
-                                            />
-                                </div>
-                            </div>
-                            <div class='control-group'>
-                                <label class='control-label' for='topped'>推荐置顶</label>
-
-                                <div class='controls'>
-                                    <input id='topped' type='text' name="topped" value="${movie.topped}"
-                                            />
-                                </div>
-                            </div>
-                            <div class='control-group'>
-                                <label class='control-label' for='clickRate'>点击率</label>
-
-                                <div class='controls'>
-                                    <input id='clickRate' type='text' name="clickRate" value="${movie.clickRate}"
-                                            />
-                                </div>
-                            </div>
-                            <div class='control-group'>
-                                <label class='control-label' for='shortComment'>卖点短评</label>
-
-                                <div class='controls'>
-                                    <textarea id='shortComment' name="shortComment">${movie.shortComment}</textarea>
-                                </div>
-                            </div>
-                            <hr class='hr-normal'/>
-                            <div class='control-group'>
-                                <label class='control-label' for='introduction'>剧情介绍</label>
-
-                                <div class='controls'>
-                                    <textarea id='introduction' name="introduction">${movie.introduction}</textarea>
-                                </div>
-                            </div>
-                            <div class='control-group'>
-                                <label class='control-label' for='faceSPictureFile'>封面小图片</label>
-
-                                <div class='controls'>
-                                    <input id='faceSPictureFile' type='file' name="faceSPictureFile"/>
-                                </div>
-                            </div>
-                            <div class='control-group'>
-                                <label class='control-label' for='faceBPictureFile'>封面大图片</label>
-
-                                <div class='controls'>
-                                    <input id='faceBPictureFile' type='file' name="faceBPictureFile"/>
-                                </div>
-                            </div>
-                            <div class='control-group'>
-                                <label class='control-label' for='stillsFile'>剧照图片</label>
-
-                                <div class='controls'>
-                                    <input id='stillsFile' type='file' name="stillsFile"/>
-                                </div>
-                            </div>
-
-                            <!--保存重置-->
-                            <div class='form-actions'>
-                                <button class='btn btn-primary' type='submit'>
-                                    <i class='icon-save'></i>
-                                    保存
-                                </button>
-                                <button class='btn' type='button' onclick="javascript:history.back(-1);">返回</button>
-                            </div>
-                            <!--保存重置-->
-                        </form>
-
-                    </div>
-                </div>
-                <!--页面内标签-->
-                <hr class='hr-double'/>
-
-
             </div>
         </div>
-    </div>
-</section>
-<!--核心显示区-->
+        <!--页面内标签-->
+        <hr class='hr-double'/>
+
+
+    </section>
+
+
 </div>
+<!--核心显示区-->
 <!-- / jquery -->
 <script src='/zijingwang/assets/javascripts/jquery/jquery.min.js' type='text/javascript'></script>
 <!-- / jquery mobile events (for touch and slide) -->
-<script src='/zijingwang/assets/javascripts/plugins/mobile_events/jquery.mobile-events.min.js' type='text/javascript'></script>
+<script src='/zijingwang/assets/javascripts/plugins/mobile_events/jquery.mobile-events.min.js'
+        type='text/javascript'></script>
 <!-- / jquery migrate (for compatibility with new jquery) -->
 <script src='/zijingwang/assets/javascripts/jquery/jquery-migrate.min.js' type='text/javascript'></script>
 <!-- / jquery ui -->
@@ -470,12 +407,15 @@
 <script src='/zijingwang/assets/javascripts/plugins/flot/flot.resize.js' type='text/javascript'></script>
 <script src='/zijingwang/assets/javascripts/plugins/flot/flot.pie.js' type='text/javascript'></script>
 <!-- / bootstrap switch -->
-<script src='/zijingwang/assets/javascripts/plugins/bootstrap_switch/bootstrapSwitch.min.js' type='text/javascript'></script>
+<script src='/zijingwang/assets/javascripts/plugins/bootstrap_switch/bootstrapSwitch.min.js'
+        type='text/javascript'></script>
 <!-- / fullcalendar -->
 <script src='/zijingwang/assets/javascripts/plugins/fullcalendar/fullcalendar.min.js' type='text/javascript'></script>
 <!-- / datatables -->
-<script src='/zijingwang/assets/javascripts/plugins/datatables/jquery.dataTables.min.js' type='text/javascript'></script>
-<script src='/zijingwang/assets/javascripts/plugins/datatables/jquery.dataTables.columnFilter.js' type='text/javascript'></script>
+<script src='/zijingwang/assets/javascripts/plugins/datatables/jquery.dataTables.min.js'
+        type='text/javascript'></script>
+<script src='/zijingwang/assets/javascripts/plugins/datatables/jquery.dataTables.columnFilter.js'
+        type='text/javascript'></script>
 <!-- / wysihtml5 -->
 <script src='/zijingwang/assets/javascripts/plugins/common/wysihtml5.min.js' type='text/javascript'></script>
 <script src='/zijingwang/assets/javascripts/plugins/common/bootstrap-wysihtml5.js' type='text/javascript'></script>
@@ -487,7 +427,8 @@
 <!-- / mention -->
 <script src='/zijingwang/assets/javascripts/plugins/mention/mention.min.js' type='text/javascript'></script>
 <!-- / input mask -->
-<script src='/zijingwang/assets/javascripts/plugins/input_mask/bootstrap-inputmask.min.js' type='text/javascript'></script>
+<script src='/zijingwang/assets/javascripts/plugins/input_mask/bootstrap-inputmask.min.js'
+        type='text/javascript'></script>
 <!-- / fileinput -->
 <script src='/zijingwang/assets/javascripts/plugins/fileinput/bootstrap-fileinput.js' type='text/javascript'></script>
 <!-- / modernizr -->
@@ -498,15 +439,21 @@
 <script src='/zijingwang/assets/javascripts/plugins/fileupload/tmpl.min.js' type='text/javascript'></script>
 <script src='/zijingwang/assets/javascripts/plugins/fileupload/load-image.min.js' type='text/javascript'></script>
 <script src='/zijingwang/assets/javascripts/plugins/fileupload/canvas-to-blob.min.js' type='text/javascript'></script>
-<script src='/zijingwang/assets/javascripts/plugins/fileupload/jquery.iframe-transport.min.js' type='text/javascript'></script>
-<script src='/zijingwang/assets/javascripts/plugins/fileupload/jquery.fileupload.min.js' type='text/javascript'></script>
-<script src='/zijingwang/assets/javascripts/plugins/fileupload/jquery.fileupload-fp.min.js' type='text/javascript'></script>
-<script src='/zijingwang/assets/javascripts/plugins/fileupload/jquery.fileupload-ui.min.js' type='text/javascript'></script>
-<script src='/zijingwang/assets/javascripts/plugins/fileupload/jquery.fileupload-init.js' type='text/javascript'></script>
+<script src='/zijingwang/assets/javascripts/plugins/fileupload/jquery.iframe-transport.min.js'
+        type='text/javascript'></script>
+<script src='/zijingwang/assets/javascripts/plugins/fileupload/jquery.fileupload.min.js'
+        type='text/javascript'></script>
+<script src='/zijingwang/assets/javascripts/plugins/fileupload/jquery.fileupload-fp.min.js'
+        type='text/javascript'></script>
+<script src='/zijingwang/assets/javascripts/plugins/fileupload/jquery.fileupload-ui.min.js'
+        type='text/javascript'></script>
+<script src='/zijingwang/assets/javascripts/plugins/fileupload/jquery.fileupload-init.js'
+        type='text/javascript'></script>
 <!-- / timeago -->
 <script src='/zijingwang/assets/javascripts/plugins/timeago/jquery.timeago.js' type='text/javascript'></script>
 <!-- / slimscroll -->
-<script src='/zijingwang/assets/javascripts/plugins/slimscroll/jquery.slimscroll.min.js' type='text/javascript'></script>
+<script src='/zijingwang/assets/javascripts/plugins/slimscroll/jquery.slimscroll.min.js'
+        type='text/javascript'></script>
 <!-- / autosize (for textareas) -->
 <script src='/zijingwang/assets/javascripts/plugins/autosize/jquery.autosize-min.js' type='text/javascript'></script>
 <!-- / charCount -->
@@ -515,7 +462,8 @@
 <script src='/zijingwang/assets/javascripts/plugins/validate/jquery.validate.min.js' type='text/javascript'></script>
 <script src='/zijingwang/assets/javascripts/plugins/validate/additional-methods.js' type='text/javascript'></script>
 <!-- / naked password -->
-<script src='/zijingwang/assets/javascripts/plugins/naked_password/naked_password-0.2.4.min.js' type='text/javascript'></script>
+<script src='/zijingwang/assets/javascripts/plugins/naked_password/naked_password-0.2.4.min.js'
+        type='text/javascript'></script>
 <!-- / nestable -->
 <script src='/zijingwang/assets/javascripts/plugins/nestable/jquery.nestable.js' type='text/javascript'></script>
 <!-- / tabdrop -->
@@ -525,7 +473,8 @@
 <!-- / bootbox -->
 <script src='/zijingwang/assets/javascripts/plugins/bootbox/bootbox.min.js' type='text/javascript'></script>
 <!-- / inplace editing -->
-<script src='/zijingwang/assets/javascripts/plugins/xeditable/bootstrap-editable.min.js' type='text/javascript'></script>
+<script src='/zijingwang/assets/javascripts/plugins/xeditable/bootstrap-editable.min.js'
+        type='text/javascript'></script>
 <script src='/zijingwang/assets/javascripts/plugins/xeditable/wysihtml5.js' type='text/javascript'></script>
 <!-- / ckeditor -->
 <script src='/zijingwang/assets/javascripts/plugins/ckeditor/ckeditor.js' type='text/javascript'></script>
@@ -535,7 +484,8 @@
 <script src='/zijingwang/assets/javascripts/plugins/bootstrap_datetimepicker/bootstrap-datetimepicker.js'
         type='text/javascript'></script>
 <!-- / daterange picker -->
-<script src='/zijingwang/assets/javascripts/plugins/bootstrap_daterangepicker/moment.min.js' type='text/javascript'></script>
+<script src='/zijingwang/assets/javascripts/plugins/bootstrap_daterangepicker/moment.min.js'
+        type='text/javascript'></script>
 <script src='/zijingwang/assets/javascripts/plugins/bootstrap_daterangepicker/bootstrap-daterangepicker.js'
         type='text/javascript'></script>
 <!-- / max length -->

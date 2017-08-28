@@ -148,9 +148,15 @@
                 </a>
                 <ul class='nav nav-stacked'>
                     <li class=''>
-                        <a href='Serach.html'><!--链接到标签对应的html页面-->
+                        <a href='/zijingwang/reportForm/PV'><!--链接到标签对应的html页面-->
                             <i class='icon-caret-right'></i>
-                            <span>报表导出</span>
+                            <span>网站访问量</span>
+                        </a>
+                    </li>
+                    <li class=''>
+                        <a href='/zijingwang/reportForm/userProportion'><!--链接到标签对应的html页面-->
+                            <i class='icon-caret-right'></i>
+                            <span>用户比例</span>
                         </a>
                     </li>
                 </ul>
