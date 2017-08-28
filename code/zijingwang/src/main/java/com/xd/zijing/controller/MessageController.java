@@ -78,7 +78,12 @@ public class MessageController {
 	//前台留言
 	@RequestMapping(value="/message",method=RequestMethod.POST)
 	public String leaveMessage(String messageContent, HttpSession session,HttpServletRequest req){
-		//Vsession.getAttribute("user");
+		/*
+		 * uncompleted
+		 */
+		//session.getAttribute("vipdata");
+		
+		
 		Message message = new Message();
 		List<SenseWord> list = senseService.findAll();
 		SensitivewordFilter filter = new SensitivewordFilter(list);

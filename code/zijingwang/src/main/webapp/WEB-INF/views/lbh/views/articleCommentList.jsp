@@ -4,7 +4,22 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
-<title>回复留言</title>
+<title>文章评论列表</title>
+<style type="text/css">
+ #p{
+	margin-left: 10px;
+	text-align: center;
+} 
+
+#p a {
+		border:1px solid #000;
+		display:inline-block;
+		padding: 2px 5px;
+		margin:0 5px;
+		text-decoration: none;
+	}
+
+</style>
 <meta
 	content='width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no'
 	name='viewport' />
@@ -88,6 +103,22 @@
 <link href='assets/stylesheets/demo.css' media='all' rel='stylesheet'
 	type='text/css' />
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
+<script type="text/javascript">
+function de(commentId){
+
+	$.get('/zijingwang/articleCommentDelete',	{'commentId':commentId}, function(data){
+	
+		if(data == 1){ 
+			alert("delete succeed");
+			window.location.href = "/zijingwang/listArticleComment";
+		}
+		else alert("delete fail");
+		}, 'json');
+	}
+	
+	
+</script>
 </head>
 <body class='contrast-blue '>
 	<header>
@@ -261,11 +292,11 @@
 					class='icon-angle-down angle-down'></i>
 			</a>
 				<ul class='nav nav-stacked'>
-					<li class=''><a href='/zijingwang/addSense'> <!--链接到标签对应的html页面-->
-							<i class='icon-caret-right'></i> <span>增加敏感词</span>
+					<li class=''><a href='/zijingwang/addSense'>
+							<!--链接到标签对应的html页面--> <i class='icon-caret-right'></i> <span>增加敏感词</span>
 					</a></li>
-					<li class=''><a href='/zijingwang/listSense'> <!--链接到标签对应的html页面-->
-							<i class='icon-caret-right'></i> <span>查询所有敏感词</span>
+					<li class=''><a href='/zijingwang/listSense'>
+							<!--链接到标签对应的html页面--> <i class='icon-caret-right'></i> <span>查询所有敏感词</span>
 					</a></li>
 				</ul></li>
 			<!--敏感词管理-->
@@ -294,11 +325,9 @@
 					</a></li>
 				</ul></li>
 			<!--文章评论管理-->
-			
 			</ul>
 		</div>
 		</nav>
-
 		<!--核心显示区-->
 		<section id='content'>
 		<div class='container-fluid'>
@@ -309,65 +338,89 @@
 						<div class='span12'>
 							<div class='page-header'>
 								<h1 class='pull-left'>
-									<i class='icon-edit'></i> <span>回复</span>
+									<i class='icon-edit'></i> <span>文章评论管理</span>
 								</h1>
 							</div>
 						</div>
 					</div>
 					<!--第一部分-->
 
-					<!--页面内标签-->
+
+					<!--表格2区域-->
 					<div class='row-fluid'>
-					<c:set var="m" value="${requestScope.message }" />
-						<form accept-charset="UTF-8" action="/zijingwang/messageReply"
-							class="form form-horizontal" method="post"
-							style="margin-bottom: 0;" />
-						<div style="margin: 0; padding: 0; display: inline">
-							<input name="utf8" type="hidden" value="&#x2713;" />
-						    <input name="messageId" type="hidden" value="${m.messageId }" />
-						</div>
-						<div class='control-group'>
-							<label class='control-label' for='inputText1'>用户编号</label>
-							<div class='controls' style="margin-top: 5px;">
-								${m.userId }
+						<div class='span12 box bordered-box blue-border'
+							style='margin-bottom: 0;'>
+							<div class='box-header blue-background'>
+								<div class='title'>文章评论列表</div>
+								<div class='actions'>
+									<a href="#" class="btn box-remove btn-mini btn-link"><i
+										class='icon-remove'></i> </a> <a href="#"
+										class="btn box-collapse btn-mini btn-link"><i></i> </a>
+								</div>
+							</div>
+							<div class='box-content box-no-padding'>
+								<div class='responsive-table'>
+									<div class='scrollable-area'>
+									<c:set var="page" value="${requestScope.page }" />
+										<table class='table table-bordered table-striped'
+											style='margin-bottom: 0;'>
+											<thead>
+												<tr>
+													<th>评论编号</th>
+													<th>文章编号</th>
+													<th>用户编号</th>
+													<th>内容</th>
+													<th>评论时间</th>
+													<th>删除</th>
+												</tr>
+											</thead>
+											<tbody>
+												<c:choose>
+													<c:when test="${page ne null and page.list ne null }">
+														<c:forEach items="${page.list }" var="m">
+															<tr>
+																<td>${m.commentId }</td>
+																<td>${m.articleId }</td>
+																<td>${m.userId }</td>
+																<td>${m.commentContent }</td>
+																<td>${m.commentTime }</td>
+																<td><button class="btn btn-danger" name="button"
+																		style="margin-bottom: 5px" type="submit"
+																		onclick="de(${m.commentId})">删除</button></td>
+															</tr>
+														</c:forEach>
+													</c:when>
+													<c:otherwise>
+														<tr>
+															<td colspan="6">查无数据</td>
+														</tr>
+													</c:otherwise>
+												</c:choose>
+											</tbody>
+										</table>
+										
+									</div>
+								</div>
+								<div id="p">
+											<c:if test="${page.current gt 1 }">
+												<a href="/zijingwang/listArticleComment?cur=${page.current-1 }">上一页</a>
+											</c:if>
+											<c:forEach begin="1" end="${page.total }" var="cur">
+												<a href="/zijingwang/listArticleComment?cur=${cur }">${cur }</a>
+											</c:forEach>
+											<c:if test="${page.current lt page.total }">
+												<a href="/zijingwang/listArticleComment?cur=${page.current+1 }">下一页</a>
+											</c:if>
+										</div>
 							</div>
 						</div>
-						<hr class='hr-normal' />
-						<div class='control-group'>
-							<label class='control-label' for='inputSelect'>内容</label>
-							<div class='controls' style="margin-top: 5px;">
-								${m.messageContent }
-							</div>
-						</div>
-						<div class='control-group'>
-							<label class='control-label' for='inputText1'>留言日期</label>
-							<div class='controls' style="margin-top: 5px;">
-								${m.messageTime }
-							</div>
+						<!--表格2区域-->
 
-						</div>
-						<div class='control-group'>
-							<label class='control-label' for='inputText1'>回复</label>
-							<div class='controls' style="margin-top: 5px;">
-								<textarea name="replyMessage">${m.replyMessage }</textarea>
-							</div>
-						</div>
-						<div class='form-actions'>
-						    <button class='btn' type='submit'>
-						    	<i class='icon-save'></i> 提交</button>
-							<button class='btn' type='submit'
-								onclick="javascript:history.go(-1)">返回</button>
-						</div>
-						</form>
+
+
 					</div>
-					<!--页面内标签-->
-					<hr class='hr-double' />
-
-
-
 				</div>
 			</div>
-		</div>
 		</section>
 		<!--核心显示区-->
 	</div>

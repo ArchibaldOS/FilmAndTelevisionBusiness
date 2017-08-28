@@ -8,7 +8,13 @@ import org.springframework.web.bind.annotation.RequestMethod;
 public class HomeController {
 	
 	@RequestMapping(value="/",method=RequestMethod.GET)
-	public String backHome(){
+	public String fontHome(){
 		return "lbh/views/index";
 	}
+	
+	@RequestMapping(value="/back",method=RequestMethod.GET)
+	public String backHome(){
+		return "lbh/views/backIndex";
+	}
+	
 }

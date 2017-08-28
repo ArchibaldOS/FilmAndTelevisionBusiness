@@ -313,6 +313,19 @@
 					</a></li>
 				</ul></li>
 			<!--留言管理-->
+			
+			<!--文章评论管理-->
+			<li class=''><a class='dropdown-collapse' href='#'> <i
+					class='icon-edit'></i> <span>文章评论管理</span> <i
+					class='icon-angle-down angle-down'></i>
+			</a>
+				<ul class='nav nav-stacked'>
+					<li class=''><a href='/zijingwang/listArticleComment'> <!--链接到标签对应的html页面-->
+							<i class='icon-caret-right'></i> <span>查看所有评论</span>
+					</a></li>
+				</ul></li>
+			<!--文章评论管理-->
+			
             </ul>
         </div>
         </nav>

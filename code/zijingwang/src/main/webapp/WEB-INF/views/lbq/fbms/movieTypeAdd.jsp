@@ -1,4 +1,4 @@
-<%@ page language="java" contentType="text/html; charset=utf-8" %>
+<%@ page language="java" contentType="text/html; charset=utf-8" pageEncoding="UTF-8" %>
 <!DOCTYPE html>
 <html>
 <head>
@@ -295,7 +295,7 @@
                             </div>
                         </div>
                         <div class='box-content'>
-                            <form accept-charset="UTF-8" action="/zijingwang/movieType/movieTypeAddAction" class="form form-horizontal" method="post"
+                           <form accept-charset="UTF-8" action="/zijingwang/movieType/movieTypeAddAction" class="form form-horizontal" method="post"
                                   style="margin-bottom: 0;"/>
                             <div style="margin:0;padding:0;display:inline">
                                 <input name="utf8" type="hidden" value="&#x2713;"/>

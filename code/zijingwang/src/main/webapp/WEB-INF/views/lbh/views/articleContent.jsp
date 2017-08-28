@@ -5,6 +5,7 @@
 <html>
 <head>
 	<c:set var="a" value="${requestScope.article }" />
+	<c:set var="p" value="${requestScope.page }" />
     <title>${a.title }</title>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <link href="css/style.css" rel="stylesheet" type="text/css" media="all"/>
@@ -41,7 +42,30 @@
 	color: blue;
 	background-color: blue;
 }
- 
+#btn1{
+	float:left;
+	margin-left:250px; 	
+
+	width: 70px;
+	height: 90px;
+
+}
+#btn2{
+	float:left;
+	width: 130px;
+	height: 90px;
+}
+#page {
+	margin-top: 10px;
+}
+
+#page a {
+	border: 1px solid #000;
+	display: inline-block;
+	padding: 2px 5px;
+	margin: 0 5px;
+	text-decoration: none;
+}
 </style>
 <body>
 <div class="header">
@@ -99,15 +123,65 @@
 						<h4><font color="gray" style="font-style: italic;">作者：${a.author }</font></h4>
 					</div>
 					<div class="content">${a.articleContent }</div>
-					<div style="width: 100%;height:50px;"></div>
+					<div style="width: 100%;height:40px;"></div>
 					<div>
-                         <button class='btn btn-primary' type='submit' onclick="javascript:history.go(-1)" style="width: 60px ">返回</button>
-                    </div>
-				</div>
+						<div id='btn1'>
+                         	<button  class='btn btn-primary' type='submit' onclick="javascript:history.go(-1)" style="width: 60px">返回</button>
+                    	</div>
+                    	<div id="btn2">
+                    		<button class='btn btn-primary' type='submit' onclick="javascript:history.go(-1)" style="width: 120px ">发表评论</button>
+						</div>
+					</div>
+					<div></div>
+					<div style="width:100%;height:auto;border:green solid 2px;clear: both;background-color: gray;">
+						<div style="border:green solid 2px;">
+							<br />
+							<h3>评论列表</h3>
+							<br />
+							<table style="border:green solid 2px;margin-left: 50px;width: 100%;" bordercolor="red">
+								<tbody>
+								<c:choose>
+									<c:when test="${p ne null and p.list ne null }">
+										<c:forEach items="${p.list }" var="s">
+											<tr style="background-color:#fff; ">
+												<td>
+													<div style="float:left">${s.userId }</div>
+													<div style="float:right;margin-right: 200px;border:green solid 2px;">${s.commentTime }</div>
+													<br/><br/><div style="text-align: left"><strong>${s.commentContent }</strong></div>			
+													<br/><br/>			
+												</td>
+											</tr>
+										</c:forEach>
+										<!-- onclick="location.href='/zijingwang/senseDelete?senseId=${s.senseId}'" -->
+									</c:when>
+									<c:otherwise>
+										<tr>
+											<td colspan="1">查无数据</td>
+										</tr>
+									</c:otherwise>
+								</c:choose>
+							</tbody>
+							</table>
+						</div>
+						<div id="page">
+							<c:if test="${p.current gt 1 }">
+								<a href="/zijingwang/articleContent?articleId=${a.articleId }&&cur=${p.current-1 }">上一页</a>
+							</c:if>
+							<c:forEach begin="1" end="${p.total }" var="cur">
+								<a href="/zijingwang/articleContent?articleId=${a.articleId }&&cur=${cur }">${cur }</a>
+							</c:forEach>
+							<c:if test="${p.current lt p.total }">
+								<a href="/zijingwang/articleContent?articleId=${a.articleId }&&cur=${p.current+1 }">下一页</a>
+							</c:if>
+						</div>
+					</div>
+			</div>
 		</div>
-
 </div>
 <div style="width: 100%;height:150px;"></div>
 </body>
-
+<script type="text/javascript">
+	
+			
+		</script>
 </html>

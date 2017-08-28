@@ -10,6 +10,7 @@ import org.springframework.web.bind.annotation.ResponseBody;
 
 import com.xd.zijing.entity.Article;
 import com.xd.zijing.entity.Page;
+import com.xd.zijing.service.ArticleCommentService;
 import com.xd.zijing.service.ArticleService;
 
 @Controller
@@ -18,17 +19,23 @@ public class ArticeController {
 	@Autowired
 	private ArticleService articleService;
 	
+	@Autowired
+	private ArticleCommentService articleCommentService;
+	
 	@RequestMapping(value="/article",method=RequestMethod.GET)
 	public String article(){
 		return "lbh/views/article";
 	}
 	
 	@RequestMapping(value="/articleContent",method=RequestMethod.GET)
-	public String content(@RequestParam(name="articleId") int articleId,Model model){
+	public String content(@RequestParam(name="articleId") int articleId,@RequestParam(name="cur", defaultValue="1") int cur,Model model){
 
 		Article article = articleService.findById(articleId);
 		
+		Page page = articleCommentService.findById(articleId,cur);
+		
 		model.addAttribute("article", article);
+		model.addAttribute("page", page);	
 		return "lbh/views/articleContent";
 		
 	}
