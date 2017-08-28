@@ -7,11 +7,9 @@ import java.util.List;
 import java.util.Map;
 import java.util.Set;
 
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Controller;
+
 
 import com.xd.zijing.entity.SenseWord;
-import com.xd.zijing.service.SenseService;
 
 /**
  * @Description: 初始化敏感词库，将敏感词加入到HashMap中，构建DFA算法模型
