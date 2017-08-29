@@ -61,7 +61,7 @@
             <div class='navbar'>
                 <div class='navbar-inner'>
                     <div class='container-fluid'>
-                       <a class='brand' href='/zijingwang'>
+                       <a class='brand' href='/zijingwang/backIndex'>
                             <i class='icon-heart-empty'></i>
                             <span class='hidden-phone'>后台管理系统</span>
                         </a>
@@ -126,119 +126,15 @@
                                 </ul>
                             </li>
                             <!--切换颜色 -->
-                            <!--消息提示列表 -->
-                            <li class='dropdown medium only-icon widget'>
-                                <a class='dropdown-toggle' data-toggle='dropdown' href='#'>
-                                    <i class='icon-rss'></i>
-                                    <div class='label'>5</div>
-                                </a>
-                                <ul class='dropdown-menu'>
-                                    <li>
-                                        <a href='#'>
-                                            <div class='widget-body'>
-                                                <div class='pull-left icon'>
-                                                    <i class='icon-user text-success'></i>
-                                                </div>
-                                                <div class='pull-left text'>
-                                                    John Doe signed up
-                                                    <small class='muted'>just now</small>
-                                                </div>
-                                            </div>
-                                        </a>
-                                    </li>
-                                    <li class='divider'></li>
-                                    <li>
-                                        <a href='#'>
-                                            <div class='widget-body'>
-                                                <div class='pull-left icon'>
-                                                    <i class='icon-inbox text-error'></i>
-                                                </div>
-                                                <div class='pull-left text'>
-                                                    New Order #002
-                                                    <small class='muted'>3 minutes ago</small>
-                                                </div>
-                                            </div>
-                                        </a>
-                                    </li>
-                                    <li class='divider'></li>
-                                    <li>
-                                        <a href='#'>
-                                            <div class='widget-body'>
-                                                <div class='pull-left icon'>
-                                                    <i class='icon-comment text-warning'></i>
-                                                </div>
-                                                <div class='pull-left text'>
-                                                    America Leannon commented Flatty with veeery long text.
-                                                    <small class='muted'>1 hour ago</small>
-                                                </div>
-                                            </div>
-                                        </a>
-                                    </li>
-                                    <li class='divider'></li>
-                                    <li>
-                                        <a href='#'>
-                                            <div class='widget-body'>
-                                                <div class='pull-left icon'>
-                                                    <i class='icon-user text-success'></i>
-                                                </div>
-                                                <div class='pull-left text'>
-                                                    Jane Doe signed up
-                                                    <small class='muted'>last week</small>
-                                                </div>
-                                            </div>
-                                        </a>
-                                    </li>
-                                    <li class='divider'></li>
-                                    <li>
-                                        <a href='#'>
-                                            <div class='widget-body'>
-                                                <div class='pull-left icon'>
-                                                    <i class='icon-inbox text-error'></i>
-                                                </div>
-                                                <div class='pull-left text'>
-                                                    New Order #001
-                                                    <small class='muted'>1 year ago</small>
-                                                </div>
-                                            </div>
-                                        </a>
-                                    </li>
-                                    <li class='widget-footer'>
-                                        <a href='#'>All notifications</a>
-                                    </li>
-                                </ul>
-                            </li>
-                            <!--消息提示列表 -->
+                            
                             <!--用户信息下拉列表 -->
-                            <li class='dropdown dark user-menu'>
-                                <a class='dropdown-toggle' data-toggle='dropdown' href='#'>
-                                    <img alt='Mila Kunis' height='23' src=' assets/images/avatar.jpg' width='23' />
-                                    <span class='user-name hidden-phone'>张雨欣</span>
-                                    <b class='caret'></b>
-                                </a>
-                                <ul class='dropdown-menu'>
-
-                                    <li>
-                                        <a href='user_profile.html'>
-                                            <i class='icon-user'></i>
-                                            主页
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href='user_profile.html'>
-                                            <i class='icon-cog'></i>
-                                            设置
-                                        </a>
-                                    </li>
-                                    <li class='divider'></li>
-                                    <li>
-                                        <a href='sign_in.html'>
-                                            <i class='icon-signout'></i>
-                                            注销
-                                        </a>
-                                    </li>
-                                </ul>
-                            </li>
-                            <!--用户信息下拉列表 -->
+					<li class='dropdown dark user-menu'><a class='dropdown-toggle'
+						data-toggle='dropdown' href='#'> <img alt='Mila Kunis'
+							height='23' src=' assets/images/avatar.jpg' width='23' /> <span
+							class='user-name hidden-phone'>管理员</span>
+					</a>
+						</li>
+					<!--用户信息下拉列表 -->
                         </ul>
                         <!--导航栏右侧 -->
                     </div>

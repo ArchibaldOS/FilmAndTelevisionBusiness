@@ -1,6 +1,7 @@
 package com.xd.zijing.service;
 
 
+import com.xd.zijing.entity.ArticleComment;
 import com.xd.zijing.entity.Page;
 
 public interface ArticleCommentService {
@@ -10,5 +11,7 @@ public interface ArticleCommentService {
 	int delete(int commentId);
 
 	Page findById(int articleId,int cur);
+
+	int insert(ArticleComment articleComment);
 
 }

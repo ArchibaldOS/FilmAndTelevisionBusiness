@@ -43,4 +43,10 @@ public class ArticleCommentServiceImpl implements ArticleCommentService {
 		return page;
 	}
 
+	@Override
+	public int insert(ArticleComment articleComment) {
+		int result = articleCommentMapper.insertComment(articleComment);
+		return result;
+	}
+
 }

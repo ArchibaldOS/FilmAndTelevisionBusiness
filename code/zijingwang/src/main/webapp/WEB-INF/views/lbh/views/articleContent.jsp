@@ -1,6 +1,8 @@
+<%@page import="org.springframework.web.context.request.RequestScope"%>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
+<%@ page import="com.xd.zijing.entity.Article" %>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
@@ -47,16 +49,19 @@
 	margin-left:250px; 	
 
 	width: 70px;
-	height: 90px;
+	height: 60px;
 
 }
 #btn2{
 	float:left;
 	width: 130px;
-	height: 90px;
+	height: 60px;
 }
 #page {
-	margin-top: 10px;
+	padding:10px 0px;
+	margin-left:50px;
+	margin-right:50px;
+	background-color: white;
 }
 
 #page a {
@@ -124,35 +129,59 @@
 					</div>
 					<div class="content">${a.articleContent }</div>
 					<div style="width: 100%;height:40px;"></div>
-					<div>
+					<div style="height: 80px;">
 						<div id='btn1'>
                          	<button  class='btn btn-primary' type='submit' onclick="javascript:history.go(-1)" style="width: 60px">返回</button>
                     	</div>
                     	<div id="btn2">
-                    		<button class='btn btn-primary' type='submit' onclick="javascript:history.go(-1)" style="width: 120px ">发表评论</button>
+                    		<button id='btn22' class='btn btn-primary' type='submit' onclick="(commentArea.style.display=='none')?commentArea.style.display='':commentArea.style.display='none'" style="width: 120px ">发表评论</button>
 						</div>
 					</div>
-					<div></div>
-					<div style="width:100%;height:auto;border:green solid 2px;clear: both;background-color: gray;">
-						<div style="border:green solid 2px;">
+					<div id="commentArea" style="display: none;">
+					<div style="float: left;width: 100%;">
+						<form action="/zijingwang/articleComment" method="post"
+							style="margin: 0px 100px 20px 240px;" onsubmit="return check()">
+							<div style="float: left;">
+								<h4>在线评论</h4>
+								<br />
+							</div>
+							<div>
+								<input name="articleId" type="hidden" value="${a.articleId }" />
+								<textarea id="content" rows="5" cols="50" name="commentContent"></textarea>
+								<span id="msg"></span>
+							</div>
+							<br />
+							<div id="wrapper">
+								<input type="submit" value="提交评论" class="btn btn-default"
+									style="width: 100px; color: white; background-color: blue" />
+								<input type="reset" value="重置" class="btn btn-default"
+									style="width: 100px; color: blue;" />
+							</div>
+						</form>
+					</div>
+
+
+
+				</div>
+					<div style="width:100%;height:auto;clear: both;background-color: gray;">
+						<div style="margin-right: 50px;margin-left: 50px;">
 							<br />
 							<h3>评论列表</h3>
 							<br />
-							<table style="border:green solid 2px;margin-left: 50px;width: 100%;" bordercolor="red">
+							<table style="margin-right: 50px;width: 100%;" bordercolor="red">
 								<tbody>
 								<c:choose>
-									<c:when test="${p ne null and p.list ne null }">
+									<c:when test="${p ne null and p.list ne null and not empty p.list}">
 										<c:forEach items="${p.list }" var="s">
-											<tr style="background-color:#fff; ">
-												<td>
+											<tr style="background-color:white; ">
+												<td style="border: gray solid 1px;">
 													<div style="float:left">${s.userId }</div>
-													<div style="float:right;margin-right: 200px;border:green solid 2px;">${s.commentTime }</div>
+													<div style="float:right;margin-right:20px;">${s.commentTime }</div>
 													<br/><br/><div style="text-align: left"><strong>${s.commentContent }</strong></div>			
-													<br/><br/>			
+													<br/>
 												</td>
 											</tr>
 										</c:forEach>
-										<!-- onclick="location.href='/zijingwang/senseDelete?senseId=${s.senseId}'" -->
 									</c:when>
 									<c:otherwise>
 										<tr>
@@ -163,6 +192,7 @@
 							</tbody>
 							</table>
 						</div>
+						<c:if test="${not empty p.list }">
 						<div id="page">
 							<c:if test="${p.current gt 1 }">
 								<a href="/zijingwang/articleContent?articleId=${a.articleId }&&cur=${p.current-1 }">上一页</a>
@@ -174,6 +204,8 @@
 								<a href="/zijingwang/articleContent?articleId=${a.articleId }&&cur=${p.current+1 }">下一页</a>
 							</c:if>
 						</div>
+						</c:if>
+						<div style="height: 20px;background-color: gray;"></div>
 					</div>
 			</div>
 		</div>
@@ -182,6 +214,35 @@
 </body>
 <script type="text/javascript">
 	
-			
-		</script>
+	var content = document.getElementById("content");
+	var msg = document.getElementById("msg");
+	content.onblur = function(e) {
+		if (content.value == "") {
+			this.style.borderColor = "red";
+			msg.style.color = "red";
+			msg.innerHTML = "内容不能为空！";
+		} else {
+			this.style.borderColor = "green";
+			msg.innerHTML = "";
+		}
+	}
+	function check() {
+		if (content.value == "") {
+			alert("留言内容不能为空！");
+			return false;
+		}
+	}
+</script>
+<%
+	 if(request.getAttribute("isSucceed") != null){
+     	int flag = (int)request.getAttribute("isSucceed");
+	 	if(flag == 1){
+		 	out.println("<script type=\"text/javascript\">alert('评论成功!')</script>");
+		}else{
+			Object set =request.getAttribute("set");
+			out.println("<script type=\"text/javascript\">alert('"+ "请不要使用"+ set.toString() +"等敏感词！')</script>");
+		}
+
+	 }
+%> 
 </html>
