@@ -9,8 +9,6 @@
             cinemaName,payOnline,address,telephone,introduction
         from
             sys_cinema
-        where
-            cinemaName='天地影视'
     </select>
 
     <update id="updateCinema" parameterType="Cinema" >

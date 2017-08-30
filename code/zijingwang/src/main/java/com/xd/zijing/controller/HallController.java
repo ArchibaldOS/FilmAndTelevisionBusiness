@@ -2,6 +2,7 @@ package com.xd.zijing.controller;
 
 import com.xd.zijing.entity.Page;
 import com.xd.zijing.entity.Hall;
+import com.xd.zijing.service.CinemaService;
 import com.xd.zijing.service.HallService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -16,6 +17,9 @@ public class HallController {
 
     @Autowired
     private HallService hallService;
+
+    @Autowired
+    private CinemaService cinemaService;
 
     @RequestMapping(value = "/hall/hallList", method = RequestMethod.GET)
     public String index(@RequestParam(name = "cur", defaultValue = "1") int cur, Model model) {
@@ -43,6 +47,9 @@ public class HallController {
     public String hallDetailUpdate(@PathVariable("hallId") int hallId, Model model) {
         Hall hal1 = hallService.queryHallById(hallId);
         model.addAttribute("hall", hal1);
+
+        String cinemaName=cinemaService.queryCinemaInfo().getCinemaName();
+        model.addAttribute("cinemaName",cinemaName);
         return "lbq/fbms/hallDetailUpdate";
     }
 
@@ -53,7 +60,9 @@ public class HallController {
     }
 
     @RequestMapping(value = "/hall/hallAdd", method = RequestMethod.GET)
-    public String hallAdd(){
+    public String hallAdd(Model model){
+        String cinemaName=cinemaService.queryCinemaInfo().getCinemaName();
+        model.addAttribute("cinemaName",cinemaName);
         return "lbq/fbms/hallAdd";
     }
 

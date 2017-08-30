@@ -49,4 +49,9 @@ public class MovieTypeServiceImpl implements MovieTypeService {
     public boolean updateMovieType(MovieType movieType) {
         return movieTypeDao.updateMovieType(movieType);
     }
+
+    @Override
+    public List<MovieType> findAllForMovie() {
+        return movieTypeDao.findAllForMovie();
+    }
 }

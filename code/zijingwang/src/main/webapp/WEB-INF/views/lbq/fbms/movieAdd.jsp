@@ -1,4 +1,5 @@
 <%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt" %>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@ page language="java" contentType="text/html; charset=utf-8" %>
 <!DOCTYPE html>
 <html>
@@ -10,13 +11,16 @@
     <script src='/zijingwang/assets/javascripts/html5shiv.js' type='text/javascript'></script>
     <![endif]-->
     <link href='/zijingwang/assets/stylesheets/bootstrap/bootstrap2.css' media='all' rel='stylesheet' type='text/css'/>
-    <link href='/zijingwang/assets/stylesheets/bootstrap/bootstrap-responsive.css' media='all' rel='stylesheet' type='text/css'/>
+    <link href='/zijingwang/assets/stylesheets/bootstrap/bootstrap-responsive.css' media='all' rel='stylesheet'
+          type='text/css'/>
     <!-- / jquery ui -->
     <link href='/zijingwang/assets/stylesheets/jquery_ui/jquery-ui-1.10.0.custom.css' media='all' rel='stylesheet'
           type='text/css'/>
-    <link href='/zijingwang/assets/stylesheets/jquery_ui/jquery.ui.1.10.0.ie.css' media='all' rel='stylesheet' type='text/css'/>
+    <link href='/zijingwang/assets/stylesheets/jquery_ui/jquery.ui.1.10.0.ie.css' media='all' rel='stylesheet'
+          type='text/css'/>
     <!-- / switch buttons -->
-    <link href='/zijingwang/assets/stylesheets/plugins/bootstrap_switch/bootstrap-switch.css' media='all' rel='stylesheet'
+    <link href='/zijingwang/assets/stylesheets/plugins/bootstrap_switch/bootstrap-switch.css' media='all'
+          rel='stylesheet'
           type='text/css'/>
     <!-- / xeditable -->
     <link href='/zijingwang/assets/stylesheets/plugins/xeditable/bootstrap-editable.css' media='all' rel='stylesheet'
@@ -28,41 +32,51 @@
     <link href='/zijingwang/assets/stylesheets/plugins/common/bootstrap-wysihtml5.css' media='all' rel='stylesheet'
           type='text/css'/>
     <!-- / jquery file upload -->
-    <link href='/zijingwang/assets/stylesheets/plugins/jquery_fileupload/jquery.fileupload-ui.css' media='all' rel='stylesheet'
+    <link href='/zijingwang/assets/stylesheets/plugins/jquery_fileupload/jquery.fileupload-ui.css' media='all'
+          rel='stylesheet'
           type='text/css'/>
     <!-- / full calendar -->
     <link href='/zijingwang/assets/stylesheets/plugins/fullcalendar/fullcalendar.css' media='all' rel='s
 	tylesheet' type='text/css'/>
     <!-- / select2 -->
-    <link href='/zijingwang/assets/stylesheets/plugins/select2/select2.css' media='all' rel='stylesheet' type='text/css'/>
+    <link href='/zijingwang/assets/stylesheets/plugins/select2/select2.css' media='all' rel='stylesheet'
+          type='text/css'/>
     <!-- / mention -->
-    <link href='/zijingwang/assets/stylesheets/plugins/mention/mention.css' media='all' rel='stylesheet' type='text/css'/>
+    <link href='/zijingwang/assets/stylesheets/plugins/mention/mention.css' media='all' rel='stylesheet'
+          type='text/css'/>
     <!-- / tabdrop (responsive tabs) -->
-    <link href='/zijingwang/assets/stylesheets/plugins/tabdrop/tabdrop.css' media='all' rel='stylesheet' type='text/css'/>
+    <link href='/zijingwang/assets/stylesheets/plugins/tabdrop/tabdrop.css' media='all' rel='stylesheet'
+          type='text/css'/>
     <!-- / jgrowl notifications -->
-    <link href='/zijingwang/assets/stylesheets/plugins/jgrowl/jquery.jgrowl.min.css' media='all' rel='stylesheet' type='text/css'/>
+    <link href='/zijingwang/assets/stylesheets/plugins/jgrowl/jquery.jgrowl.min.css' media='all' rel='stylesheet'
+          type='text/css'/>
     <!-- / datatables -->
     <link href='/zijingwang/assets/stylesheets/plugins/datatables/bootstrap-datatable.css' media='all' rel='stylesheet'
           type='text/css'/>
     <!-- / dynatrees (file trees) -->
-    <link href='/zijingwang/assets/stylesheets/plugins/dynatree/ui.dynatree.css' media='all' rel='stylesheet' type='text/css'/>
+    <link href='/zijingwang/assets/stylesheets/plugins/dynatree/ui.dynatree.css' media='all' rel='stylesheet'
+          type='text/css'/>
     <!-- / color picker -->
     <link href='/zijingwang/assets/stylesheets/plugins/bootstrap_colorpicker/bootstrap-colorpicker.css' media='all'
           rel='stylesheet' type='text/css'/>
     <!-- / datetime picker -->
-    <link href='/zijingwang/assets/stylesheets/plugins/bootstrap_datetimepicker/bootstrap-datetimepicker.min.css' media='all'
+    <link href='/zijingwang/assets/stylesheets/plugins/bootstrap_datetimepicker/bootstrap-datetimepicker.min.css'
+          media='all'
           rel='stylesheet' type='text/css'/>
     <!-- / daterange picker) -->
-    <link href='/zijingwang/assets/stylesheets/plugins/bootstrap_daterangepicker/bootstrap-daterangepicker.css' media='all'
+    <link href='/zijingwang/assets/stylesheets/plugins/bootstrap_daterangepicker/bootstrap-daterangepicker.css'
+          media='all'
           rel='stylesheet' type='text/css'/>
     <!-- / flags (country flags) -->
     <link href='/zijingwang/assets/stylesheets/plugins/flags/flags.css' media='all' rel='stylesheet' type='text/css'/>
     <!-- / slider nav (address book) -->
-    <link href='/zijingwang/assets/stylesheets/plugins/slider_nav/slidernav.css' media='all' rel='stylesheet' type='text/css'/>
+    <link href='/zijingwang/assets/stylesheets/plugins/slider_nav/slidernav.css' media='all' rel='stylesheet'
+          type='text/css'/>
     <!-- / fuelux (wizard) -->
     <link href='/zijingwang/assets/stylesheets/plugins/fuelux/wizard.css' media='all' rel='stylesheet' type='text/css'/>
     <!-- / flatty theme -->
-    <link href='/zijingwang/assets/stylesheets/light-theme.css' id='color-settings-body-color' media='all' rel='stylesheet'
+    <link href='/zijingwang/assets/stylesheets/light-theme.css' id='color-settings-body-color' media='all'
+          rel='stylesheet'
           type='text/css'/>
     <!-- / demo -->
     <link href='/zijingwang/assets/stylesheets/demo.css' media='all' rel='stylesheet' type='text/css'/>
@@ -70,199 +84,11 @@
 </head>
 <body class='contrast-blue '>
 <header>
-    <div class='navbar'>
-        <div class='navbar-inner'>
-            <div class='container-fluid'>
-                <a class='brand' href='index.html'>
-                    <i class='icon-heart-empty'></i>
-                    <span class='hidden-phone'>后台管理系统</span>
-                </a>
-                <a class='toggle-nav btn pull-left' href='#'>
-                    <i class='icon-reorder'></i>
-                </a>
-                <!--导航栏右侧 -->
-                <ul class='nav pull-right'>
-                    <!--切换颜色 -->
-                    <li class='dropdown light only-icon'>
-                        <a class='dropdown-toggle' data-toggle='dropdown' href='#'>
-                            <i class='icon-adjust'></i>
-                        </a>
-                        <ul class='dropdown-menu color-settings'>
-                            <li class='divider'></li>
-                            <li class='color-settings-contrast-color'>
-                                <div class='color-title'>主题颜色</div>
-                                <a href="#" data-change-to="contrast-red"><i class='icon-adjust text-red'></i>
-                                    Red
-                                </a>
-                                <a href="#" data-change-to="contrast-blue"><i class='icon-adjust text-blue'></i>
-                                    Blue
-                                    <small>(default)</small>
-                                </a>
-                                <a href="#" data-change-to="contrast-orange"><i class='icon-adjust text-orange'></i>
-                                    Orange
-                                </a>
-                                <a href="#" data-change-to="contrast-purple"><i class='icon-adjust text-purple'></i>
-                                    Purple
-                                </a>
-                                <a href="#" data-change-to="contrast-green"><i class='icon-adjust text-green'></i>
-                                    Green
-                                </a>
-                                <a href="#" data-change-to="contrast-muted"><i class='icon-adjust text-muted'></i>
-                                    Muted
-                                </a>
-                                <a href="#" data-change-to="contrast-fb"><i class='icon-adjust text-fb'></i>
-                                    Facebook
-                                </a>
-                                <a href="#" data-change-to="contrast-dark"><i class='icon-adjust text-dark'></i>
-                                    Dark
-                                </a>
-                                <a href="#" data-change-to="contrast-pink"><i class='icon-adjust text-pink'></i>
-                                    Pink
-                                </a>
-                                <a href="#" data-change-to="contrast-grass-green"><i
-                                        class='icon-adjust text-grass-green'></i>
-                                    Grass green
-                                </a>
-                                <a href="#" data-change-to="contrast-sea-blue"><i class='icon-adjust text-sea-blue'></i>
-                                    Sea blue
-                                </a>
-                                <a href="#" data-change-to="contrast-banana"><i class='icon-adjust text-banana'></i>
-                                    Banana
-                                </a>
-                                <a href="#" data-change-to="contrast-dark-orange"><i
-                                        class='icon-adjust text-dark-orange'></i>
-                                    Dark orange
-                                </a>
-                                <a href="#" data-change-to="contrast-brown"><i class='icon-adjust text-brown'></i>
-                                    Brown
-                                </a>
-                            </li>
-                        </ul>
-                    </li>
-                    <!--切换颜色 -->
-                    <!--消息提示列表 -->
-                    <li class='dropdown medium only-icon widget'>
-                        <a class='dropdown-toggle' data-toggle='dropdown' href='#'>
-                            <i class='icon-rss'></i>
-
-                            <div class='label'>5</div>
-                        </a>
-                        <ul class='dropdown-menu'>
-                            <li>
-                                <a href='#'>
-                                    <div class='widget-body'>
-                                        <div class='pull-left icon'>
-                                            <i class='icon-user text-success'></i>
-                                        </div>
-                                        <div class='pull-left text'>
-                                            John Doe signed up
-                                            <small class='muted'>just now</small>
-                                        </div>
-                                    </div>
-                                </a>
-                            </li>
-                            <li class='divider'></li>
-                            <li>
-                                <a href='#'>
-                                    <div class='widget-body'>
-                                        <div class='pull-left icon'>
-                                            <i class='icon-inbox text-error'></i>
-                                        </div>
-                                        <div class='pull-left text'>
-                                            New Order #002
-                                            <small class='muted'>3 minutes ago</small>
-                                        </div>
-                                    </div>
-                                </a>
-                            </li>
-                            <li class='divider'></li>
-                            <li>
-                                <a href='#'>
-                                    <div class='widget-body'>
-                                        <div class='pull-left icon'>
-                                            <i class='icon-comment text-warning'></i>
-                                        </div>
-                                        <div class='pull-left text'>
-                                            America Leannon commented Flatty with veeery long text.
-                                            <small class='muted'>1 hour ago</small>
-                                        </div>
-                                    </div>
-                                </a>
-                            </li>
-                            <li class='divider'></li>
-                            <li>
-                                <a href='#'>
-                                    <div class='widget-body'>
-                                        <div class='pull-left icon'>
-                                            <i class='icon-user text-success'></i>
-                                        </div>
-                                        <div class='pull-left text'>
-                                            Jane Doe signed up
-                                            <small class='muted'>last week</small>
-                                        </div>
-                                    </div>
-                                </a>
-                            </li>
-                            <li class='divider'></li>
-                            <li>
-                                <a href='#'>
-                                    <div class='widget-body'>
-                                        <div class='pull-left icon'>
-                                            <i class='icon-inbox text-error'></i>
-                                        </div>
-                                        <div class='pull-left text'>
-                                            New Order #001
-                                            <small class='muted'>1 year ago</small>
-                                        </div>
-                                    </div>
-                                </a>
-                            </li>
-                            <li class='widget-footer'>
-                                <a href='#'>All notifications</a>
-                            </li>
-                        </ul>
-                    </li>
-                    <!--消息提示列表 -->
-                    <!--用户信息下拉列表 -->
-                    <li class='dropdown dark user-menu'>
-                        <a class='dropdown-toggle' data-toggle='dropdown' href='#'>
-                            <img alt='Mila Kunis' height='23' src='/zijingwang/assets/images/avatar.jpg' width='23'/>
-                            <span class='user-name hidden-phone'>张雨欣</span>
-                            <b class='caret'></b>
-                        </a>
-                        <ul class='dropdown-menu'>
-
-                            <li>
-                                <a href='user_profile.html'>
-                                    <i class='icon-user'></i>
-                                    主页
-                                </a>
-                            </li>
-                            <li>
-                                <a href='user_profile.html'>
-                                    <i class='icon-cog'></i>
-                                    设置
-                                </a>
-                            </li>
-                            <li class='divider'></li>
-                            <li>
-                                <a href='sign_in.html'>
-                                    <i class='icon-signout'></i>
-                                    注销
-                                </a>
-                            </li>
-                        </ul>
-                    </li>
-                    <!--用户信息下拉列表 -->
-                </ul>
-                <!--导航栏右侧 -->
-            </div>
-        </div>
-    </div>
+    <%@include file="common/header.jsp"%>
 </header>
 <div id='wrapper'>
 <div id='main-nav-bg'></div>
-<%@include file="common/leftList.jsp"%>
+<%@include file="common/leftList.jsp" %>
 
 
 <!--核心显示区-->
@@ -296,7 +122,8 @@
                 </div>
             </div>
             <div class='box-content'>
-                <form accept-charset="UTF-8" action="/zijingwang/movie/movieAddAction" class="form form-horizontal" enctype="multipart/form-data"
+                <form accept-charset="UTF-8" action="/zijingwang/movie/movieAddAction" class="form form-horizontal"
+                      enctype="multipart/form-data"
                       method="post" style="margin-bottom: 0;">
                     <div style="margin:0;padding:0;display:inline">
                         <input name="utf8" type="hidden" value="&#x2713;"/>
@@ -330,12 +157,24 @@
 
                         <div class='controls'>
                             <select id='movieType' name="movieType">
-                                <option/>
-                                动作
-                                <option/>
-                                恐怖
-                                <option/>
-                                其他
+                                <c:forEach items="${movieTypes}" var="mt">
+                                    <option value="${mt.movieTypeName}">
+                                            ${mt.movieTypeName}
+                                    </option>
+                                </c:forEach>
+                            </select>
+                        </div>
+                    </div>
+                    <div class='control-group'>
+                        <label class='control-label' for='version'>版本</label>
+
+                        <div class='controls'>
+                            <select id='version' name="version">
+                                <c:forEach items="${versions}" var="v">
+                                    <option value="${v.versionName}">
+                                            ${v.versionName}
+                                    </option>
+                                </c:forEach>
                             </select>
                         </div>
                     </div>
@@ -483,7 +322,8 @@
 <!-- / jquery -->
 <script src='/zijingwang/assets/javascripts/jquery/jquery.min.js' type='text/javascript'></script>
 <!-- / jquery mobile events (for touch and slide) -->
-<script src='/zijingwang/assets/javascripts/plugins/mobile_events/jquery.mobile-events.min.js' type='text/javascript'></script>
+<script src='/zijingwang/assets/javascripts/plugins/mobile_events/jquery.mobile-events.min.js'
+        type='text/javascript'></script>
 <!-- / jquery migrate (for compatibility with new jquery) -->
 <script src='/zijingwang/assets/javascripts/jquery/jquery-migrate.min.js' type='text/javascript'></script>
 <!-- / jquery ui -->
@@ -498,12 +338,15 @@
 <script src='/zijingwang/assets/javascripts/plugins/flot/flot.resize.js' type='text/javascript'></script>
 <script src='/zijingwang/assets/javascripts/plugins/flot/flot.pie.js' type='text/javascript'></script>
 <!-- / bootstrap switch -->
-<script src='/zijingwang/assets/javascripts/plugins/bootstrap_switch/bootstrapSwitch.min.js' type='text/javascript'></script>
+<script src='/zijingwang/assets/javascripts/plugins/bootstrap_switch/bootstrapSwitch.min.js'
+        type='text/javascript'></script>
 <!-- / fullcalendar -->
 <script src='/zijingwang/assets/javascripts/plugins/fullcalendar/fullcalendar.min.js' type='text/javascript'></script>
 <!-- / datatables -->
-<script src='/zijingwang/assets/javascripts/plugins/datatables/jquery.dataTables.min.js' type='text/javascript'></script>
-<script src='/zijingwang/assets/javascripts/plugins/datatables/jquery.dataTables.columnFilter.js' type='text/javascript'></script>
+<script src='/zijingwang/assets/javascripts/plugins/datatables/jquery.dataTables.min.js'
+        type='text/javascript'></script>
+<script src='/zijingwang/assets/javascripts/plugins/datatables/jquery.dataTables.columnFilter.js'
+        type='text/javascript'></script>
 <!-- / wysihtml5 -->
 <script src='/zijingwang/assets/javascripts/plugins/common/wysihtml5.min.js' type='text/javascript'></script>
 <script src='/zijingwang/assets/javascripts/plugins/common/bootstrap-wysihtml5.js' type='text/javascript'></script>
@@ -515,7 +358,8 @@
 <!-- / mention -->
 <script src='/zijingwang/assets/javascripts/plugins/mention/mention.min.js' type='text/javascript'></script>
 <!-- / input mask -->
-<script src='/zijingwang/assets/javascripts/plugins/input_mask/bootstrap-inputmask.min.js' type='text/javascript'></script>
+<script src='/zijingwang/assets/javascripts/plugins/input_mask/bootstrap-inputmask.min.js'
+        type='text/javascript'></script>
 <!-- / fileinput -->
 <script src='/zijingwang/assets/javascripts/plugins/fileinput/bootstrap-fileinput.js' type='text/javascript'></script>
 <!-- / modernizr -->
@@ -526,15 +370,21 @@
 <script src='/zijingwang/assets/javascripts/plugins/fileupload/tmpl.min.js' type='text/javascript'></script>
 <script src='/zijingwang/assets/javascripts/plugins/fileupload/load-image.min.js' type='text/javascript'></script>
 <script src='/zijingwang/assets/javascripts/plugins/fileupload/canvas-to-blob.min.js' type='text/javascript'></script>
-<script src='/zijingwang/assets/javascripts/plugins/fileupload/jquery.iframe-transport.min.js' type='text/javascript'></script>
-<script src='/zijingwang/assets/javascripts/plugins/fileupload/jquery.fileupload.min.js' type='text/javascript'></script>
-<script src='/zijingwang/assets/javascripts/plugins/fileupload/jquery.fileupload-fp.min.js' type='text/javascript'></script>
-<script src='/zijingwang/assets/javascripts/plugins/fileupload/jquery.fileupload-ui.min.js' type='text/javascript'></script>
-<script src='/zijingwang/assets/javascripts/plugins/fileupload/jquery.fileupload-init.js' type='text/javascript'></script>
+<script src='/zijingwang/assets/javascripts/plugins/fileupload/jquery.iframe-transport.min.js'
+        type='text/javascript'></script>
+<script src='/zijingwang/assets/javascripts/plugins/fileupload/jquery.fileupload.min.js'
+        type='text/javascript'></script>
+<script src='/zijingwang/assets/javascripts/plugins/fileupload/jquery.fileupload-fp.min.js'
+        type='text/javascript'></script>
+<script src='/zijingwang/assets/javascripts/plugins/fileupload/jquery.fileupload-ui.min.js'
+        type='text/javascript'></script>
+<script src='/zijingwang/assets/javascripts/plugins/fileupload/jquery.fileupload-init.js'
+        type='text/javascript'></script>
 <!-- / timeago -->
 <script src='/zijingwang/assets/javascripts/plugins/timeago/jquery.timeago.js' type='text/javascript'></script>
 <!-- / slimscroll -->
-<script src='/zijingwang/assets/javascripts/plugins/slimscroll/jquery.slimscroll.min.js' type='text/javascript'></script>
+<script src='/zijingwang/assets/javascripts/plugins/slimscroll/jquery.slimscroll.min.js'
+        type='text/javascript'></script>
 <!-- / autosize (for textareas) -->
 <script src='/zijingwang/assets/javascripts/plugins/autosize/jquery.autosize-min.js' type='text/javascript'></script>
 <!-- / charCount -->
@@ -543,7 +393,8 @@
 <script src='/zijingwang/assets/javascripts/plugins/validate/jquery.validate.min.js' type='text/javascript'></script>
 <script src='/zijingwang/assets/javascripts/plugins/validate/additional-methods.js' type='text/javascript'></script>
 <!-- / naked password -->
-<script src='/zijingwang/assets/javascripts/plugins/naked_password/naked_password-0.2.4.min.js' type='text/javascript'></script>
+<script src='/zijingwang/assets/javascripts/plugins/naked_password/naked_password-0.2.4.min.js'
+        type='text/javascript'></script>
 <!-- / nestable -->
 <script src='/zijingwang/assets/javascripts/plugins/nestable/jquery.nestable.js' type='text/javascript'></script>
 <!-- / tabdrop -->
@@ -553,7 +404,8 @@
 <!-- / bootbox -->
 <script src='/zijingwang/assets/javascripts/plugins/bootbox/bootbox.min.js' type='text/javascript'></script>
 <!-- / inplace editing -->
-<script src='/zijingwang/assets/javascripts/plugins/xeditable/bootstrap-editable.min.js' type='text/javascript'></script>
+<script src='/zijingwang/assets/javascripts/plugins/xeditable/bootstrap-editable.min.js'
+        type='text/javascript'></script>
 <script src='/zijingwang/assets/javascripts/plugins/xeditable/wysihtml5.js' type='text/javascript'></script>
 <!-- / ckeditor -->
 <script src='/zijingwang/assets/javascripts/plugins/ckeditor/ckeditor.js' type='text/javascript'></script>
@@ -563,7 +415,8 @@
 <script src='/zijingwang/assets/javascripts/plugins/bootstrap_datetimepicker/bootstrap-datetimepicker.js'
         type='text/javascript'></script>
 <!-- / daterange picker -->
-<script src='/zijingwang/assets/javascripts/plugins/bootstrap_daterangepicker/moment.min.js' type='text/javascript'></script>
+<script src='/zijingwang/assets/javascripts/plugins/bootstrap_daterangepicker/moment.min.js'
+        type='text/javascript'></script>
 <script src='/zijingwang/assets/javascripts/plugins/bootstrap_daterangepicker/bootstrap-daterangepicker.js'
         type='text/javascript'></script>
 <!-- / max length -->

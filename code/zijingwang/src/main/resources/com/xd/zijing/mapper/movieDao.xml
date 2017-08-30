@@ -62,4 +62,5 @@
            #{released},#{stars},#{topped},#{clickRate},#{shortComment},#{introduction},
            #{faceSPicture},#{faceBPicture},#{stills})
     </insert>
+
 </mapper>

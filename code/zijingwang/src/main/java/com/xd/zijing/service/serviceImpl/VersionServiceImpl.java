@@ -49,4 +49,9 @@ public class VersionServiceImpl implements VersionService {
     public boolean updateVersion(Version version) {
         return versionDao.updateVersion(version);
     }
+
+    @Override
+    public List<Version> findAllForMovie() {
+        return versionDao.findAllForMovie();
+    }
 }

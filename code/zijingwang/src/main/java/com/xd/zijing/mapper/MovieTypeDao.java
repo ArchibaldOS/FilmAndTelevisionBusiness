@@ -22,4 +22,6 @@ public interface MovieTypeDao {
     List<MovieType> findAll(@Param("offset")int offset,@Param("size")int size);
 
     boolean updateMovieType(MovieType movieType);
+
+    List<MovieType> findAllForMovie();
 }

@@ -21,4 +21,6 @@ public interface VersionDao {
     List<Version> findAll(@Param("offset")int offset,@Param("size")int size);
 
     boolean updateVersion(Version version);
+
+    List<Version> findAllForMovie();
 }

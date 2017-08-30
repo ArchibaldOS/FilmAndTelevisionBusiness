@@ -3,6 +3,13 @@
         PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.xd.zijing.mapper.VersionDao">
+    <select id="findAllForMovie" resultType="Version">
+        select
+            versionId,versionName
+        from
+            sys_version
+    </select>
+
     <select id="findAll" resultType="Version" parameterType="int">
         select
             versionId,versionName

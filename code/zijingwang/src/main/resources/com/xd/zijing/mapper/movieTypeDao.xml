@@ -3,6 +3,13 @@
         PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.xd.zijing.mapper.MovieTypeDao">
+    <select id="findAllForMovie" resultType="MovieType">
+        select
+            movieTypeId,movieTypeName
+        from
+            sys_movietype
+    </select>
+
     <select id="findAll" resultType="MovieType" parameterType="int">
         select
             movieTypeId,movieTypeName
