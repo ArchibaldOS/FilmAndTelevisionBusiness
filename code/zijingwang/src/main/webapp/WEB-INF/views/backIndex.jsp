@@ -349,13 +349,13 @@
 </style>
 <section>
     <div  class="left _div">
-        <a href="#"><img src="/zijingwang/assets/images/btn1.jpg"></a>
+        <a href="/zijingwang/infoBack"><img src="/zijingwang/assets/images/btn1.jpg"></a>
         <span>
-            电影后台管理
+            信息发布系统
         </span>
     </div>
     <div class="right _div">
-        <a href="/zijingwang/assets/cinema"><img src="/zijingwang/assets/images/btn2.jpg"></a>
+        <a href="/zijingwang/cinema"><img src="/zijingwang/assets/images/btn2.jpg"></a>
         <span>
             电影后台管理
         </span>
@@ -363,7 +363,7 @@
     <div class="center _div">
         <a href="#"><img src="/zijingwang/assets/images/btn3.jpg"></a>
         <span>
-            电影后台管理
+            系统后台管理
         </span>
     </div>
 </section>

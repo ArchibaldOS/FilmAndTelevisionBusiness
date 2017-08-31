@@ -27,6 +27,11 @@ public class ArticeController {
 		return "lbh/views/article";
 	}
 	
+	@RequestMapping(value="/infoBack",method=RequestMethod.GET)
+	public String backHome(){
+		return "lbh/views/backIndex";
+	}
+	
 	@RequestMapping(value="/articleContent",method=RequestMethod.GET)
 	public String content(@RequestParam(name="articleId") int articleId,@RequestParam(name="cur", defaultValue="1") int cur,Model model){
 

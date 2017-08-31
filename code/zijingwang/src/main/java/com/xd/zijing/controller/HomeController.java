@@ -12,9 +12,6 @@ public class HomeController {
 		return "lbh/views/index";
 	}
 	
-	@RequestMapping(value="/back",method=RequestMethod.GET)
-	public String backHome(){
-		return "lbh/views/backIndex";
-	}
+	
 	
 }
