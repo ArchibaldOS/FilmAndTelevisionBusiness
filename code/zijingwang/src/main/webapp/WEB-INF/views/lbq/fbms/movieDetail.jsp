@@ -98,7 +98,7 @@
                 <!--页面内标签-->
                 <div class='row-fluid'>
                     <div class="tab-pane active" id="retab1">
-                        <form accept-charset="UTF-8" action="/zijingwang/movie/${movie.movieId}/movieDetailUpdate"
+                        <form accept-charset="UTF-8" action="/zijingwang/movie/${movie.id}/movieDetailUpdate"
                               class="form form-horizontal" method="post"
                               style="margin-bottom: 0;">
                             <div style="margin:0;padding:0;display:inline">
@@ -110,20 +110,11 @@
                                 <label class='control-label' for='movieName'>片名</label>
 
                                 <div class='controls'>
-                                    <input id='movieName' type='text' name="movieName" value="${movie.movieName}"
+                                    <input id='movieName' type='text' name="name" value="${movie.name}"
                                            readonly="readonly"/><!--修改name与数据库英文名称统一-->
                                 </div>
                             </div>
                             <hr class='hr-normal'/>
-                            <div class='control-group'>
-                                <label class='control-label' for='director'>导演</label>
-
-                                <div class='controls'>
-                                    <input id='director' type='text' name="director" value="${movie.director}"
-                                           readonly="readonly"/>
-                                </div>
-
-                            </div>
                             <div class='control-group'>
                                 <label class='control-label' for='actor'>主演</label>
 
@@ -136,15 +127,7 @@
                                 <label class='control-label' for='movieType'>类型</label>
 
                                 <div class='controls'>
-                                    <input id='movieType' type='text' name="movieType" value="${movie.movieType}"
-                                           readonly="readonly"/>
-                                </div>
-                            </div>
-                            <div class='control-group'>
-                                <label class='control-label' for='version'>版本</label>
-
-                                <div class='controls'>
-                                    <input id='version' type='text' name="version" value="${movie.version}"
+                                    <input id='movieType' type='text' name="filmtype" value="${movie.filmtype}"
                                            readonly="readonly"/>
                                 </div>
                             </div>
@@ -152,7 +135,7 @@
                                 <label class='control-label' for='region'>国家/地区</label>
 
                                 <div class='controls'>
-                                    <input id='region' type='text' name="region" value="${movie.region}"
+                                    <input id='region' type='text' name="country" value="${movie.country}"
                                            readonly="readonly"/>
                                 </div>
                             </div>
@@ -160,69 +143,33 @@
                                 <label class='control-label' for='duration'>片长</label>
 
                                 <div class='controls'>
-                                    <input id='duration' type='text' name="duraion" value="${movie.duration}"
+                                    <input id='duration' type='text' name="filmtime" value="${movie.filmtime}"
                                            readonly="readonly"/>
-                                </div>
-                            </div>
-                            <div class='control-group'>
-                                <label class='control-label' for='released'>是否上映</label>
-
-                                <div class='controls'>
-                                    <c:if test="${movie.released=='true'}">
-                                        <input id='released'  type='text' name="released" value="正在热映"
-                                               readonly="readonly"/>
-                                    </c:if>
-                                    <c:if test="${movie.released=='false'}">
-                                        <input id='released'  type='text' name="released" value="即将上映"
-                                               readonly="readonly"/>
-                                    </c:if>
                                 </div>
                             </div>
                             <div class='control-group'>
                                 <label class='control-label' for='releaseDate'>上映日期</label>
 
                                 <div class='controls'>
-                                    <input id='releaseDate' type='text' name="releaseDate"
-                                           value="<fmt:formatDate value='${movie.releaseDate}' pattern='yyyy-MM-dd'/>"
+                                    <input id='releaseDate' type='text' name="releasedate"
+                                           value="<fmt:formatDate value='${movie.releasedate}' pattern='yyyy-MM-dd'/>"
                                            readonly="readonly"/>
                                 </div>
                             </div>
                             <div class='control-group'>
-                                <label class='control-label' for='stars'>星级</label>
+                                <label class='control-label' for='price'>价格</label>
 
                                 <div class='controls'>
-                                    <input id='stars' type='text' name="stars" value="${movie.stars}"
+                                    <input id='price' type='text' name="pirce" value="${movie.price}"
                                            readonly="readonly"/>
                                 </div>
                             </div>
                             <div class='control-group'>
-                                <label class='control-label' for='topped'>推荐置顶</label>
+                                <label class='control-label' for='score'>评分</label>
 
                                 <div class='controls'>
-                                    <c:if test="${movie.topped=='true'}">
-                                        <input id='topped'  type='text' name="topped" value="是"
-                                               readonly="readonly"/>
-                                    </c:if>
-                                    <c:if test="${movie.topped=='false'}">
-                                        <input id='topped'  type='text' name="topped" value="否"
-                                               readonly="readonly"/>
-                                    </c:if>
-                                </div>
-                            </div>
-                            <div class='control-group'>
-                                <label class='control-label' for='clickRate'>点击率</label>
-
-                                <div class='controls'>
-                                    <input id='clickRate' type='text' name="clickRate" value="${movie.clickRate}"
+                                    <input id='score' type='text' name="score" value="${movie.score}"
                                            readonly="readonly"/>
-                                </div>
-                            </div>
-                            <div class='control-group'>
-                                <label class='control-label' for='shortComment'>卖点短评</label>
-
-                                <div class='controls'>
-                                    <textarea id='shortComment' name="shortComment"
-                                              readonly="readonly">${movie.shortComment}</textarea>
                                 </div>
                             </div>
                             <hr class='hr-normal'/>
@@ -230,31 +177,15 @@
                                 <label class='control-label' for='introduction'>剧情介绍</label>
 
                                 <div class='controls'>
-                                    <textarea id='introduction' name="introduction"
-                                              readonly="readonly">${movie.introduction}</textarea>
+                                    <textarea id='introduction' name="description"
+                                              readonly="readonly">${movie.description}</textarea>
                                 </div>
                             </div>
                             <div class='control-group'>
-                                <label class='control-label' for='faceSPicture'>封面小图片</label>
+                                <label class='control-label' for='stills'>海报图片</label>
 
                                 <div class='controls' style="width: 300px ;">
-                                    <img id="faceSPicture"
-                                         src="/zijingwang/assets/images/picture/faceSPicture/${movie.faceSPicture}">
-                                </div>
-                            </div>
-                            <div class='control-group'>
-                                <label class='control-label' for='faceBPicture'>封面大图片</label>
-
-                                <div class='controls' style="width: 300px ;">
-                                    <img id="faceBPicture"
-                                         src="/zijingwang/assets/images/picture/faceBPicture/${movie.faceBPicture}">
-                                </div>
-                            </div>
-                            <div class='control-group'>
-                                <label class='control-label' for='stills'>剧照图片</label>
-
-                                <div class='controls' style="width: 300px ;">
-                                    <img id="stills" src="/zijingwang/assets/images/picture/stills/${movie.stills}">
+                                    <img id="stills" src="/zijingwang/assets/images/picture/post/${movie.post}">
                                 </div>
                             </div>
 

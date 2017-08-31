@@ -6,10 +6,10 @@
 
     <select id="findAll" resultType="Comment" parameterType="int">
         select
-            commentId,author,title,content,publishTime,fromIP
+            id,nickname,name,review
         from
-            sys_comment
-        order by commentId
+            review
+        order by id
         limit #{offset},#{size}
     </select>
 
@@ -17,36 +17,22 @@
         select
             count(1)
         from
-            sys_comment
+            review
     </select>
 
     <delete id="deleteById" parameterType="int">
         delete
         from
-            sys_comment
+            review
         where
-            commentId=#{commentId}
+            id=#{id}
     </delete>
 
     <select id="queryById" parameterType="int" resultType="Comment">
         select
-            commentId,author,title,content,publishTime,fromIP
-        from sys_comment
-        where commentId=#{commentId}
+            id,nickname,name,review
+        from review
+        where id=#{id}
     </select>
 
-    <update id="updateComment" parameterType="Comment">
-        update
-          sys_comment
-        set
-          author=#{author},#{title},#{content},#{publishTime},#{fromIp}
-        where commentId=#{commentId}
-    </update>
-
-    <insert id="addComment" parameterType="Comment">
-        insert into
-           sys_comment(author,title,content,publishTime,fromIP)
-        values
-           (#{author},#{title},#{content},#{publishTime},#{fromIP})
-    </insert>
 </mapper>

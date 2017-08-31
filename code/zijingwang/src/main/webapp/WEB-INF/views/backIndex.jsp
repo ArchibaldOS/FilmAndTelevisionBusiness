@@ -208,7 +208,7 @@
                     <!--用户信息下拉列表 -->
                     <li class='dropdown dark user-menu'>
                         <a class='dropdown-toggle' data-toggle='dropdown' href='#'>
-                            <img alt='Mila Kunis' height='23' src='/zijingwang/assets//zijingwang/assets/images/avatar2.jpg' width='23' />
+                            <img alt='Mila Kunis' height='23' src='/zijingwang/assets/images/avatar2.jpg' width='23' />
                             <span class='user-name hidden-phone'>管理员</span>
                             <b class='caret'></b>
                         </a>

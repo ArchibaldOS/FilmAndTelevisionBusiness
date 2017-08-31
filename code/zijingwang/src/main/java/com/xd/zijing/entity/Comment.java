@@ -7,75 +7,53 @@ import java.util.Date;
  */
 public class Comment {
 
-    private int commentId;
+    private int id;
 
-    private String author;
+    private String nickname;
 
-    private String title;
+    private String name;
 
-    private String content;
+    private String review;
 
-    private Date publishTime;
-
-    private String fromIP;
-
-    public int getCommentId() {
-        return commentId;
+    public int getId() {
+        return id;
     }
 
-    public void setCommentId(int commentId) {
-        this.commentId = commentId;
+    public void setId(int id) {
+        this.id = id;
     }
 
-    public String getAuthor() {
-        return author;
+    public String getNickname() {
+        return nickname;
     }
 
-    public void setAuthor(String author) {
-        this.author = author;
+    public void setNickname(String nickname) {
+        this.nickname = nickname;
     }
 
-    public String getTitle() {
-        return title;
+    public String getName() {
+        return name;
     }
 
-    public void setTitle(String title) {
-        this.title = title;
+    public void setName(String name) {
+        this.name = name;
     }
 
-    public String getContent() {
-        return content;
+    public String getReview() {
+        return review;
     }
 
-    public void setContent(String content) {
-        this.content = content;
-    }
-
-    public Date getPublishTime() {
-        return publishTime;
-    }
-
-    public void setPublishTime(Date publishTime) {
-        this.publishTime = publishTime;
-    }
-
-    public String getFromIP() {
-        return fromIP;
-    }
-
-    public void setFromIP(String fromIP) {
-        this.fromIP = fromIP;
+    public void setReview(String review) {
+        this.review = review;
     }
 
     @Override
     public String toString() {
         return "Comment{" +
-                "commentId=" + commentId +
-                ", author='" + author + '\'' +
-                ", title='" + title + '\'' +
-                ", content='" + content + '\'' +
-                ", publishTime=" + publishTime +
-                ", fromIP='" + fromIP + '\'' +
+                "id=" + id +
+                ", nickname='" + nickname + '\'' +
+                ", name='" + name + '\'' +
+                ", review='" + review + '\'' +
                 '}';
     }
 }

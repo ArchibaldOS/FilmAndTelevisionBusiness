@@ -84,240 +84,156 @@
 </head>
 <body class='contrast-blue '>
 <header>
-    <%@include file="common/header.jsp"%>
+    <%@include file="common/header.jsp" %>
 </header>
 <div id='wrapper'>
-<div id='main-nav-bg'></div>
-<%@include file="common/leftList.jsp" %>
+    <div id='main-nav-bg'></div>
+    <%@include file="common/leftList.jsp" %>
 
 
-<!--核心显示区-->
-<section id='content'>
-<div class='container-fluid'>
-<div class='row-fluid' id='content-wrapper'>
-<div class='span12'>
-    <!--第一部分-->
-    <div class='row-fluid'>
-        <div class='span12'>
-            <div class='page-header'>
-                <h1 class='pull-left'>
-                    <i class='icon-edit'></i>
-                    <span>影片管理</span>
-                </h1>
-            </div>
-        </div>
-    </div>
-    <!--第一部分-->
+    <!--核心显示区-->
+    <section id='content'>
+        <div class='container-fluid'>
+            <div class='row-fluid' id='content-wrapper'>
+                <div class='span12'>
+                    <!--第一部分-->
+                    <div class='row-fluid'>
+                        <div class='span12'>
+                            <div class='page-header'>
+                                <h1 class='pull-left'>
+                                    <i class='icon-edit'></i>
+                                    <span>影片管理</span>
+                                </h1>
+                            </div>
+                        </div>
+                    </div>
+                    <!--第一部分-->
 
-    <!--页面内标签-->
-    <div class='row-fluid'>
-        <div class='span12 box' style='margin-bottom: 0'>
-            <div class='box-header blue-background'>
-                <div class='title'>添加影片</div>
-                <div class='actions'>
-                    <a href="#" class="btn box-remove btn-mini btn-link"><i class='icon-remove'></i>
-                    </a>
-                    <a href="#" class="btn box-collapse btn-mini btn-link"><i></i>
-                    </a>
+                    <!--页面内标签-->
+                    <div class='row-fluid'>
+                        <div class='span12 box' style='margin-bottom: 0'>
+                            <div class='box-header blue-background'>
+                                <div class='title'>添加影片</div>
+                                <div class='actions'>
+                                    <a href="#" class="btn box-remove btn-mini btn-link"><i class='icon-remove'></i>
+                                    </a>
+                                    <a href="#" class="btn box-collapse btn-mini btn-link"><i></i>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class='box-content'>
+                                <form accept-charset="UTF-8" action="/zijingwang/movie/movieAddAction"
+                                      class="form form-horizontal"
+                                      enctype="multipart/form-data"
+                                      method="post" style="margin-bottom: 0;">
+                                    <div style="margin:0;padding:0;display:inline">
+                                        <input name="utf8" type="hidden" value="&#x2713;"/>
+                                        <input name="authenticity_token" type="hidden"
+                                               value="CFC7d00LWKQsSahRqsfD+e/mHLqbaVIXBvlBGe/KP+I="/>
+                                    </div>
+                                    <div class='control-group'>
+                                        <label class='control-label' for='movieName'>片名</label>
+
+                                        <div class='controls'>
+                                            <input id='movieName' type='text' name="name"/>
+                                        </div>
+                                    </div>
+                                    <hr class='hr-normal'/>
+                                    <div class='control-group'>
+                                        <label class='control-label' for='actor'>主演</label>
+
+                                        <div class='controls'>
+                                            <input id='actor' type='text' name="actor"/>
+                                        </div>
+                                    </div>
+                                    <div class='control-group'>
+                                        <label class='control-label' for='movieType'>类型</label>
+
+                                        <div class='controls'>
+                                            <select id='movieType' name="filmtype">
+                                                <c:forEach items="${movieTypes}" var="mt">
+                                                    <option value="${mt.movieTypeName}">
+                                                            ${mt.movieTypeName}
+                                                    </option>
+                                                </c:forEach>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class='control-group'>
+                                        <label class='control-label' for='region'>国家/地区</label>
+
+                                        <div class='controls'>
+                                            <input id='region' type='text' name="country"/>
+                                        </div>
+                                    </div>
+                                    <div class='control-group'>
+                                        <label class='control-label' for='duration'>片长</label>
+
+                                        <div class='controls'>
+                                            <input id='duration' type='text' name="filmtime"/>
+                                        </div>
+                                    </div>
+                                    <div class='control-group'>
+                                        <label class='control-label' for='releaseDate'>上映日期</label>
+
+                                        <div class='controls'>
+                                            <input id='releaseDate' type='date' name="releasedate"/>
+                                        </div>
+                                    </div>
+                                    <div class='control-group'>
+                                        <label class='control-label' for='price'>价格</label>
+
+                                        <div class='controls'>
+                                            <input id='price' type='text' name="price"/>
+                                        </div>
+                                    </div>
+                                    <div class='control-group'>
+                                        <label class='control-label' for='score'>评分</label>
+
+                                        <div class='controls'>
+                                            <input id='score' type='text' name="score"/>
+                                        </div>
+                                    </div>
+                                    <div class='control-group'>
+                                        <label class='control-label' for='introduction'>剧情介绍</label>
+
+                                        <div class='controls'>
+                                            <textarea id='introduction' name="description"></textarea>
+                                        </div>
+                                    </div>
+                                    <div class='control-group'>
+                                        <label class='control-label' for='stillsFile'>海报图片</label>
+
+                                        <div class='controls'>
+                                            <input id='stillsFile' type='file' name="postFile"/>
+                                        </div>
+                                    </div>
+
+                                    <!--保存重置-->
+                                    <div class='form-actions'>
+                                        <button class='btn btn-primary' type='submit'>
+                                            <i class='icon-save'></i>
+                                            保存
+                                        </button>
+                                        <button class='btn' type='submit'>重置</button>
+                                    </div>
+                                    <!--保存重置-->
+                                </form>
+
+
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div class='box-content'>
-                <form accept-charset="UTF-8" action="/zijingwang/movie/movieAddAction" class="form form-horizontal"
-                      enctype="multipart/form-data"
-                      method="post" style="margin-bottom: 0;">
-                    <div style="margin:0;padding:0;display:inline">
-                        <input name="utf8" type="hidden" value="&#x2713;"/>
-                        <input name="authenticity_token" type="hidden"
-                               value="CFC7d00LWKQsSahRqsfD+e/mHLqbaVIXBvlBGe/KP+I="/>
-                    </div>
-                    <div class='control-group'>
-                        <label class='control-label' for='movieName'>片名</label>
-
-                        <div class='controls'>
-                            <input id='movieName' type='text' name="movieName"/>
-                        </div>
-                    </div>
-                    <hr class='hr-normal'/>
-                    <div class='control-group'>
-                        <label class='control-label' for='director'>导演</label>
-
-                        <div class='controls'>
-                            <input id='director' type='text' name="director"/>
-                        </div>
-                    </div>
-                    <div class='control-group'>
-                        <label class='control-label' for='actor'>主演</label>
-
-                        <div class='controls'>
-                            <input id='actor' type='text' name="actor"/>
-                        </div>
-                    </div>
-                    <div class='control-group'>
-                        <label class='control-label' for='movieType'>类型</label>
-
-                        <div class='controls'>
-                            <select id='movieType' name="movieType">
-                                <c:forEach items="${movieTypes}" var="mt">
-                                    <option value="${mt.movieTypeName}">
-                                            ${mt.movieTypeName}
-                                    </option>
-                                </c:forEach>
-                            </select>
-                        </div>
-                    </div>
-                    <div class='control-group'>
-                        <label class='control-label' for='version'>版本</label>
-
-                        <div class='controls'>
-                            <select id='version' name="version">
-                                <c:forEach items="${versions}" var="v">
-                                    <option value="${v.versionName}">
-                                            ${v.versionName}
-                                    </option>
-                                </c:forEach>
-                            </select>
-                        </div>
-                    </div>
-                    <div class='control-group'>
-                        <label class='control-label' for='region'>国家/地区</label>
-
-                        <div class='controls'>
-                            <input id='region' type='text' name="region"/>
-                        </div>
-                    </div>
-                    <div class='control-group'>
-                        <label class='control-label' for='duration'>片长</label>
-
-                        <div class='controls'>
-                            <input id='duration' type='text' name="duration"/>
-                        </div>
-                    </div>
-                    <div class='control-group'>
-                        <label class='control-label' for='released'>是否上映</label>
-
-                        <div class='controls'>
-                            <select id='released' name="released">
-                                <option value="0"/>
-                                即将上映
-                                <option value="1"/>
-                                正在热映
-                            </select>
-                        </div>
-                    </div>
-                    <div class='control-group'>
-                        <label class='control-label' for='releaseDate'>上映日期</label>
-
-                        <div class='controls'>
-                            <input id='releaseDate' type='date' name="releaseDate"/>
-                        </div>
-                    </div>
-                    <div class='control-group'>
-                        <label class='control-label' for='stars'>星级</label>
-
-                        <div class='controls'>
-                            <select id='stars' name="stars">
-                                <option/>
-                                1
-                                <option/>
-                                1.5
-                                <option/>
-                                2
-                                <option/>
-                                2.5
-                                <option/>
-                                3
-                                <option/>
-                                3.5
-                                <option/>
-                                4
-                                <option/>
-                                4.5
-                                <option/>
-                                5
-                            </select>
-                        </div>
-                    </div>
-                    <div class='control-group'>
-                        <label class='control-label' for='topped'>推荐置顶</label>
-
-                        <div class='controls'>
-                            <select id='topped' name="topped">
-                                <option value="1"/>
-                                置顶
-                                <option value="0"/>
-                                未置顶
-                            </select>
-                        </div>
-                    </div>
-                    <div class='control-group'>
-                        <label class='control-label' for='clickRate'>点击率</label>
-
-                        <div class='controls'>
-                            <input id='clickRate' type='text' name="clickRate"/>
-                        </div>
-                    </div>
-                    <div class='control-group'>
-                        <label class='control-label' for='shortComment'>卖点短评</label>
-
-                        <div class='controls'>
-                            <textarea id='shortComment' name="shortComment"></textarea>
-                        </div>
-                    </div>
-                    <div class='control-group'>
-                        <label class='control-label' for='introduction'>剧情介绍</label>
-
-                        <div class='controls'>
-                            <textarea id='introduction' name="introduction"></textarea>
-                        </div>
-                    </div>
-                    <div class='control-group'>
-                        <label class='control-label' for='faceSPictureFile'>封面小图片</label>
-
-                        <div class='controls'>
-                            <input id='faceSPictureFile' type='file' name="faceSPictureFile"/>
-                        </div>
-                    </div>
-                    <div class='control-group'>
-                        <label class='control-label' for='faceBPictureFile'>封面大图片</label>
-
-                        <div class='controls'>
-                            <input id='faceBPictureFile' type='file' name="faceBPictureFile"/>
-                        </div>
-                    </div>
-                    <div class='control-group'>
-                        <label class='control-label' for='stillsFile'>剧照图片</label>
-
-                        <div class='controls'>
-                            <input id='stillsFile' type='file' name="stillsFile"/>
-                        </div>
-                    </div>
-
-                    <!--保存重置-->
-                    <div class='form-actions'>
-                        <button class='btn btn-primary' type='submit'>
-                            <i class='icon-save'></i>
-                            保存
-                        </button>
-                        <button class='btn' type='submit'>重置</button>
-                    </div>
-                    <!--保存重置-->
-                </form>
-
-
-            </div>
-            </form>
         </div>
-    </div>
-</div>
-</div>
-</div>
 
-<!--页面内标签-->
-<hr class='hr-double'/>
+        <!--页面内标签-->
+        <hr class='hr-double'/>
 
 
-</section>
-<!--核心显示区-->
+    </section>
+    <!--核心显示区-->
 </div>
 <!-- / jquery -->
 <script src='/zijingwang/assets/javascripts/jquery/jquery.min.js' type='text/javascript'></script>

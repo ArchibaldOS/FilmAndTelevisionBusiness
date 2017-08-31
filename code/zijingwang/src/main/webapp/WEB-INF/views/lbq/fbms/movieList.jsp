@@ -120,9 +120,6 @@
                                                 片名
                                             </th>
                                             <th>
-                                                导演
-                                            </th>
-                                            <th>
                                                 主演
                                             </th>
                                             <th>
@@ -141,22 +138,21 @@
                                         <c:forEach items="${page.list}" var="m">
                                             <tr>
                                                 <td><input type="checkbox" name=""></td>
-                                                <td>${m.movieName}</td>
-                                                <td>${m.director}</td>
+                                                <td>${m.name}</td>
                                                 <td>${m.actor}</td>
-                                                <td>${m.movieType}</td>
+                                                <td>${m.filmtype}</td>
                                                 <td>
                                                     <button class="btn btn-warning" name="button"
                                                             style="margin-bottom:5px"
                                                             type="submit"
-                                                            onclick="location='/zijingwang/movie/${m.movieId}/movieDetail'">查看
+                                                            onclick="location='/zijingwang/movie/${m.id}/movieDetail'">查看
                                                     </button>
                                                 </td>
                                                 <td>
                                                     <button class="btn btn-danger" name="button"
                                                             style="margin-bottom:5px"
                                                             type="submit"
-                                                            onclick="location='/zijingwang/movie/${m.movieId}/movieDelete'">删除
+                                                            onclick="location='/zijingwang/movie/${m.id}/movieDelete'">删除
                                                     </button>
                                                 </td>
                                             </tr>

@@ -14,11 +14,8 @@ public interface CommentDao {
 
     boolean deleteById(int commentId);
 
-    boolean addComment(Comment comment);
-
     int count();
 
     List<Comment> findAll(@Param("offset")int offset,@Param("size")int size);
 
-    boolean updateComment(Comment comment);
 }

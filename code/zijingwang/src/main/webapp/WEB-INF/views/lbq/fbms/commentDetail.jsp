@@ -91,34 +91,22 @@
                             <div class='control-group'>
                                 <label class='control-label' for='author'>发表人</label>
                                 <div class='controls'>
-                                    <input id='author'  type='text' name="author" value="${comment.author}" readonly="readonly" /><!--修改name与数据库英文名称统一-->
+                                    <input id='author'  type='text' name="author" value="${comment.nickname}" readonly="readonly" /><!--修改name与数据库英文名称统一-->
                                 </div>
                             </div>
                             <hr class='hr-normal' />
                             <div class='control-group'>
                                 <label class='control-label' for='title'>评论标题</label>
                                 <div class='controls'>
-                                    <input id='title'  type='text'  name="titlee" value="${comment.title}" readonly="readonly"/>
+                                    <input id='title'  type='text'  name="titlee" value="${comment.name}" readonly="readonly"/>
                                 </div>
                                 
-                            </div>
-                            <div class='control-group'>
-                                <label class='control-label' for='publishTime'>发布时间</label>
-                                <div class='controls'>
-                                    <input id='publishTime'  type='text' name="publishTime" value="<fmt:formatDate value='${comment.publishTime}' pattern='yyyy-MM-dd HH:mm:ss'/>" readonly="readonly" />
-                                </div>
-                            </div>
-                            <div class='control-group'>
-                                <label class='control-label' for='fromIP'>来自IP</label>
-                                <div class='controls'>
-                                    <input id='fromIP'  type='text' name="fromIP" value="${comment.fromIP}" readonly="readonly"/>
-                                </div>
                             </div>
                             <hr class='hr-normal' />
                             <div class='control-group'>
                                 <label class='control-label' for='commentContent'>评论内容</label>
                                 <div class='controls'>
-                                    <textarea id='commentContent' name="content" readonly="readonly" >${comment.content}</textarea>
+                                    <textarea id='commentContent' name="content" readonly="readonly" >${comment.review}</textarea>
                                 </div>
                             </div>
 

@@ -124,12 +124,6 @@
                                                     评论标题
                                                 </th>
                                                 <th>
-                                                    发布时间
-                                                </th>
-                                                <th>
-                                                    来自IP
-                                                </th>
-                                                <th>
                                                     评论内容
                                                 </th>
                                                 <th>
@@ -142,22 +136,19 @@
                                             <c:forEach items="${page.list}" var="c">
                                                 <tr>
                                                     <td><input type="checkbox" name=""></td>
-                                                    <td>${c.author}</td>
-                                                    <td>${c.title}</td>
-                                                    <td><fmt:formatDate value="${c.publishTime}"
-                                                                        pattern="yyyy-MM-dd HH:mm:ss"/></td>
-                                                    <td>${c.fromIP}</td>
+                                                    <td>${c.nickname}</td>
+                                                    <td>${c.name}</td>
                                                     <td>
                                                         <button class="btn btn-warning" name="button"
                                                                 style="margin-bottom:5px" type="submit"
-                                                                onclick="location='/zijingwang/comment/${c.commentId}/commentDetail'">
+                                                                onclick="location='/zijingwang/comment/${c.id}/commentDetail'">
                                                             查看
                                                         </button>
                                                     </td>
                                                     <td>
                                                         <button class="btn btn-danger" name="button"
                                                                 style="margin-bottom:5px" type="submit"
-                                                                onclick="location='/zijingwang/comment/${c.commentId}/commentDelete'">
+                                                                onclick="location='/zijingwang/comment/${c.id}/commentDelete'">
                                                             删除
                                                         </button>
                                                     </td>

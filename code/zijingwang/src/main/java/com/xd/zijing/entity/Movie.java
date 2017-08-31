@@ -9,73 +9,53 @@ import java.util.Date;
  */
 public class Movie {
 
-    private int movieId;
+    private int id;
 
-    private String movieType;
+    private String filmtype;
 
-    private String version;
-
-    private String movieName;
+    private String name;
 
     private String director;
 
     private String actor;
 
-    private String region;
+    private String country;
 
-    private String duration;
+    private String filmtime;
 
-    private boolean released;
+    @DateTimeFormat(pattern = "yyyy-MM-dd")
+    private Date releasedate;
 
-    @DateTimeFormat(pattern = "yyyy-MM-dd" )
-    private Date releaseDate;
+    private String score;
 
-    private String stars;
+    private String price;
 
-    private boolean topped;
+    private String description;
 
-    private String clickRate;
+    private String post;
 
-    private String shortComment;
-
-    private String introduction;
-
-    private String faceSPicture;
-
-    private String faceBPicture;
-
-    private String stills;
-
-    public int getMovieId() {
-        return movieId;
+    public int getId() {
+        return id;
     }
 
-    public void setMovieId(int movieId) {
-        this.movieId = movieId;
+    public void setId(int id) {
+        this.id = id;
     }
 
-    public String getMovieType() {
-        return movieType;
+    public String getFilmtype() {
+        return filmtype;
     }
 
-    public void setMovieType(String movieType) {
-        this.movieType = movieType;
+    public void setFilmtype(String filmtype) {
+        this.filmtype = filmtype;
     }
 
-    public String getVersion() {
-        return version;
+    public String getName() {
+        return name;
     }
 
-    public void setVersion(String version) {
-        this.version = version;
-    }
-
-    public String getMovieName() {
-        return movieName;
-    }
-
-    public void setMovieName(String movieName) {
-        this.movieName = movieName;
+    public void setName(String name) {
+        this.name = name;
     }
 
     public String getDirector() {
@@ -94,123 +74,77 @@ public class Movie {
         this.actor = actor;
     }
 
-    public String getRegion() {
-        return region;
+    public String getCountry() {
+        return country;
     }
 
-    public void setRegion(String region) {
-        this.region = region;
+    public void setCountry(String country) {
+        this.country = country;
     }
 
-    public String getDuration() {
-        return duration;
+    public String getFilmtime() {
+        return filmtime;
     }
 
-    public void setDuration(String duration) {
-        this.duration = duration;
+    public void setFilmtime(String filmtime) {
+        this.filmtime = filmtime;
     }
 
-    public boolean isReleased() {
-        return released;
+    public Date getReleasedate() {
+        return releasedate;
     }
 
-    public void setReleased(boolean released) {
-        this.released = released;
+    public void setReleasedate(Date releasedate) {
+        this.releasedate = releasedate;
     }
 
-    public Date getReleaseDate() {
-        return releaseDate;
+    public String getScore() {
+        return score;
     }
 
-    public void setReleaseDate(Date releaseDate) {
-        this.releaseDate = releaseDate;
+    public void setScore(String score) {
+        this.score = score;
     }
 
-    public String getStars() {
-        return stars;
+    public String getPrice() {
+        return price;
     }
 
-    public void setStars(String stars) {
-        this.stars = stars;
+    public void setPrice(String price) {
+        this.price = price;
     }
 
-    public boolean isTopped() {
-        return topped;
+    public String getDescription() {
+        return description;
     }
 
-    public void setTopped(boolean topped) {
-        this.topped = topped;
+    public void setDescription(String description) {
+        this.description = description;
     }
 
-    public String getClickRate() {
-        return clickRate;
+    public String getPost() {
+        return post;
     }
 
-    public void setClickRate(String clickRate) {
-        this.clickRate = clickRate;
-    }
-
-    public String getShortComment() {
-        return shortComment;
-    }
-
-    public void setShortComment(String shortComment) {
-        this.shortComment = shortComment;
-    }
-
-    public String getIntroduction() {
-        return introduction;
-    }
-
-    public void setIntroduction(String introduction) {
-        this.introduction = introduction;
-    }
-
-    public String getFaceSPicture() {
-        return faceSPicture;
-    }
-
-    public void setFaceSPicture(String faceSPicture) {
-        this.faceSPicture = faceSPicture;
-    }
-
-    public String getFaceBPicture() {
-        return faceBPicture;
-    }
-
-    public void setFaceBPicture(String faceBPicture) {
-        this.faceBPicture = faceBPicture;
-    }
-
-    public String getStills() {
-        return stills;
-    }
-
-    public void setStills(String stills) {
-        this.stills = stills;
+    public void setPost(String post) {
+        this.post = post;
     }
 
     @Override
     public String toString() {
         return "Movie{" +
-                "movieId=" + movieId +
-                ", movieType='" + movieType + '\'' +
-                ", version='" + version + '\'' +
-                ", movieName='" + movieName + '\'' +
+                "id=" + id +
+                ", filmtype='" + filmtype + '\'' +
+                ", name='" + name + '\'' +
                 ", director='" + director + '\'' +
                 ", actor='" + actor + '\'' +
-                ", region='" + region + '\'' +
-                ", duration='" + duration + '\'' +
-                ", released=" + released +
-                ", releaseDate=" + releaseDate +
-                ", stars='" + stars + '\'' +
-                ", topped=" + topped +
-                ", clickRate=" + clickRate +
-                ", shortComment='" + shortComment + '\'' +
-                ", introduction='" + introduction + '\'' +
-                ", faceSPicture='" + faceSPicture + '\'' +
-                ", faceBPicture='" + faceBPicture + '\'' +
-                ", stills='" + stills + '\'' +
+                ", country='" + country + '\'' +
+                ", filmtime='" + filmtime + '\'' +
+                ", releasedate=" + releasedate +
+                ", score='" + score + '\'' +
+                ", price='" + price + '\'' +
+                ", description='" + description + '\'' +
+                ", post='" + post + '\'' +
                 '}';
     }
 }

@@ -6,12 +6,11 @@
 
     <select id="findAll" resultType="Movie" parameterType="int">
         select
-            movieId,version,movieType,movieName,director,actor,region,
-            duration,released,releaseDate,stars,topped,clickRate,shortComment,
-            introduction,faceSPicture,faceBPicture,stills
+            id,name,releasedate,filmtype,filmtime,actor,description,price,
+            country,post,score
         from
-            sys_movie
-        order by movieId
+            information
+        order by id
         limit #{offset},#{size}
     </select>
 
@@ -19,48 +18,42 @@
         select
             count(1)
         from
-            sys_movie
+            information
     </select>
 
     <delete id="deleteById" parameterType="int">
         delete
         from
-            sys_movie
+            information
         where
-            movieId=#{movieId}
+            id=#{id}
     </delete>
 
     <select id="queryById" parameterType="int" resultType="Movie">
         select
-            movieId,version,movieType,movieName,director,actor,region,
-            duration,released,releaseDate,stars,topped,clickRate,shortComment,
-            introduction,faceSPicture,faceBPicture,stills
-        from sys_movie
-        where movieId=#{movieId}
+            id,name,releasedate,filmtype,filmtime,actor,description,price,
+            country,post,score
+        from information
+        where id=#{id}
     </select>
 
     <update id="updateMovie" parameterType="Movie">
         update
-          sys_movie
+          information
         set
-          version=#{version},movieType=#{movieType},movieName=#{movieName},
-          director=#{director},actor=#{actor},region=#{region},duration=#{duration},
-          released=#{released},releaseDate=#{releaseDate},stars=#{stars},
-          topped=#{topped},clickRate=#{clickRate},shortComment=#{shortComment},
-          introduction=#{introduction},faceSPicture=#{faceSPicture},
-          faceBPicture=#{faceBPicture},stills=#{stills}
-        where movieId=#{movieId}
+          name=#{name},releasedate=#{releasedate},filmtype=#{filmtype},
+          filmtime=#{filmtime},actor=#{actor},description=#{description},price=#{price},
+          country=#{country},post=#{post},score=#{score}
+        where id=#{id}
     </update>
 
     <insert id="addMovie" parameterType="Movie">
         insert into
-           sys_movie(version,movieType,releaseDate,movieName,director,actor,region,
-            duration,released,stars,topped,clickRate,shortComment,
-            introduction,faceSPicture,faceBPicture,stills)
+           information(name,releasedate,filmtype,filmtime,actor,
+           description,price,country,post,score)
         values
-           (#{version},#{movieType},#{releaseDate},#{movieName},#{director},#{actor},#{region},#{duration},
-           #{released},#{stars},#{topped},#{clickRate},#{shortComment},#{introduction},
-           #{faceSPicture},#{faceBPicture},#{stills})
+           (#{name},#{releasedate},#{filmtype},#{filmtime},#{actor},
+           #{description},#{price},#{country},#{post},#{score})
     </insert>
 
 </mapper>

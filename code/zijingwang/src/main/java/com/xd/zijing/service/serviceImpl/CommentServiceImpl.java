@@ -17,11 +17,12 @@ public class CommentServiceImpl implements CommentService {
 
     @Autowired
     private CommentDao commentDao;
+
     @Override
     public Page queryComments(int cur) {
-        Page page =new Page(cur);
-        int cout=commentDao.count();
-        List<Comment> comments=commentDao.findAll(page.getOffset(),page.getSize());
+        Page page = new Page(cur);
+        int cout = commentDao.count();
+        List<Comment> comments = commentDao.findAll(page.getOffset(), page.getSize());
 
         page.setCount(cout);
         page.setList(comments);
@@ -37,15 +38,5 @@ public class CommentServiceImpl implements CommentService {
     @Override
     public boolean deleteById(int commentId) {
         return commentDao.deleteById(commentId);
-    }
-
-    @Override
-    public boolean addComment(Comment comment) {
-        return commentDao.addComment(comment);
-    }
-
-    @Override
-    public boolean updateComment(Comment comment) {
-        return commentDao.updateComment(comment);
     }
 }

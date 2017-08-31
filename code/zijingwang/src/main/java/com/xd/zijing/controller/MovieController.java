@@ -34,9 +34,6 @@ public class MovieController {
     @Autowired
     private MovieTypeService movieTypeService;
 
-    @Autowired
-    private VersionService versionService;
-
     @RequestMapping(value = "/movie/movieList", method = RequestMethod.GET)
     private String index(@RequestParam(name = "cur", defaultValue = "1") int cur, Model model) {
         Page page = movieService.queryMovies(cur);
@@ -63,15 +60,19 @@ public class MovieController {
         model.addAttribute("movie", movie);
 
         List<MovieType> movieTypes = movieTypeService.findAllForMovie();
-        List<Version> versions = versionService.findAllForMovie();
         model.addAttribute("movieTypes", movieTypes);
-        model.addAttribute("versions", versions);
         return "lbq/fbms/movieDetailUpdate";
     }
 
     @RequestMapping(value = "/movie/movieUpdate", method = RequestMethod.POST)
-    public String movieUpdate(Movie movie) {
-
+    public String movieUpdate(Movie movie, @RequestParam("postFile") MultipartFile postFile, HttpServletRequest request) throws IOException {
+        String path = request.getServletContext().getRealPath("assets/images");
+        File post = new File(path + "/picture/post",
+                System.currentTimeMillis() + postFile.getOriginalFilename());
+        if (!postFile.isEmpty()) {
+            FileUtils.copyInputStreamToFile(postFile.getInputStream(), post);
+        }
+        movie.setPost(post.getName());
         movieService.updateMovie(movie);
         return "redirect:/movie/movieList";
     }
@@ -79,40 +80,22 @@ public class MovieController {
     @RequestMapping(value = "/movie/movieAdd", method = RequestMethod.GET)
     public String movieAdd(Model model) {
         List<MovieType> movieTypes = movieTypeService.findAllForMovie();
-        List<Version> versions = versionService.findAllForMovie();
         model.addAttribute("movieTypes", movieTypes);
-        model.addAttribute("versions", versions);
         return "lbq/fbms/movieAdd";
     }
 
     @RequestMapping(value = "/movie/movieAddAction", method = RequestMethod.POST)
-    public String movieAddAction(Movie movie, @RequestParam("faceSPictureFile") MultipartFile faceSPictureFile,
-                                 @RequestParam("faceBPictureFile") MultipartFile faceBPictureFile,
-                                 @RequestParam("stillsFile") MultipartFile stillsFile, HttpServletRequest request) throws IOException {
+    public String movieAddAction(Movie movie, @RequestParam("postFile") MultipartFile postFile, HttpServletRequest request) throws IOException {
         String path = request.getServletContext().getRealPath("assets/images");
 
         //UUID.randomUUID().toString();
 
-        File smallPicture = new File(path + "/picture/faceSPicture",
-                System.currentTimeMillis() + faceSPictureFile.getOriginalFilename());
-        if (!faceSPictureFile.isEmpty()) {
-            FileUtils.copyInputStreamToFile(faceSPictureFile.getInputStream(), smallPicture);
+        File post = new File(path + "/picture/post",
+                System.currentTimeMillis() + postFile.getOriginalFilename());
+        if (!postFile.isEmpty()) {
+            FileUtils.copyInputStreamToFile(postFile.getInputStream(), post);
         }
-
-        File bigPicture = new File(path + "/picture/faceBPicture",
-                System.currentTimeMillis() + faceBPictureFile.getOriginalFilename());
-        if (!faceBPictureFile.isEmpty()) {
-            FileUtils.copyInputStreamToFile(faceBPictureFile.getInputStream(), bigPicture);
-        }
-
-        File stillsPicture = new File(path + "/picture/stills",
-                System.currentTimeMillis() + stillsFile.getOriginalFilename());
-        if (!stillsFile.isEmpty()) {
-            FileUtils.copyInputStreamToFile(stillsFile.getInputStream(), stillsPicture);
-        }
-        movie.setFaceSPicture(smallPicture.getName());
-        movie.setFaceBPicture(bigPicture.getName());
-        movie.setStills(stillsPicture.getName());
+        movie.setPost(post.getName());
         movieService.addMovie(movie);
         return "redirect:/movie/movieList";
     }
