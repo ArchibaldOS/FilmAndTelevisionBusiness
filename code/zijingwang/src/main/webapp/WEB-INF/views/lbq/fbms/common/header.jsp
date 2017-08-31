@@ -1,5 +1,5 @@
 <%@ page language="java" contentType="text/html; charset=utf-8" %>
-<div class='navbar'>
+<div  class='navbar' style="position: fixed">
     <div class='navbar-inner'>
         <div class='container-fluid'>
             <a class='brand' href='index.html'>
