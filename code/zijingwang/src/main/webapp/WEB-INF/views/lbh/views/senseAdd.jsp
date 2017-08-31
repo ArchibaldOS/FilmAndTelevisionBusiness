@@ -147,7 +147,7 @@
 					<!--用户信息下拉列表 -->
 					<li class='dropdown dark user-menu'><a class='dropdown-toggle'
 						data-toggle='dropdown' href='#'> <img alt='Mila Kunis'
-							height='23' src=' assets/images/avatar.jpg' width='23' /> <span
+							height='23' src=' assets/images/avatar2.jpg' width='23' /> <span
 							class='user-name hidden-phone'>管理员</span>
 					</a>
 						</li>
