@@ -66,8 +66,8 @@ public class MovieController {
 
     @RequestMapping(value = "/movie/movieUpdate", method = RequestMethod.POST)
     public String movieUpdate(Movie movie, @RequestParam("postFile") MultipartFile postFile, HttpServletRequest request) throws IOException {
-        String path = request.getServletContext().getRealPath("assets/images");
-        File post = new File(path + "/picture/post",
+        String path = request.getServletContext().getRealPath("image");
+        File post = new File(path ,
                 System.currentTimeMillis() + postFile.getOriginalFilename());
         if (!postFile.isEmpty()) {
             FileUtils.copyInputStreamToFile(postFile.getInputStream(), post);
@@ -86,11 +86,11 @@ public class MovieController {
 
     @RequestMapping(value = "/movie/movieAddAction", method = RequestMethod.POST)
     public String movieAddAction(Movie movie, @RequestParam("postFile") MultipartFile postFile, HttpServletRequest request) throws IOException {
-        String path = request.getServletContext().getRealPath("assets/images");
+        String path = request.getServletContext().getRealPath("image");
 
         //UUID.randomUUID().toString();
 
-        File post = new File(path + "/picture/post",
+        File post = new File(path,
                 System.currentTimeMillis() + postFile.getOriginalFilename());
         if (!postFile.isEmpty()) {
             FileUtils.copyInputStreamToFile(postFile.getInputStream(), post);

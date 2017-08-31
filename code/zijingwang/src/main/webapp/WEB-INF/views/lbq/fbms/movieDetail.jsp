@@ -185,7 +185,7 @@
                                 <label class='control-label' for='stills'>海报图片</label>
 
                                 <div class='controls' style="width: 300px ;">
-                                    <img id="stills" src="/zijingwang/assets/images/picture/post/${movie.post}">
+                                    <img id="stills" src="/zijingwang/image/${movie.post}">
                                 </div>
                             </div>
 
