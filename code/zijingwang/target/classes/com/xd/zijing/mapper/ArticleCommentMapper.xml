@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.xd.zijing.mapper.ArticleCommentMapper">
+
+	<insert id="insertComment" parameterType="ArticleComment" keyProperty="commentId">
+		insert into article_comment(articleId,userId,commentContent,commentTime) 
+		values(#{articleId},#{userId},#{commentContent},now())
+	</insert>
+
+	<select id="count" resultType="int">
+		SELECT
+			count(1)
+		FROM
+			article_comment
+	</select>
+	
+	<select id="countById" parameterType="int" resultType="int">
+		SELECT
+			count(1)
+		FROM
+			article_comment
+		WHERE
+			articleId = #{articleId}
+	</select>
+	
+	<select id="findAll" parameterType="int" resultType="ArticleComment">
+		SELECT 
+			commentId,articleId,userId,commentContent,commentTime
+		FROM article_comment
+		ORDER BY commentId
+		LIMIT #{offset}, #{size}
+	</select>
+	
+	<select id="findAllById" parameterType="int" resultType="ArticleComment">
+		SELECT 
+			userId,commentContent,commentTime
+		FROM article_comment
+		WHERE articleId = #{articleId}
+		ORDER BY commentId
+		LIMIT #{offset}, #{size}
+	</select>
+	
+	<delete id="delete" parameterType="int">
+		delete from article_comment where commentId = #{commentId}
+	</delete>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</mapper>
