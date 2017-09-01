@@ -11,4 +11,10 @@ public class BackController {
 	public String get(){
 		return "backIndex";
 	}
+
+    @RequestMapping(value="/hotmovie",method=RequestMethod.GET)
+    public String hotmovie(){
+        return "ylds/hotmovie";
+    }
+
 }

@@ -4,9 +4,9 @@
 <head>
     <title>紫荆网</title>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <link href="css/style.css" rel="stylesheet" type="text/css" media="all"/>
-    <link rel="stylesheet" href="css/bootstrap.css"> <!-- Bootstrap-Core-CSS -->
-    <link rel="stylesheet" href="css/style2.css" type="text/css" media="all" />
+    <link href="css0/style.css" rel="stylesheet" type="text/css" media="all"/>
+    <link rel="stylesheet" href="css0/bootstrap.css"> <!-- Bootstrap-Core-CSS -->
+    <link rel="stylesheet" href="css0/style2.css" type="text/css" media="all" />
     <link href="http://fonts.googleapis.com/css?family=Exo+2:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&amp;subset=cyrillic,latin-ext" rel="stylesheet">
     <link href="http://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
 </head>
