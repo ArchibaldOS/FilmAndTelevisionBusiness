@@ -299,7 +299,7 @@
                             </a>
                         </li>
                         <li class=''>
-                            <a href='/zijingwang/UserList.do'><!--链接到标签对应的html页面-->
+                            <a href='/zijingwang/UserListDO'><!--链接到标签对应的html页面-->
                                 <i class='icon-caret-right'></i>
                                 <span>修改用户资料</span>
                             </a>
@@ -352,7 +352,7 @@
                                         Employee employee = (Employee) request.getAttribute("employee");
                                     %>
                                     <div class='box-content'>
-                                        <form accept-charset="UTF-8" action="/EmployeeDetailUpdateDO" class="form form-horizontal" method="get" style="margin-bottom: 0;" >
+                                        <form accept-charset="UTF-8" action="/zijingwang/EmployeeDetailUpdateDO" class="form form-horizontal" method="get" style="margin-bottom: 0;" >
                                             <div class='control-group'>
                                                 <div class="controls">
                                                     <input value="${employee.userid}"  type="hidden" name="id"/><br>

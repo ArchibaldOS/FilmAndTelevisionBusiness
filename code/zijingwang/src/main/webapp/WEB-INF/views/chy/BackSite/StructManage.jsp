@@ -300,7 +300,7 @@
                             </a>
                         </li>
                         <li class=''>
-                            <a href='/zijingwang/UserList.do'><!--链接到标签对应的html页面-->
+                            <a href='/zijingwang/UserListDO'><!--链接到标签对应的html页面-->
                                 <i class='icon-caret-right'></i>
                                 <span>修改用户资料</span>
                             </a>
@@ -409,9 +409,9 @@
                                                             </c:otherwise>
                                                         </c:choose>
                                                     </td>
-                                                    <td><button class="btn btn-success" name="button" style="margin-bottom:5px" type="submit" onclick="location='/StructDetailDO?departmentID=${struct.departmentid}'">查看</button></td>
-                                                    <td><button class="btn btn-warning" name="button" style="margin-bottom:5px" type="submit" onclick="location='/StructDetailUpdate?departmentID=${struct.departmentid}'">修改</button></td>
-                                                    <td><button class="btn btn-danger" name="button" style="margin-bottom:5px" type="submit" onclick="location='/StructDetailDeleteDO?departmentID=${struct.departmentid}'">删除</button></td>
+                                                    <td><button class="btn btn-success" name="button" style="margin-bottom:5px" type="submit" onclick="location='/zijingwang/StructDetailDO?departmentID=${struct.departmentid}'">查看</button></td>
+                                                    <td><button class="btn btn-warning" name="button" style="margin-bottom:5px" type="submit" onclick="location='/zijingwang/StructDetailUpdate?departmentID=${struct.departmentid}'">修改</button></td>
+                                                    <td><button class="btn btn-danger" name="button" style="margin-bottom:5px" type="submit" onclick="location='/zijingwang/StructDetailDeleteDO?departmentID=${struct.departmentid}'">删除</button></td>
                                                 </tr>
                                             </c:forEach>
                                             </tbody>

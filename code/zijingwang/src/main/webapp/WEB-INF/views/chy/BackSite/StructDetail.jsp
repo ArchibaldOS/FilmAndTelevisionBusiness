@@ -299,7 +299,7 @@
                             </a>
                         </li>
                         <li class=''>
-                            <a href='/zijingwang/UserList.do'><!--链接到标签对应的html页面-->
+                            <a href='/zijingwang/UserListDO'><!--链接到标签对应的html页面-->
                                 <i class='icon-caret-right'></i>
                                 <span>修改用户资料</span>
                             </a>
@@ -404,7 +404,7 @@
 
                             <!--保存重置-->
                             <div class='form-actions'>
-                                <button class='btn btn-primary' type='submit'onclick="location='/StructDetailUpdate?departmentID=${struct.departmentID}'">
+                                <button class='btn btn-primary' type='submit'onclick="location='/zijingwang/StructDetailUpdate?departmentID=${struct.departmentID}'">
                                     <i class='icon-save'></i>
                                     修改
                                 </button>

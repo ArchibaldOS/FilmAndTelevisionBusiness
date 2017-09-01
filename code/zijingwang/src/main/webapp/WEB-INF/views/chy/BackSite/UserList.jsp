@@ -299,7 +299,7 @@
                                 </a>
                             </li>
                             <li class=''>
-                                <a href='/zijingwang/UserList.do'><!--链接到标签对应的html页面-->
+                                <a href='/zijingwang/UserListDO'><!--链接到标签对应的html页面-->
                                     <i class='icon-caret-right'></i>
                                     <span>修改用户资料</span>
                                 </a>
@@ -400,9 +400,9 @@
                                                     <td><c:out value="${vip.vipname}"></c:out></td>
                                                     <td><c:out value="${vip.vipbalance}"></c:out></td>
                                                     <td><c:out value="${vip.viprank}"></c:out></td>
-                                                    <td><button class="btn btn-success" name="button" style="margin-bottom:5px" type="submit" onclick="location='/UserDetailDO?vipid=${vip.vipid}'">查看</button></td>
-                                                    <td><button class="btn btn-warning" name="button" style="margin-bottom:5px" type="submit" onclick="location='/UserDetailUpdate?vipid=${vip.vipid}'">修改</button></td>
-                                                    <td><button class="btn btn-danger" name="button" style="margin-bottom:5px" type="submit" onclick="location='/DeleteUserDO?vipid=${vip.vipid}'">删除</button></td>
+                                                    <td><button class="btn btn-success" name="button" style="margin-bottom:5px" type="submit" onclick="location='/zijingwang/UserDetailDO?vipid=${vip.vipid}'">查看</button></td>
+                                                    <td><button class="btn btn-warning" name="button" style="margin-bottom:5px" type="submit" onclick="location='/zijingwang/UserDetailUpdate?vipid=${vip.vipid}'">修改</button></td>
+                                                    <td><button class="btn btn-danger" name="button" style="margin-bottom:5px" type="submit" onclick="location='/zijingwang/DeleteUserDO?vipid=${vip.vipid}'">删除</button></td>
                                                 </tr>
                                             </c:forEach>
                                             </tbody>

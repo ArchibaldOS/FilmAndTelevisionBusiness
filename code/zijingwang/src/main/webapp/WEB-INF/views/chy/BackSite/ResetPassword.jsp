@@ -298,7 +298,7 @@
                                 </a>
                             </li>
                             <li class=''>
-                                <a href='/zijingwang/UserList.do'><!--链接到标签对应的html页面-->
+                                <a href='/zijingwang/UserListDO'><!--链接到标签对应的html页面-->
                                     <i class='icon-caret-right'></i>
                                     <span>修改用户资料</span>
                                 </a>
@@ -340,7 +340,7 @@
                     <!--页面内标签-->
                     <div class='row-fluid'>
                         <div class="tab-pane active" id="retab1"><!--p>学校用户列表</p-->
-                            <form accept-charset="UTF-8" action="/ResetPasswordDO" class="form form-horizontal" method="post" style="margin-bottom: 0;" >
+                            <form accept-charset="UTF-8" action="/zijingwang/ResetPasswordDO" class="form form-horizontal" method="post" style="margin-bottom: 0;" >
                                 <div style="margin:0;padding:0;display:inline">
                                     <input name="utf8" type="hidden" value="&#x2713;" />
                                     <input name="authenticity_token" type="hidden" value="CFC7d00LWKQsSahRqsfD+e/mHLqbaVIXBvlBGe/KP+I=" />
@@ -377,7 +377,7 @@
                                         <i class='icon-save'></i>
                                         修改
                                     </button>
-                                    <button class='btn'  onclick="location='/UserList.do'">返回</button>
+                                    <button class='btn'  onclick="location='/zijingwang/UserListDO'">返回</button>
                                 </div>
                                 <!--保存重置-->
                           </form>
