@@ -1,4 +1,4 @@
-<%@page import="org.springframework.web.context.request.RequestScope"%>
+<%@ page import="org.springframework.web.context.request.RequestScope"%>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
@@ -168,7 +168,7 @@
 							<br />
 							<h3>评论列表</h3>
 							<br />
-							<table style="margin-right: 50px;width: 100%;" bordercolor="red">
+							<table style="margin-right: 50px;width: 100%;">
 								<tbody>
 								<c:choose>
 									<c:when test="${p ne null and p.list ne null and not empty p.list}">
