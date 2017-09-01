@@ -350,7 +350,7 @@
                            %>
                             <div class='control-group'>
                                 <div class='controls'>
-                                    <input id='inputText1' value="${vip.vipid}" type='text' name="vipid" readonly/><!--修改name与数据库英文名称统一-->
+                                    <input id='inputText1' value="${vip.vipid}" type='hidden' name="vipid" readonly/><!--修改name与数据库英文名称统一-->
                                 </div>
                             </div>
                             <div class='control-group'>
