@@ -352,7 +352,7 @@
                             <div class='box-content'>
                                 <strong>请填写部门信息</strong>
                                 <div class='box-content'>
-                                    <form accept-charset="UTF-8" action="/AddStructDO" class="form form-horizontal" method="get" style="margin-bottom: 0;">
+                                    <form accept-charset="UTF-8" action="/zijingwang/AddStructDO" class="form form-horizontal" method="get" style="margin-bottom: 0;">
                                                 <div class='control-group'>
                                                     <label class='control-label' for='inputSelect'>影院名称</label>
                                                     <div class='controls'>

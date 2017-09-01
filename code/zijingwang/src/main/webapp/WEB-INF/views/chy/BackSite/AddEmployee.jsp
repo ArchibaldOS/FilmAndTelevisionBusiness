@@ -352,7 +352,7 @@
                                     <div class='box-content'>
                                         <strong>请填写员工信息</strong>
                                         <div class='box-content'>
-                                            <form accept-charset="UTF-8" action="/AddEmployeeDO" class="form form-horizontal" method="get" style="margin-bottom: 0;" >
+                                            <form accept-charset="UTF-8" action="/zijingwang/AddEmployeeDO" class="form form-horizontal" method="get" style="margin-bottom: 0;" >
                                                 <div class='control-group'>
                                                 <label class="control-label">员工姓名：</label>
                                                     <div class="controls">

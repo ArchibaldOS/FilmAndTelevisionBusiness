@@ -338,7 +338,7 @@
                         </div>
                     </div>
                     <!--第一部分-->
-                    <form accept-charset="UTF-8" action="/VipSearchResultDO" class="form form-horizontal" method="post" style="margin-bottom: 0;" >
+                    <form accept-charset="UTF-8" action="/zijingwang/VipSearchResultDO" class="form form-horizontal" method="post" style="margin-bottom: 0;" >
                          <div class='control-group'>
                             <label class='control-label' for='inputSelect'>影院</label>
                             <div class='controls'>

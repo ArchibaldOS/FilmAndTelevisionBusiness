@@ -355,7 +355,7 @@
                                     <%
                                         Struct struct = (Struct) request.getAttribute("struct");
                                     %>
-                                <form accept-charset="UTF-8" action="/StructDetailUpdateDO" class="form form-horizontal" method="post" style="margin-bottom: 0;">
+                                <form accept-charset="UTF-8" action="/zijingwang/StructDetailUpdateDO" class="form form-horizontal" method="post" style="margin-bottom: 0;">
                                     <div style="margin:0;padding:0;display:inline">
                                         <input name="utf8" type="hidden" value="&#x2713;" />
                                         <input name="authenticity_token" type="hidden" value="CFC7d00LWKQsSahRqsfD+e/mHLqbaVIXBvlBGe/KP+I=" />

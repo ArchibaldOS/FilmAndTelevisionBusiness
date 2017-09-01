@@ -352,7 +352,7 @@
                                         Employee employee = (Employee) request.getAttribute("employee");
                                     %>
                                     <div class='box-content'>
-                                        <form accept-charset="UTF-8" action="/EmployeeDetailUpdateDO" class="form form-horizontal" method="get" style="margin-bottom: 0;" >
+                                        <form accept-charset="UTF-8" action="/zijingwang/EmployeeDetailUpdateDO" class="form form-horizontal" method="get" style="margin-bottom: 0;" >
                                             <div class='control-group'>
                                                 <div class="controls">
                                                     <input value="${employee.userid}"  type="hidden" name="id"/><br>
