@@ -19,10 +19,6 @@ public class BackLoginController {
     @Autowired
     private AdminManage adminManage;
 
-    @RequestMapping("/index")
-    public String index(){
-        return "BackIndex";
-    }
 
     @RequestMapping(value = "/AdminLogin")
     public String login (){
@@ -35,12 +31,15 @@ public class BackLoginController {
 
         String username = request.getParameter("vipUsername");
         String password = request.getParameter("vipPassword") ;
-
+        System.out.println("1");
         for (Admin admin:admins){
             if (username.equals(admin.getAdminusername()) && password.equals(admin.getAdminpassword())){
-                return "redirect:/index";
+                System.out.println("2");
+                return "redirect:/backIndex";
+
             }
         }
+        System.out.println("3");
         return "redirect:/AdminLogin";
     }
 
