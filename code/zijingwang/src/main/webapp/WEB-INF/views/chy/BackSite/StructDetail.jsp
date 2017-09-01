@@ -361,9 +361,9 @@
                                 </div>
                             </div>
                             <div class='control-group'>
-                                <label class='control-label' for='inputPassword4'>部门名称</label>
+                                <label class='control-label' for='inputText1'>部门名称</label>
                                 <div class='controls'>
-                                    <input id='inputPassword4' value="${struct.departmentname}" type='password' readonly/>
+                                    <input id='inputText1' value="${struct.departmentname}" type='text' readonly/>
                                 </div>
                             </div>
 
