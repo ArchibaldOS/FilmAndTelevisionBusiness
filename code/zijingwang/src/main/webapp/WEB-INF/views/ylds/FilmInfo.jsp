@@ -110,15 +110,9 @@
 					<li class="active"><a href="/zijingwang" class="scroll">首&nbsp;&nbsp;&nbsp;&nbsp;页</a></li>
 					<li><a href="" >正在上映</a></li>
 					<li><a href="#services" class="hvr-bounce-to-bottom scroll">选座购票</a></li>
-<<<<<<< HEAD
-					<li><a href="/zijingwang/article" class="hvr-bounce-to-bottom scroll">影视资讯</a></li>
-					<li><a href="#mail" class="hvr-bounce-to-bottom scroll">个人中心</a></li>
-					<li><a href="/zijingwang/message" class="hvr-bounce-to-bottom scroll">用户留言</a></li>
-=======
 					<li><a href="/zijingwang/article" >影视资讯</a></li>
 					<li><a href="#mail" class="hvr-bounce-to-bottom scroll">个人中心</a></li>
 					<li><a href="/zijingwang/message" >用户留言</a></li>
->>>>>>> e4a4e0aa57d1cc949bc7d22c2555ac4b4fe77baa
 				</ul>
 				</nav>
 			</div>
