@@ -1,12 +1,19 @@
-<%@ page import="com.xd.zijing.entity.Vip" %>
+<%@ page import="com.xd.zijing.entity.Employee" %>
 <%@ page import="java.util.List" %>
+<%@ page import="java.util.ArrayList" %>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 <%@ page isELIgnored="false"%>
+<%--<%--%>
+    <%--String path = request.getContextPath();--%>
+    <%--String basePath = request.getScheme() + "://"--%>
+            <%--+ request.getServerName() + ":" + request.getServerPort()--%>
+            <%--+ path + "/";--%>
+<%--%>--%>
 <!DOCTYPE html>
 <html>
 <head>
-    <title>后台管理系统</title>
+    <title>影视业务电子商务平台——系统管理子系统</title>
     <meta content='width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no' name='viewport' />
     
     <!--[if lt IE 9]>
@@ -62,7 +69,7 @@
         <div class='navbar'>
             <div class='navbar-inner'>
                 <div class='container-fluid'>
-                    <a class='brand' href='/index'>
+                    <a class='brand' href='/zijingwang/index'>
                         <i class='icon-heart-empty'></i>
                         <span class='hidden-phone'>系统管理子系统</span>
                     </a>
@@ -137,7 +144,7 @@
                             </a>
                             <ul class='dropdown-menu'>
                                 <li>
-                                    <a href='/AdminLogin'>
+                                    <a href='/zijingwang/AdminLogin'>
                                         <i class='icon-signout'></i>
                                         注销
                                     </a>
@@ -166,25 +173,25 @@
                         </a>
                         <ul class='nav nav-stacked'>
                             <li class=''>
-                                <a href='/StructManageDO'><!--链接到标签对应的html页面-->
+                                <a href='/zijingwang/StructManageDO'><!--链接到标签对应的html页面-->
                                     <i class='icon-caret-right'></i>
                                     <span>查询部门</span>
                                 </a>
                             </li>
                             <li class=''>
-                                <a href='/AddStruct'>
+                                <a href='/zijingwang/AddStruct'>
                                     <i class='icon-caret-right'></i>
                                     <span>新增部门</span>
                                 </a>
                             </li>
                             <li class=''>
-                                <a href='/StructManageDO'><!--链接到标签对应的html页面-->
+                                <a href='/zijingwang/StructManageDO'><!--链接到标签对应的html页面-->
                                     <i class='icon-caret-right'></i>
                                     <span>修改部门信息</span>
                                 </a>
                             </li>
                             <li class=''>
-                                <a href='/StructManageDO'><!--链接到标签对应的html页面-->
+                                <a href='/zijingwang/StructManageDO'><!--链接到标签对应的html页面-->
                                     <i class='icon-caret-right'></i>
                                     <span>删除部门</span>
                                 </a>
@@ -201,25 +208,25 @@
                         </a>
                         <ul class='nav nav-stacked'>
                             <li class=''>
-                                <a href='/selectEmployeeDO'><!--链接到标签对应的html页面-->
+                                <a href='/zijingwang/selectEmployeeDO'><!--链接到标签对应的html页面-->
                                     <i class='icon-caret-right'></i>
                                     <span>查询员工</span>
                                 </a>
                             </li>
                             <li class=''>
-                                <a href='/AddEmployee'>
+                                <a href='/zijingwang/AddEmployee'>
                                     <i class='icon-caret-right'></i>
                                     <span>新增员工</span>
                                 </a>
                             </li>
                             <li class=''>
-                                <a href='/selectEmployeeDO'><!--链接到标签对应的html页面-->
+                                <a href='/zijingwang/selectEmployeeDO'><!--链接到标签对应的html页面-->
                                     <i class='icon-caret-right'></i>
                                     <span>修改员工信息</span>
                                 </a>
                             </li>
                             <li class=''>
-                                <a href='/selectEmployeeDO'><!--链接到标签对应的html页面-->
+                                <a href='/zijingwang/selectEmployeeDO'><!--链接到标签对应的html页面-->
                                     <i class='icon-caret-right'></i>
                                     <span>删除员工</span>
                                 </a>
@@ -237,13 +244,13 @@
                         </a>
                         <ul class='nav nav-stacked'>
                             <li class=''>
-                                <a href='/VipLevelSearch'><!--链接到标签对应的html页面-->
+                                <a href='/zijingwang/VipLevelSearch'><!--链接到标签对应的html页面-->
                                     <i class='icon-caret-right'></i>
                                     <span>会员等级查询</span>
                                 </a>
                             </li>
                             <li class=''>
-                                <a href='/VipListDO'><!--链接到标签对应的html页面-->
+                                <a href='/zijingwang/VipListDO'><!--链接到标签对应的html页面-->
                                     <i class='icon-caret-right'></i>
                                     <span>会员等级修改</span>
                                 </a>
@@ -262,13 +269,13 @@
                         </a>
                         <ul class='nav nav-stacked'>
                             <li class=''>
-                                <a href='/TicketTimeManageDO'><!--链接到标签对应的html页面-->
+                                <a href='/zijingwang/TicketTimeManageDO'><!--链接到标签对应的html页面-->
                                     <i class='icon-caret-right'></i>
                                     <span>查询售票时间</span>
                                 </a>
                             </li>
                             <li class=''>
-                                <a href='/TicketTimeManageDO'><!--链接到标签对应的html页面-->
+                                <a href='/zijingwang/TicketTimeManageDO'><!--链接到标签对应的html页面-->
                                     <i class='icon-caret-right'></i>
                                     <span>修改售票时间</span>
                                 </a>
@@ -287,25 +294,25 @@
                         </a>
                         <ul class='nav nav-stacked'>
                             <li class=''>
-                                <a href='/AddUser'><!--链接到标签对应的html页面-->
+                                <a href='/zijingwang/AddUser'><!--链接到标签对应的html页面-->
                                     <i class='icon-caret-right'></i>
                                     <span>添加用户</span>
                                 </a>
                             </li>
                             <li class=''>
-                                <a href='/UserListDO'><!--链接到标签对应的html页面-->
+                                <a href='/zijingwang/UserListDO'><!--链接到标签对应的html页面-->
                                     <i class='icon-caret-right'></i>
                                     <span>删除用户</span>
                                 </a>
                             </li>
                             <li class=''>
-                                <a href='/UserList.do'><!--链接到标签对应的html页面-->
+                                <a href='/zijingwang/UserList.do'><!--链接到标签对应的html页面-->
                                     <i class='icon-caret-right'></i>
                                     <span>修改用户资料</span>
                                 </a>
                             </li>
                             <li class=''>
-                                <a href='/ResetPassword'><!--链接到标签对应的html页面-->
+                                <a href='/zijingwang/ResetPassword'><!--链接到标签对应的html页面-->
                                     <i class='icon-caret-right'></i>
                                     <span>重置密码</span>
                                 </a>
@@ -313,6 +320,7 @@
                         </ul>
                     </li>
                     <!--用户管理-->
+
 
 
 
@@ -330,7 +338,7 @@
                             <div class='page-header'>
                                 <h1 class='pull-left'>
                                     <i class='icon-edit'></i>
-                                    <span>用户管理</span>
+                                    <span>员工管理</span>
                                 </h1>
                             </div>
                         </div>
@@ -342,7 +350,7 @@
                     <div class='row-fluid'>
                         <div class='span12 box bordered-box blue-border' style='margin-bottom:0;'>
                             <div class='box-header blue-background'>
-                                <div class='title'>会员列表</div>
+                                <div class='title'>员工列表</div>
                                 <div class='actions'>
                                     <a href="#" class="btn box-remove btn-mini btn-link"><i class='icon-remove'></i>
                                     </a>
@@ -356,71 +364,109 @@
                                         <table class='data-table table table-bordered table-striped' style='margin-bottom:0;'>
                                             <thead>
                                                 <tr>
-                                                    <tr>
-                                                        <th>
-                                                            选择
-                                                        </th>
-                                                        <th>
-                                                            用户名
-                                                        </th>
-                                                        <th>
-                                                            姓名
-                                                        </th>
-                                                        <th>
-                                                            当前余额
-                                                        </th>
-                                                        <th>
-                                                            当前会员等级
-                                                        </th>
-                                                        <th>
-                                                            查看
-                                                        </th>
-                                                        <th>
-                                                            修改
-                                                        </th>
-                                                        <th>
-                                                            删除
-                                                        </th>
-                                                    </tr>
+                                                    <th>
+                                                        选择
+                                                    </th>
+                                                    <%--<th>--%>
+                                                        <%--员工ID--%>
+                                                    <%--</th>--%>
+                                                    <th>
+                                                        员工名称
+                                                    </th>
+                                                    <th>
+                                                        员工年龄
+                                                    </th>
+                                                    <th>
+                                                        员工性别
+                                                    </th>
+                                                    <th>
+                                                        员工职称
+                                                    </th>
+                                                    <th>
+                                                        所属部门
+                                                    </th>
+                                                    <th>
+                                                        部门领导
+                                                    </th>
+                                                    <th>
+                                                        修改
+                                                    </th>
+                                                    <th>
+                                                        删除
+                                                    </th>
+                                                </tr>
                                                 </tr>
                                             </thead>
                                             <tbody>
                                             <%
-                                                List<Vip> vips = (List<Vip>) session.getAttribute("vips");
-
-//                                                for (Vip vip:vips){
-//                                                    System.out.println("#33"+vip);
+                                                List<Employee> employees = (List<Employee>) session.getAttribute("employees");
+//                                                List<Employee> employees =
+//                                                List<Employee> employees = new ArrayList<Employee>();
+//                                                Employee employee = new Employee((long) 2,"xiaomi",19,"xiaomin","123456","male", (float) 288,"xiaom123in@164.com",123456,"服务员","服务部","xiaohuang");
+//                                                Employee employee2 = new Employee((long) 12,"xiaom32i",19,"xiaom123in","123456","male", (float) 288,"xiaom123in@164.com",123456,"服务员","服务部","xiaohuang");
+//
+//                                                employees.add(employee);
+//                                                employees.add(employee2);
+//
+//                                                for (Employee employee:employees){
+//                                                    System.out.println(employee);
 //                                                }
                                             %>
-                                            <c:forEach var="vip" items="${vips}">
+                                            <c:forEach var="employee" items="${employees}">
                                                 <tr>
                                                     <td><input type="checkbox"/>  </td>
-                                                        <%--<td><c:out value="${vip.userID}"></c:out> </td>--%>
-                                                    <td><c:out value="${vip.vipusername}"></c:out></td>
-                                                    <td><c:out value="${vip.vipname}"></c:out></td>
-                                                    <td><c:out value="${vip.vipbalance}"></c:out></td>
-                                                    <td><c:out value="${vip.viprank}"></c:out></td>
-                                                    <td><button class="btn btn-success" name="button" style="margin-bottom:5px" type="submit" onclick="location='/UserDetailDO?vipid=${vip.vipid}'">查看</button></td>
-                                                    <td><button class="btn btn-warning" name="button" style="margin-bottom:5px" type="submit" onclick="location='/UserDetailUpdate?vipid=${vip.vipid}'">修改</button></td>
-                                                    <td><button class="btn btn-danger" name="button" style="margin-bottom:5px" type="submit" onclick="location='/DeleteUserDO?vipid=${vip.vipid}'">删除</button></td>
+                                                    <%--<td><c:out value="${employee.userID}"></c:out> </td>--%>
+                                                    <td><c:out value="${employee.username}"></c:out></td>
+                                                    <td><c:out value="${employee.age}"></c:out></td>
+                                                    <td><c:out value="${employee.gender}"></c:out></td>
+                                                    <td><c:out value="${employee.title}"></c:out></td>
+                                                    <td><c:out value="${employee.department}"></c:out></td>
+                                                    <td><c:out value="${employee.leader}"></c:out></td>
+                                                    <td><button id="update" class="btn btn-warning" name="button" style="margin-bottom:5px" type="submit" onclick="location='/EmployeeDetailUpdate?userid=${employee.userid}'">修改</button></td>
+                                                    <td><button id="delete" class="btn btn-danger" name="button" style="margin-bottom:5px" type="submit" onclick="location='/deleteEmployeeDO?userid=${employee.userid}'">删除</button></td>
                                                 </tr>
                                             </c:forEach>
+
                                             </tbody>
                                         </table>
+
                                     </div>
                                 </div>
                             </div>
                         </div>
                         <!--表格2区域-->
 
-
-
                     </div>
                 </div>
             </div>
-        </section>
-        <!--核心显示区-->
+        </div>
+    </section>
+    <!--核心显示区-->
     </div>
+
+
+    <%--<script>--%>
+        <%--document.getElementById("update").onclick = function () {--%>
+            <%--window.open("/UpdateEmployee.action");--%>
+        <%--}--%>
+    <%--</script>--%>
+    <%--<script>--%>
+        <%--document.getElementById("delete").onclick = function () {--%>
+            <%--var request = new XMLHttpRequest();--%>
+            <%--request.open("GET","/deleteEmployee.do?id=" + document.getElementById("id").value);--%>
+            <%--request.send();--%>
+            <%--request.onreadystatechange = function () {--%>
+                <%--if(request.readyState === 4){--%>
+                    <%--if (request.status === 200){--%>
+                        <%--alert("删除成功");--%>
+                    <%--}else {--%>
+                        <%--alert("error:"+request.status);--%>
+                    <%--}--%>
+                <%--}--%>
+            <%--}--%>
+        <%--}--%>
+    <%--</script>--%>
+
     <!-- / jquery -->
     <script src='assets/javascripts/jquery/jquery.min.js' type='text/javascript'></script>
     <!-- / jquery mobile events (for touch and slide) -->

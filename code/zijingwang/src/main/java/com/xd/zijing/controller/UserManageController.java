@@ -25,19 +25,19 @@ public class UserManageController {
 
     @RequestMapping("/AddUser")
     public String addUser(){
-        return "AddUser";
+        return "chy/BackSite/AddUser";
     }
 
     @RequestMapping("/UserList")
     public String userList(){
-        return "UserList";
+        return "chy/BackSite/UserList";
     }
 
     @RequestMapping(value = "/UserListDO")
     public String selectUser(HttpSession session){
         List<Vip> vips = vipManage.selectAllVip(0,11);
         session.setAttribute("vips",vips);
-        return "redirect:/UserList";
+        return "chy/BackSite/redirect:/UserList";
     }
 
     @RequestMapping(value = "/UserDetailDO")
@@ -47,12 +47,12 @@ public class UserManageController {
 //        for (Vip vip:vips){
 //            System.out.println(vip);
 //        }
-        return "UserDetail";
+        return "chy/BackSite/UserDetail";
     }
 
     @RequestMapping("/UserDetail")
     public String userDetail(){
-        return "UserDetail";
+        return "chy/BackSite/UserDetail";
     }
 
     @RequestMapping("/AddUserDO")
@@ -66,7 +66,7 @@ public class UserManageController {
         vip.setViptelephone(request.getParameter("u_telephone"));
         vip.setVipregisterdate(new Date());
         vipManage.insertVip(vip);
-        return "redirect:/AddUser";
+        return "chy/BackSite/redirect:/AddUser";
     }
 
     @RequestMapping(value = "/UserDetailUpdateDO")
@@ -79,24 +79,24 @@ public class UserManageController {
 //        vip.setVipbirthday(request.getParameter("u_birthday"));
         vip.setViptelephone(request.getParameter("u_telephone"));
         vipManage.updateVip(vip);
-        return "redirect:/UserListDO";
+        return "chy/BackSite/redirect:/UserListDO";
     }
     @RequestMapping("/UserDetailUpdate")
     public String userDetailUpdate(HttpServletRequest request){
         Vip vip = vipManage.selectVipById(Integer.valueOf(request.getParameter("vipid")));
         request.setAttribute("vip",vip);
-        return "UserDetailUpdate";
+        return "chy/BackSite/UserDetailUpdate";
     }
 
 
     @RequestMapping("/ResetPassword")
     public String resetPassword(){
-        return "ResetPassword";
+        return "chy/BackSite/ResetPassword";
     }
 
     @RequestMapping("/ResetPasswordError")
     public String resetPasswordError(){
-        return "ResetPasswordError";
+        return "chy/BackSite/ResetPasswordError";
     }
 
 
@@ -110,20 +110,20 @@ public class UserManageController {
             if (newPassword.equals(checkPassword)){
                 vip.setVippassword(newPassword);
                 vipManage.updateVip(vip);
-                return "/ResetPassword";
+                return "chy/BackSite//ResetPassword";
             }
             else{
-                return "/ResetPasswordError";
+                return "chy/BackSite//ResetPasswordError";
             }
         }else{
-            return "/ResetPasswordError";
+            return "chy/BackSite//ResetPasswordError";
         }
     }
 
     @RequestMapping(value = "/DeleteUserDO",method = {RequestMethod.GET})
     public String DeleteUser(HttpServletRequest request){
         vipManage.deleteVip(Long.parseLong(request.getParameter("vipid")));
-        return "redirect:/UserListDO";
+        return "chy/BackSite/redirect:/UserListDO";
     }
 
 

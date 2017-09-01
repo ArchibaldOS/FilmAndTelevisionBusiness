@@ -25,7 +25,7 @@ public class EmployeeController {
 
     @RequestMapping("/AddEmployee")
     public String addEmployee(){
-        return "AddEmployee";
+        return "chy/BackSite/AddEmployee";
     }
 
     @RequestMapping(value = "/AddEmployeeDO",method = {RequestMethod.GET})
@@ -44,19 +44,19 @@ public class EmployeeController {
         employee.setLeader(request.getParameter("e_leader"));
 
         employeeManage.insertEmployee(employee);
-        return "EmployeeManage";
+        return "chy/BackSite/EmployeeManage";
     }
 
     @RequestMapping("/EmployeeManage")
     public String EmployeeManage(){
-        return "EmployeeManage";
+        return "chy/BackSite/EmployeeManage";
     }
 
     @RequestMapping(value = "/selectEmployeeDO")
     public String selectEmployee( HttpSession session){
         List<Employee> employees = employeeManage.selectAllEmployee(0,5);
         session.setAttribute("employees",employees);
-        return "redirect:/EmployeeManage";
+        return "chy/BackSite/redirect:/EmployeeManage";
     }
 
     @RequestMapping("/EmployeeDetailUpdate")
@@ -64,7 +64,7 @@ public class EmployeeController {
         Employee employee = employeeManage.selectEmployeeById(Long.parseLong(request.getParameter("userid")));
         request.setAttribute("employee",employee);
 
-        return "EmployeeDetailUpdate";
+        return "chy/BackSite/EmployeeDetailUpdate";
     }
 
 
@@ -81,14 +81,14 @@ public class EmployeeController {
         employee.setLeader(request.getParameter("leader"));
 
         employeeManage.updateEmployee(employee);
-        return "redirect:/selectEmployeeDO";
+        return "chy/BackSite/redirect:/selectEmployeeDO";
     }
 
 
     @RequestMapping(value = "/deleteEmployeeDO",method = {RequestMethod.GET})
     public String deleteEmployee(HttpServletRequest request){
         employeeManage.deleteEmployee(Long.parseLong(request.getParameter("userid")));
-        return "redirect:/selectEmployeeDO";
+        return "chy/BackSite/redirect:/selectEmployeeDO";
     }
 
 }

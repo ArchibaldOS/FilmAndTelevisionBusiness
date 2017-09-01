@@ -60,7 +60,7 @@
     <div class='navbar'>
         <div class='navbar-inner'>
             <div class='container-fluid'>
-                <a class='brand' href='/index'>
+                <a class='brand' href='/zijingwang/index'>
                     <i class='icon-heart-empty'></i>
                     <span class='hidden-phone'>系统管理子系统</span>
                 </a>
@@ -135,7 +135,7 @@
                         </a>
                         <ul class='dropdown-menu'>
                             <li>
-                                <a href='/AdminLogin'>
+                                <a href='/zijingwang/AdminLogin'>
                                     <i class='icon-signout'></i>
                                     注销
                                 </a>
@@ -164,25 +164,25 @@
                     </a>
                     <ul class='nav nav-stacked'>
                         <li class=''>
-                            <a href='/StructManageDO'><!--链接到标签对应的html页面-->
+                            <a href='/zijingwang/StructManageDO'><!--链接到标签对应的html页面-->
                                 <i class='icon-caret-right'></i>
                                 <span>查询部门</span>
                             </a>
                         </li>
                         <li class=''>
-                            <a href='/AddStruct'>
+                            <a href='/zijingwang/AddStruct'>
                                 <i class='icon-caret-right'></i>
                                 <span>新增部门</span>
                             </a>
                         </li>
                         <li class=''>
-                            <a href='/StructManageDO'><!--链接到标签对应的html页面-->
+                            <a href='/zijingwang/StructManageDO'><!--链接到标签对应的html页面-->
                                 <i class='icon-caret-right'></i>
                                 <span>修改部门信息</span>
                             </a>
                         </li>
                         <li class=''>
-                            <a href='/StructManageDO'><!--链接到标签对应的html页面-->
+                            <a href='/zijingwang/StructManageDO'><!--链接到标签对应的html页面-->
                                 <i class='icon-caret-right'></i>
                                 <span>删除部门</span>
                             </a>
@@ -199,25 +199,25 @@
                     </a>
                     <ul class='nav nav-stacked'>
                         <li class=''>
-                            <a href='/selectEmployeeDO'><!--链接到标签对应的html页面-->
+                            <a href='/zijingwang/selectEmployeeDO'><!--链接到标签对应的html页面-->
                                 <i class='icon-caret-right'></i>
                                 <span>查询员工</span>
                             </a>
                         </li>
                         <li class=''>
-                            <a href='/AddEmployee'>
+                            <a href='/zijingwang/AddEmployee'>
                                 <i class='icon-caret-right'></i>
                                 <span>新增员工</span>
                             </a>
                         </li>
                         <li class=''>
-                            <a href='/selectEmployeeDO'><!--链接到标签对应的html页面-->
+                            <a href='/zijingwang/selectEmployeeDO'><!--链接到标签对应的html页面-->
                                 <i class='icon-caret-right'></i>
                                 <span>修改员工信息</span>
                             </a>
                         </li>
                         <li class=''>
-                            <a href='/selectEmployeeDO'><!--链接到标签对应的html页面-->
+                            <a href='/zijingwang/selectEmployeeDO'><!--链接到标签对应的html页面-->
                                 <i class='icon-caret-right'></i>
                                 <span>删除员工</span>
                             </a>
@@ -235,13 +235,13 @@
                     </a>
                     <ul class='nav nav-stacked'>
                         <li class=''>
-                            <a href='/VipLevelSearch'><!--链接到标签对应的html页面-->
+                            <a href='/zijingwang/VipLevelSearch'><!--链接到标签对应的html页面-->
                                 <i class='icon-caret-right'></i>
                                 <span>会员等级查询</span>
                             </a>
                         </li>
                         <li class=''>
-                            <a href='/VipListDO'><!--链接到标签对应的html页面-->
+                            <a href='/zijingwang/VipListDO'><!--链接到标签对应的html页面-->
                                 <i class='icon-caret-right'></i>
                                 <span>会员等级修改</span>
                             </a>
@@ -260,13 +260,13 @@
                     </a>
                     <ul class='nav nav-stacked'>
                         <li class=''>
-                            <a href='/TicketTimeManageDO'><!--链接到标签对应的html页面-->
+                            <a href='/zijingwang/TicketTimeManageDO'><!--链接到标签对应的html页面-->
                                 <i class='icon-caret-right'></i>
                                 <span>查询售票时间</span>
                             </a>
                         </li>
                         <li class=''>
-                            <a href='/TicketTimeManageDO'><!--链接到标签对应的html页面-->
+                            <a href='/zijingwang/TicketTimeManageDO'><!--链接到标签对应的html页面-->
                                 <i class='icon-caret-right'></i>
                                 <span>修改售票时间</span>
                             </a>
@@ -285,25 +285,25 @@
                     </a>
                     <ul class='nav nav-stacked'>
                         <li class=''>
-                            <a href='/AddUser'><!--链接到标签对应的html页面-->
+                            <a href='/zijingwang/AddUser'><!--链接到标签对应的html页面-->
                                 <i class='icon-caret-right'></i>
                                 <span>添加用户</span>
                             </a>
                         </li>
                         <li class=''>
-                            <a href='/UserListDO'><!--链接到标签对应的html页面-->
+                            <a href='/zijingwang/UserListDO'><!--链接到标签对应的html页面-->
                                 <i class='icon-caret-right'></i>
                                 <span>删除用户</span>
                             </a>
                         </li>
                         <li class=''>
-                            <a href='/UserList.do'><!--链接到标签对应的html页面-->
+                            <a href='/zijingwang/UserList.do'><!--链接到标签对应的html页面-->
                                 <i class='icon-caret-right'></i>
                                 <span>修改用户资料</span>
                             </a>
                         </li>
                         <li class=''>
-                            <a href='/ResetPassword'><!--链接到标签对应的html页面-->
+                            <a href='/zijingwang/ResetPassword'><!--链接到标签对应的html页面-->
                                 <i class='icon-caret-right'></i>
                                 <span>重置密码</span>
                             </a>

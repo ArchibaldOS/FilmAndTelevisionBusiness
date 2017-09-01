@@ -19,10 +19,14 @@ public class BackLoginController {
     @Autowired
     private AdminManage adminManage;
 
+    @RequestMapping("/index")
+    public String index(){
+        return "chy/BackSite/BackIndex";
+    }
 
     @RequestMapping(value = "/AdminLogin")
     public String login (){
-        return "AdminLogin";
+        return "chy/BackSite/AdminLogin";
     }
     @RequestMapping(value = "/AdminLoginDO")
     public String Login (HttpServletRequest request){
@@ -31,20 +35,17 @@ public class BackLoginController {
 
         String username = request.getParameter("vipUsername");
         String password = request.getParameter("vipPassword") ;
-        System.out.println("1");
+
         for (Admin admin:admins){
             if (username.equals(admin.getAdminusername()) && password.equals(admin.getAdminpassword())){
-                System.out.println("2");
-                return "redirect:/backIndex";
-
+                return "chy/BackSite/redirect:/index";
             }
         }
-        System.out.println("3");
-        return "redirect:/AdminLogin";
+        return "chy/BackSite/redirect:/AdminLogin";
     }
 
     @RequestMapping(value = "/UserStatistics")
     public String UserStatistics(){
-        return "UserStatistics";
+        return "chy/BackSite/UserStatistics";
     }
 }

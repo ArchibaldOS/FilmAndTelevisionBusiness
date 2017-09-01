@@ -25,19 +25,19 @@ public class TicketTimeController {
 
     @RequestMapping("/TicketTimeManage")
     public String ticketTimeManage(){
-        return "TicketTimeManage";
+        return "chy/BackSite/TicketTimeManage";
     }
 
     @RequestMapping("/MovieDetail")
     public String movieDetail(){
-        return "MovieDetail";
+        return "chy/BackSite/MovieDetail";
     }
     
     @RequestMapping("/TicketTimeUpdate")
     public String ticketTimeUpdate(HttpServletRequest request){
         Screening screening = screeningManage.selectScreeningById(Integer.valueOf(request.getParameter("screeningnumber")));
         request.setAttribute("screening",screening);
-        return "TicketTimeUpdate";
+        return "chy/BackSite/TicketTimeUpdate";
     }
 
 
@@ -45,14 +45,14 @@ public class TicketTimeController {
     public String TicketTimeManage( HttpSession session){
         List<Screening> screenings = screeningManage.selectAllScreening(0,11);
         session.setAttribute("screenings",screenings);
-        return "redirect:/TicketTimeManage";
+        return "chy/BackSite/redirect:/TicketTimeManage";
     }
 
     @RequestMapping(value = "/MovieDetailDO")
     public String MovieDetail(HttpServletRequest request){
         Screening screening = screeningManage.selectScreeningById(Integer.valueOf(request.getParameter("screeningnumber")));
         request.setAttribute("screening",screening);
-        return "/MovieDetail";
+        return "chy/BackSite//MovieDetail";
     }
 
     @RequestMapping(value = "/TicketTimeUpdateDO")
@@ -72,13 +72,13 @@ public class TicketTimeController {
 
         System.out.println(time);
         screeningManage.updateScreening(screening);
-        return "redirect:/TicketTimeManageDO";
+        return "chy/BackSite/redirect:/TicketTimeManageDO";
     }
 //// TODO: 8/31/2017
     @RequestMapping(value = "/TicketTimeDeleteDO",method = {RequestMethod.GET})
     public String TicketTimeDelete(HttpServletRequest request){
         screeningManage.deleteScreening(Long.parseLong(request.getParameter("id")));
-        return "redirect:/TicketTimeManageDO";
+        return "chy/BackSite/redirect:/TicketTimeManageDO";
     }
 
 }

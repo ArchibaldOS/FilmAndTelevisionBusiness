@@ -1,12 +1,11 @@
-<%@ page import="com.xd.zijing.entity.Vip" %>
-<%@ page import="java.util.List" %>
+<%@ page import="com.xd.zijing.entity.Struct" %>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 <%@ page isELIgnored="false"%>
 <!DOCTYPE html>
 <html>
 <head>
-    <title>后台管理系统</title>
+    <title>Flatty - Flat administration template</title>
     <meta content='width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no' name='viewport' />
 
     <!--[if lt IE 9]>
@@ -62,7 +61,7 @@
     <div class='navbar'>
         <div class='navbar-inner'>
             <div class='container-fluid'>
-                <a class='brand' href='/index'>
+                <a class='brand' href='/zijingwang/index'>
                     <i class='icon-heart-empty'></i>
                     <span class='hidden-phone'>系统管理子系统</span>
                 </a>
@@ -137,7 +136,7 @@
                         </a>
                         <ul class='dropdown-menu'>
                             <li>
-                                <a href='/AdminLogin'>
+                                <a href='/zijingwang/AdminLogin'>
                                     <i class='icon-signout'></i>
                                     注销
                                 </a>
@@ -166,25 +165,25 @@
                     </a>
                     <ul class='nav nav-stacked'>
                         <li class=''>
-                            <a href='/StructManageDO'><!--链接到标签对应的html页面-->
+                            <a href='/zijingwang/StructManageDO'><!--链接到标签对应的html页面-->
                                 <i class='icon-caret-right'></i>
                                 <span>查询部门</span>
                             </a>
                         </li>
                         <li class=''>
-                            <a href='/AddStruct'>
+                            <a href='/zijingwang/AddStruct'>
                                 <i class='icon-caret-right'></i>
                                 <span>新增部门</span>
                             </a>
                         </li>
                         <li class=''>
-                            <a href='/StructManageDO'><!--链接到标签对应的html页面-->
+                            <a href='/zijingwang/StructManageDO'><!--链接到标签对应的html页面-->
                                 <i class='icon-caret-right'></i>
                                 <span>修改部门信息</span>
                             </a>
                         </li>
                         <li class=''>
-                            <a href='/StructManageDO'><!--链接到标签对应的html页面-->
+                            <a href='/zijingwang/StructManageDO'><!--链接到标签对应的html页面-->
                                 <i class='icon-caret-right'></i>
                                 <span>删除部门</span>
                             </a>
@@ -201,25 +200,25 @@
                     </a>
                     <ul class='nav nav-stacked'>
                         <li class=''>
-                            <a href='/selectEmployeeDO'><!--链接到标签对应的html页面-->
+                            <a href='/zijingwang/selectEmployeeDO'><!--链接到标签对应的html页面-->
                                 <i class='icon-caret-right'></i>
                                 <span>查询员工</span>
                             </a>
                         </li>
                         <li class=''>
-                            <a href='/AddEmployee'>
+                            <a href='/zijingwang/AddEmployee'>
                                 <i class='icon-caret-right'></i>
                                 <span>新增员工</span>
                             </a>
                         </li>
                         <li class=''>
-                            <a href='/selectEmployeeDO'><!--链接到标签对应的html页面-->
+                            <a href='/zijingwang/selectEmployeeDO'><!--链接到标签对应的html页面-->
                                 <i class='icon-caret-right'></i>
                                 <span>修改员工信息</span>
                             </a>
                         </li>
                         <li class=''>
-                            <a href='/selectEmployeeDO'><!--链接到标签对应的html页面-->
+                            <a href='/zijingwang/selectEmployeeDO'><!--链接到标签对应的html页面-->
                                 <i class='icon-caret-right'></i>
                                 <span>删除员工</span>
                             </a>
@@ -237,13 +236,13 @@
                     </a>
                     <ul class='nav nav-stacked'>
                         <li class=''>
-                            <a href='/VipLevelSearch'><!--链接到标签对应的html页面-->
+                            <a href='/zijingwang/VipLevelSearch'><!--链接到标签对应的html页面-->
                                 <i class='icon-caret-right'></i>
                                 <span>会员等级查询</span>
                             </a>
                         </li>
                         <li class=''>
-                            <a href='/VipListDO'><!--链接到标签对应的html页面-->
+                            <a href='/zijingwang/VipListDO'><!--链接到标签对应的html页面-->
                                 <i class='icon-caret-right'></i>
                                 <span>会员等级修改</span>
                             </a>
@@ -262,13 +261,13 @@
                     </a>
                     <ul class='nav nav-stacked'>
                         <li class=''>
-                            <a href='/TicketTimeManageDO'><!--链接到标签对应的html页面-->
+                            <a href='/zijingwang/TicketTimeManageDO'><!--链接到标签对应的html页面-->
                                 <i class='icon-caret-right'></i>
                                 <span>查询售票时间</span>
                             </a>
                         </li>
                         <li class=''>
-                            <a href='/TicketTimeManageDO'><!--链接到标签对应的html页面-->
+                            <a href='/zijingwang/TicketTimeManageDO'><!--链接到标签对应的html页面-->
                                 <i class='icon-caret-right'></i>
                                 <span>修改售票时间</span>
                             </a>
@@ -287,25 +286,25 @@
                     </a>
                     <ul class='nav nav-stacked'>
                         <li class=''>
-                            <a href='/AddUser'><!--链接到标签对应的html页面-->
+                            <a href='/zijingwang/AddUser'><!--链接到标签对应的html页面-->
                                 <i class='icon-caret-right'></i>
                                 <span>添加用户</span>
                             </a>
                         </li>
                         <li class=''>
-                            <a href='/UserListDO'><!--链接到标签对应的html页面-->
+                            <a href='/zijingwang/UserListDO'><!--链接到标签对应的html页面-->
                                 <i class='icon-caret-right'></i>
                                 <span>删除用户</span>
                             </a>
                         </li>
                         <li class=''>
-                            <a href='/UserList.do'><!--链接到标签对应的html页面-->
+                            <a href='/zijingwang/UserList.do'><!--链接到标签对应的html页面-->
                                 <i class='icon-caret-right'></i>
                                 <span>修改用户资料</span>
                             </a>
                         </li>
                         <li class=''>
-                            <a href='/ResetPassword'><!--链接到标签对应的html页面-->
+                            <a href='/zijingwang/ResetPassword'><!--链接到标签对应的html页面-->
                                 <i class='icon-caret-right'></i>
                                 <span>重置密码</span>
                             </a>
@@ -331,19 +330,18 @@
                             <div class='page-header'>
                                 <h1 class='pull-left'>
                                     <i class='icon-edit'></i>
-                                    <span>会员等级修改</span>
+                                    <span>组织结构维护</span>
                                 </h1>
                             </div>
                         </div>
                     </div>
                     <!--第一部分-->
 
-
-                    <!--表格2区域-->
+                    <!--页面内标签-->
                     <div class='row-fluid'>
-                        <div class='span12 box bordered-box blue-border' style='margin-bottom:0;'>
+                        <div class='span12 box' style='margin-bottom: 0'>
                             <div class='box-header blue-background'>
-                                <div class='title'>会员等级</div>
+                                <div class='title'>修改部门信息</div>
                                 <div class='actions'>
                                     <a href="#" class="btn box-remove btn-mini btn-link"><i class='icon-remove'></i>
                                     </a>
@@ -351,74 +349,72 @@
                                     </a>
                                 </div>
                             </div>
-                            <div class='box-content box-no-padding'>
-                                <div class='responsive-table'>
-                                    <div class='scrollable-area'>
-                                        <table class='data-table table table-bordered table-striped' style='margin-bottom:0;'>
-                                            <thead>
-                                            <tr>
-                                            <tr>
-                                                <th>
-                                                    选择
-                                                </th>
-                                                <th>
-                                                    会员ID
-                                                </th>
-                                                <th>
-                                                    会员姓名
-                                                </th>
-                                                <th>
-                                                    用户余额
-                                                </th>
-                                                <th>
-                                                    用户积分
-                                                </th>
-                                                <th>
-                                                    用户等级
-                                                </th>
-                                                <th>
-                                                    修改
-                                                </th>
-                                                <th>
-                                                    删除
-                                                </th>
-                                            </tr>
-                                            </tr>
-                                            </thead>
-                                            <tbody>
-                                            <%
-                                                List<Vip> vips = (List<Vip>) session.getAttribute("searchvips");
-
-//                                                for (Vip vip:vips){
-//                                                    System.out.println("#33"+vip);
-//                                                }
-                                            %>
-                                            <c:forEach var="vip" items="${vips}">
-                                                <tr>
-                                                    <td><input type="checkbox"/>  </td>
-                                                        <%--<td><c:out value="${vip.userID}"></c:out> </td>--%>
-                                                    <td><c:out value="${vip.vipusername}"></c:out></td>
-                                                    <td><c:out value="${vip.vipname}"></c:out></td>
-                                                    <td><c:out value="${vip.vipbalance}"></c:out></td>
-                                                    <td><c:out value="${vip.viptotal}"></c:out></td>
-                                                    <td><c:out value="${vip.viprank}"></c:out></td>
-                                                    <td><button class="btn btn-warning" name="button" style="margin-bottom:5px" type="submit" onclick="location='/UserDetailUpdate?vipid=${vip.vipid}'">修改</button></td>
-                                                    <td><button class="btn btn-danger" name="button" style="margin-bottom:5px" type="submit">删除</button></td>
-                                                </tr>
-                                            </c:forEach>
-                                            </tbody>
-                                        </table>
+                            <div class='box-content'>
+                                <strong>请填写部门信息</strong>
+                                <div class='box-content'>
+                                    <%
+                                        Struct struct = (Struct) request.getAttribute("struct");
+                                    %>
+                                <form accept-charset="UTF-8" action="/StructDetailUpdateDO" class="form form-horizontal" method="post" style="margin-bottom: 0;">
+                                    <div style="margin:0;padding:0;display:inline">
+                                        <input name="utf8" type="hidden" value="&#x2713;" />
+                                        <input name="authenticity_token" type="hidden" value="CFC7d00LWKQsSahRqsfD+e/mHLqbaVIXBvlBGe/KP+I=" />
                                     </div>
+                                    <div class='control-group'>
+                                        <div class='controls'>
+                                            <input id='inputText1' value="${struct.departmentid}" name="departmentID" type='hidden' readonly/><!--修改name与数据库英文名称统一-->
+                                        </div>
+                                    </div>
+                                    <div class='control-group'>
+                                        <label class='control-label' for='inputSelect'>影院名称</label>
+                                        <div class='controls'>
+                                            <select id='inputSelect'value="${struct.cinemaname}" name="cinemaName">
+                                                <option />紫荆影院
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class='control-group'>
+                                        <label class='control-label' for='inputPassword4'>部门名称</label>
+                                        <div class='controls'>
+                                            <input id='inputPassword4' value="${struct.departmentname}"  type='text' name="departmentName" />
+                                        </div>
+                                    </div>
+                                    <hr class='hr-normal' />
+                                    <div class='control-group'>
+                                        <label class='control-label' for='inputText1'>领导姓名</label>
+                                        <div class='controls'>
+                                            <input id='inputText1'  value="${struct.leader}" type='text'  name="leader"/>
+                                        </div>
+                                    </div>
+                                    <div class='control-group'>
+                                        <label class='control-label' for='inputText1'>上级部门</label>
+                                        <div class='controls'>
+                                            <input id='inputText1'  type='text' name="higherDepartment"/>
+                                        </div>
+                                    </div>
+                                    <hr class='hr-normal' />
+
+                                    <!--保存重置-->
+                                    <div class='form-actions'>
+                                        <button class='btn btn-primary' type='submit'>
+                                            <i class='icon-save'></i>
+                                            修改
+                                        </button>
+                                        <button class='btn' type='submit'>重置</button>
+                                    </div>
+                                    <!--保存重置-->
+                                    </form>
                                 </div>
                             </div>
                         </div>
-                        <!--表格2区域-->
-
-
-
                     </div>
                 </div>
             </div>
+            <!--页面内标签-->
+            <hr class='hr-double' />
+                </div>
+            </div>
+        </div>
     </section>
     <!--核心显示区-->
 </div>

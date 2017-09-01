@@ -1,5 +1,4 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
-<%@ page import="com.xd.zijing.entity.Vip" %>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 <%@ page isELIgnored="false"%>
 <!DOCTYPE html>
@@ -136,7 +135,7 @@
                             </a>
                             <ul class='dropdown-menu'>
                                 <li>
-                                    <a href='/AdminLogin'>
+                                    <a href='/zijingwang/AdminLogin'>
                                         <i class='icon-signout'></i>
                                         注销
                                     </a>
@@ -165,25 +164,25 @@
                         </a>
                         <ul class='nav nav-stacked'>
                             <li class=''>
-                                <a href='/StructManageDO'><!--链接到标签对应的html页面-->
+                                <a href='/zijingwang/StructManageDO'><!--链接到标签对应的html页面-->
                                     <i class='icon-caret-right'></i>
                                     <span>查询部门</span>
                                 </a>
                             </li>
                             <li class=''>
-                                <a href='/AddStruct'>
+                                <a href='/zijingwang/AddStruct'>
                                     <i class='icon-caret-right'></i>
                                     <span>新增部门</span>
                                 </a>
                             </li>
                             <li class=''>
-                                <a href='/StructManageDO'><!--链接到标签对应的html页面-->
+                                <a href='/zijingwang/StructManageDO'><!--链接到标签对应的html页面-->
                                     <i class='icon-caret-right'></i>
                                     <span>修改部门信息</span>
                                 </a>
                             </li>
                             <li class=''>
-                                <a href='/StructManageDO'><!--链接到标签对应的html页面-->
+                                <a href='/zijingwang/StructManageDO'><!--链接到标签对应的html页面-->
                                     <i class='icon-caret-right'></i>
                                     <span>删除部门</span>
                                 </a>
@@ -200,25 +199,25 @@
                         </a>
                         <ul class='nav nav-stacked'>
                             <li class=''>
-                                <a href='/selectEmployeeDO'><!--链接到标签对应的html页面-->
+                                <a href='/zijingwang/selectEmployeeDO'><!--链接到标签对应的html页面-->
                                     <i class='icon-caret-right'></i>
                                     <span>查询员工</span>
                                 </a>
                             </li>
                             <li class=''>
-                                <a href='/AddEmployee'>
+                                <a href='/zijingwang/AddEmployee'>
                                     <i class='icon-caret-right'></i>
                                     <span>新增员工</span>
                                 </a>
                             </li>
                             <li class=''>
-                                <a href='/selectEmployeeDO'><!--链接到标签对应的html页面-->
+                                <a href='/zijingwang/selectEmployeeDO'><!--链接到标签对应的html页面-->
                                     <i class='icon-caret-right'></i>
                                     <span>修改员工信息</span>
                                 </a>
                             </li>
                             <li class=''>
-                                <a href='/selectEmployeeDO'><!--链接到标签对应的html页面-->
+                                <a href='/zijingwang/selectEmployeeDO'><!--链接到标签对应的html页面-->
                                     <i class='icon-caret-right'></i>
                                     <span>删除员工</span>
                                 </a>
@@ -236,13 +235,13 @@
                         </a>
                         <ul class='nav nav-stacked'>
                             <li class=''>
-                                <a href='/VipLevelSearch'><!--链接到标签对应的html页面-->
+                                <a href='/zijingwang/VipLevelSearch'><!--链接到标签对应的html页面-->
                                     <i class='icon-caret-right'></i>
                                     <span>会员等级查询</span>
                                 </a>
                             </li>
                             <li class=''>
-                                <a href='/VipListDO'><!--链接到标签对应的html页面-->
+                                <a href='/zijingwang/VipListDO'><!--链接到标签对应的html页面-->
                                     <i class='icon-caret-right'></i>
                                     <span>会员等级修改</span>
                                 </a>
@@ -261,13 +260,13 @@
                         </a>
                         <ul class='nav nav-stacked'>
                             <li class=''>
-                                <a href='/TicketTimeManageDO'><!--链接到标签对应的html页面-->
+                                <a href='/zijingwang/TicketTimeManageDO'><!--链接到标签对应的html页面-->
                                     <i class='icon-caret-right'></i>
                                     <span>查询售票时间</span>
                                 </a>
                             </li>
                             <li class=''>
-                                <a href='/TicketTimeManageDO'><!--链接到标签对应的html页面-->
+                                <a href='/zijingwang/TicketTimeManageDO'><!--链接到标签对应的html页面-->
                                     <i class='icon-caret-right'></i>
                                     <span>修改售票时间</span>
                                 </a>
@@ -286,25 +285,25 @@
                         </a>
                         <ul class='nav nav-stacked'>
                             <li class=''>
-                                <a href='/AddUser'><!--链接到标签对应的html页面-->
+                                <a href='/zijingwang/AddUser'><!--链接到标签对应的html页面-->
                                     <i class='icon-caret-right'></i>
                                     <span>添加用户</span>
                                 </a>
                             </li>
                             <li class=''>
-                                <a href='/UserListDO'><!--链接到标签对应的html页面-->
+                                <a href='/zijingwang/UserListDO'><!--链接到标签对应的html页面-->
                                     <i class='icon-caret-right'></i>
                                     <span>删除用户</span>
                                 </a>
                             </li>
                             <li class=''>
-                                <a href='/UserList.do'><!--链接到标签对应的html页面-->
+                                <a href='/zijingwang/UserList.do'><!--链接到标签对应的html页面-->
                                     <i class='icon-caret-right'></i>
                                     <span>修改用户资料</span>
                                 </a>
                             </li>
                             <li class=''>
-                                <a href='/ResetPassword'><!--链接到标签对应的html页面-->
+                                <a href='/zijingwang/ResetPassword'><!--链接到标签对应的html页面-->
                                     <i class='icon-caret-right'></i>
                                     <span>重置密码</span>
                                 </a>
@@ -312,6 +311,7 @@
                         </ul>
                     </li>
                     <!--用户管理-->
+
 
 
 
@@ -330,7 +330,7 @@
                             <div class='page-header'>
                                 <h1 class='pull-left'>
                                     <i class='icon-edit'></i>
-                                    <span>详细信息</span>
+                                    <span>用户管理</span>
                                 </h1>
                             </div>
                         </div>
@@ -339,102 +339,203 @@
 
                     <!--页面内标签-->
                     <div class='row-fluid'>
-                        <div class="tab-pane active" id="retab1"><!--p>学校用户列表</p-->
-                            <form accept-charset="UTF-8" action="/UserDetailUpdate" class="form form-horizontal" method="post" style="margin-bottom: 0;" />
-                            <div style="margin:0;padding:0;display:inline">
-                                <input name="utf8" type="hidden" value="&#x2713;" />
-                                <input name="authenticity_token" type="hidden" value="CFC7d00LWKQsSahRqsfD+e/mHLqbaVIXBvlBGe/KP+I=" />
-                            </div>
-                           <%
-                               Vip vip = (Vip) request.getAttribute("vip");
-                           %>
-                            <div class='control-group'>
-                                <div class='controls'>
-                                    <input id='inputText1' value="${vip.vipid}" type='text' name="vipid" readonly/><!--修改name与数据库英文名称统一-->
+                        <div class='span12 box' style='margin-bottom: 0'>
+                            <div class='box-header blue-background'>
+                                <div class='title'>添加用户</div>
+                                <div class='actions'>
+                                    <a href="#" class="btn box-remove btn-mini btn-link"><i class='icon-remove'></i>
+                                    </a>
+                                    <a href="#" class="btn box-collapse btn-mini btn-link"><i></i>
+                                    </a>
                                 </div>
                             </div>
-                            <div class='control-group'>
-                                <label class='control-label' for='inputText1'>用户名</label>
-                                <div class='controls'>
-                                    <input id='inputText1' value="${vip.vipusername}" type='text' name="u_username" readonly/><!--修改name与数据库英文名称统一-->
-                                </div>
-                            </div>
-                            <div class='control-group'>
-                                <label class='control-label' for='inputPassword4'>密码</label>
-                                <div class='controls'>
-                                    <input id='inputPassword4' value="${vip.vippassword}" type='password'  name="u_password" readonly/>
-                                </div>
-                            </div>
+                            <div class='box-content'>
+                                <strong>请填写用户信息</strong>
+                                <div class='tabbable' style='margin-top: 20px'>
+                                    <ul class='nav nav-responsive nav-tabs'>
+                                        <li class='active'>
+                                            <a data-toggle='tab' href='#retab1'>
+                                                普通用户
+                                            </a>
+                                        </li>
+                                        <li class=''>
+                                            <a data-toggle='tab' href='#retab2'>
+                                                管理员用户
+                                            </a>
+                                        </li>
+                                    </ul>
+                                    <div class='tab-content'>
+                                        <div class="tab-pane active" id="retab1"><!--普通用户列表</p-->
+                                            <form accept-charset="UTF-8" action="/AddUser.do" class="form form-horizontal" method="post" style="margin-bottom: 0;" >
+                                                <div style="margin:0;padding:0;display:inline">
+                                                    <input name="utf8" type="hidden" value="&#x2713;" />
+                                                    <input name="authenticity_token" type="hidden" value="CFC7d00LWKQsSahRqsfD+e/mHLqbaVIXBvlBGe/KP+I=" />
+                                                </div>
+                                                <div class='control-group'>
+                                                    <label class='control-label' for='inputText1'>用户名</label>
+                                                    <div class='controls'>
+                                                        <input id='inputText1' placeholder='Username' type='text' name="u_username" /><!--修改name与数据库英文名称统一-->
+                                                    </div>
+                                                </div>
+                                                <div class='control-group'>
+                                                    <label class='control-label' for='inputPassword4'>密码</label>
+                                                    <div class='controls'>
+                                                        <input id='inputPassword4' placeholder='Password' type='password'  name="u_password" />
+                                                    </div>
+                                                </div>
 
-                            <hr class='hr-normal' />
-                            <div class='control-group'>
-                                <label class='control-label' for='inputText1'>姓名</label>
-                                <div class='controls'>
-                                    <input id='inputText1' value="${vip.vipname}" type='text'  name="u_name" readonly/>
-                                </div>
-                            </div>
-                            <div class='control-group'>
-                                <label class='control-label' for='inputText1'>性别</label>
-                                <div class='controls'>
-                                    <input id='inputText1'value="${vip.vipgender}" type='text' name="u_gender" readonly/>
-                                </div>
-                            </div>
-                            <div class='control-group'>
-                                <label class='control-label' for='inputText1'>生日</label>
-                                <div class='controls'>
-                                    <input id='inputText1' value="${vip.vipbirthday}" type='text' name="u_birthday" readonly/>
-                                </div>
-                            </div>
-                            <hr class='hr-normal' />
-                            <div class='control-group'>
-                                <label class='control-label' for='inputText1'>手机号</label>
-                                <div class='controls'>
-                                    <input id='inputText1' value="${vip.viptelephone}" type='text' name="u_telephone" readonly/>
-                                </div>
-                            </div>
+                                                <hr class='hr-normal' />
+                                                <div class='control-group'>
+                                                    <label class='control-label' for='inputText1'>姓名</label>
+                                                    <div class='controls'>
+                                                        <input id='inputText1' placeholder='name' type='text'  name="u_name"/>
+                                                    </div>
+                                                </div>
+                                                <div class='control-group'>
+                                                    <label class='control-label' for='inputSelect'>性别</label>
+                                                    <div class='controls'>
+                                                        <select id='inputSelect'placeholder='gender' name="u_gender">
+                                                            <option />男
+                                                            <option />女
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                                <div class='control-group'>
+                                                    <label class='control-label' for='inputText1'>生日</label>
+                                                    <div class='controls'>
+                                                        <input id='inputText1' placeholder='birthday' type='text' name="u_birthday"/>
+                                                    </div>
+                                                </div>
+                                                <hr class='hr-normal' />
+                                                <div class='control-group'>
+                                                    <label class='control-label' for='inputText1'>手机号</label>
+                                                    <div class='controls'>
+                                                        <input id='inputText1' placeholder='Telephone' type='text' name="u_telephone"/>
+                                                    </div>
+                                                </div>
 
-                            <hr class='hr-normal' />
-                            <div class='control-group'>
-                                <label class='control-label' for='inputText1'>用户总积分</label>
-                                <div class='controls'>
-                                    <input id='inputText1' value="${vip.viptotal}" type='text' name="u_total" readonly/>
+                                                <!--保存重置-->
+                                                <div class='form-actions'>
+                                                    <button class='btn btn-primary' type='submit'>
+                                                        <i class='icon-save'></i>
+                                                        添加
+                                                    </button>
+                                                    <button class='btn' type='submit'>重置</button>
+                                                </div>
+                                                <!--保存重置-->
+                                            </form>
+
+
+                                        </div>
+                                        <div class="tab-pane " id="retab2"><!--p>系统用户列表</p-->
+                                            <form accept-charset="UTF-8" action="/AddEmployeeDO" class="form form-horizontal" method="post" style="margin-bottom: 0;">
+                                                <div style="margin:0;padding:0;display:inline">
+                                                    <input name="utf8" type="hidden" value="&#x2713;" />
+                                                    <input name="authenticity_token" type="hidden" value="CFC7d00LWKQsSahRqsfD+e/mHLqbaVIXBvlBGe/KP+I=" />
+                                                </div>
+                                                <div class='control-group'>
+                                                    <label class='control-label' for='inputText1'>用户名</label>
+                                                    <div class='controls'>
+                                                        <input id='inputText1' placeholder='Username' type='text' name="e_username" /><!--修改name与数据库英文名称统一-->
+                                                    </div>
+                                                </div>
+                                                <div class='control-group'>
+                                                    <label class='control-label' for='inputPassword4'>密码</label>
+                                                    <div class='controls'>
+                                                        <input id='inputPassword4' placeholder='Password' type='password' name="e_password" />
+                                                    </div>
+                                                </div>
+                                                <hr class='hr-normal' />
+                                                <div class='control-group'>
+                                                    <label class='control-label' for='inputText1'>姓名</label>
+                                                    <div class='controls'>
+                                                        <input id='inputText1' placeholder='name' type='text'  name="e_name"/>
+                                                    </div>
+                                                </div>
+                                                <div class='control-group'>
+                                                    <label class='control-label' for='inputSelect'>性别</label>
+                                                    <div class='controls'>
+                                                        <select id='inputSelect' name="e_gender">
+                                                            <option />男
+                                                            <option />女
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                                <div class='control-group'>
+                                                    <label class='control-label' for='inputText1'>年龄</label>
+                                                    <div class='controls'>
+                                                        <input id='inputText1' placeholder='birthday' type='text' name="e_age"/>
+                                                    </div>
+                                                </div>
+
+                                                <div class='control-group'>
+                                                    <label class='control-label' for='inputText1'>手机号</label>
+                                                    <div class='controls'>
+                                                        <input id='inputText1' placeholder='Telephone' type='text' name="e_telephone"/>
+                                                    </div>
+                                                </div>
+                                                <div class='control-group'>
+                                                    <label class='control-label' for='inputText1'>邮箱</label>
+                                                    <div class='controls'>
+                                                        <input id='inputText1' placeholder='E-mail' type='text' name="e_mail"/>
+                                                    </div>
+                                                </div>
+                                                <hr class='hr-normal' />
+                                                <div class='control-group'>
+                                                    <label class='control-label' for='inputSelect'>部门</label>
+                                                    <div class='controls'>
+                                                        <select id='inputSelect' name="e_department" >
+                                                            <option />办公室
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                                <div class='control-group'>
+                                                    <label class='control-label' for='inputSelect'>所属领导</label>
+                                                    <div class='controls'>
+                                                        <select id='inputSelect' name="e_leader" >
+                                                            <option />小王
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                                <div class='control-group'>
+                                                    <label class='control-label' for='inputSelect'>职务</label>
+                                                    <div class='controls'>
+                                                        <select id='inputSelect' name="e_title" >
+                                                            <option />局长
+                                                            <option />副局长
+                                                            <option />科长
+                                                            <option />科员
+                                                            <option />处长
+                                                            <option />办公室主任
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                                <hr class='hr-normal' />
+
+                                                <!--保存重置-->
+                                                <div class='form-actions'>
+                                                    <button class='btn btn-primary' type='submit'>
+                                                        <i class='icon-save'></i>
+                                                        添加
+                                                    </button>
+                                                    <button class='btn' type='submit'>重置</button>
+                                                </div>
+                                                <!--保存重置-->
+                                        </form>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
-                            <div class='control-group'>
-                                <label class='control-label' for='inputText1'>用户余额</label>
-                                <div class='controls'>
-                                    <input id='inputText1' value="${vip.vipbalance}" type='text' name="u_balance" readonly/>
-                                </div>
-                            </div>
-                            <div class='control-group'>
-                                <label class='control-label' for='inputText1'>会员等级</label>
-                                <div class='controls'>
-                                    <input id='inputText1' value="${vip.viprank}" type='text' name="u_rank" readonly/>
-                                </div>
-                            </div>
-                            <!--保存重置-->
-                            <div class='form-actions'>
-                                <button class='btn btn-primary' type='submit'>
-                                    <i class='icon-save'></i>
-                                    修改
-                                </button>
-                                <button class='btn' onclick="location='/UserListDO'">返回</button>
-                            </div>
-                            <!--保存重置-->
-                        </form>
+                        </div>
                     </div>
+                    <!--页面内标签-->
+                    <hr class='hr-double' />
                 </div>
-                <!--页面内标签-->
-<hr class='hr-double' />
-
-
-
-</div>
-</div>
-</div>
-</section>
-<!--核心显示区-->
-</div>
+            </div>
+        </div>
+    </section>
+    <!--核心显示区-->
+    </div>
 <!-- / jquery -->
 <script src='assets/javascripts/jquery/jquery.min.js' type='text/javascript'></script>
 <!-- / jquery mobile events (for touch and slide) -->

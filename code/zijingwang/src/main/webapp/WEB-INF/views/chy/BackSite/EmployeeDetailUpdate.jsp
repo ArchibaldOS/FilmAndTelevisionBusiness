@@ -7,7 +7,7 @@
 <head>
     <title>影视业务电子商务平台——系统管理子系统</title>
     <meta content='width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no' name='viewport' />
-    
+
     <!--[if lt IE 9]>
     <script src=' assets/javascripts/html5shiv.js' type='text/javascript'></script>
     <![endif]-->
@@ -58,11 +58,11 @@
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 </head>
 <body class='contrast-blue '>
-    <header>
+<header>
     <div class='navbar'>
         <div class='navbar-inner'>
             <div class='container-fluid'>
-                <a class='brand' href='/index'>
+                <a class='brand' href='/zijingwang/index'>
                     <i class='icon-heart-empty'></i>
                     <span class='hidden-phone'>系统管理子系统</span>
                 </a>
@@ -137,7 +137,7 @@
                         </a>
                         <ul class='dropdown-menu'>
                             <li>
-                                <a href='/AdminLogin'>
+                                <a href='/zijingwang/AdminLogin'>
                                     <i class='icon-signout'></i>
                                     注销
                                 </a>
@@ -151,177 +151,176 @@
         </div>
     </div>
 </header>
-    <div id='wrapper'>
-        <div id='main-nav-bg'></div>
-        <nav class='' id='main-nav'>
-            <div class='navigation'>
-                <!--左侧导航栏-->
-                <ul class='nav nav-stacked'>
-                    <!--组织结构维护-->
-                    <li class=''>
-                        <a class='dropdown-collapse' href='#'>
-                            <i class='icon-edit'></i>
-                            <span>组织结构维护</span>
-                            <i class='icon-angle-down angle-down'></i>
-                        </a>
-                        <ul class='nav nav-stacked'>
-                            <li class=''>
-                                <a href='/StructManageDO'><!--链接到标签对应的html页面-->
-                                    <i class='icon-caret-right'></i>
-                                    <span>查询部门</span>
-                                </a>
-                            </li>
-                            <li class=''>
-                                <a href='/AddStruct'>
-                                    <i class='icon-caret-right'></i>
-                                    <span>新增部门</span>
-                                </a>
-                            </li>
-                            <li class=''>
-                                <a href='/StructManageDO'><!--链接到标签对应的html页面-->
-                                    <i class='icon-caret-right'></i>
-                                    <span>修改部门信息</span>
-                                </a>
-                            </li>
-                            <li class=''>
-                                <a href='/StructManageDO'><!--链接到标签对应的html页面-->
-                                    <i class='icon-caret-right'></i>
-                                    <span>删除部门</span>
-                                </a>
-                            </li>
-                        </ul>
-                    </li>
-                    <!--组织结构维护-->
-                    <!--员工管理-->
-                    <li class=''>
-                        <a class='dropdown-collapse' href='#'>
-                            <i class='icon-edit'></i>
-                            <span>员工管理</span>
-                            <i class='icon-angle-down angle-down'></i>
-                        </a>
-                        <ul class='nav nav-stacked'>
-                            <li class=''>
-                                <a href='/selectEmployeeDO'><!--链接到标签对应的html页面-->
-                                    <i class='icon-caret-right'></i>
-                                    <span>查询员工</span>
-                                </a>
-                            </li>
-                            <li class=''>
-                                <a href='/AddEmployee'>
-                                    <i class='icon-caret-right'></i>
-                                    <span>新增员工</span>
-                                </a>
-                            </li>
-                            <li class=''>
-                                <a href='/selectEmployeeDO'><!--链接到标签对应的html页面-->
-                                    <i class='icon-caret-right'></i>
-                                    <span>修改员工信息</span>
-                                </a>
-                            </li>
-                            <li class=''>
-                                <a href='/selectEmployeeDO'><!--链接到标签对应的html页面-->
-                                    <i class='icon-caret-right'></i>
-                                    <span>删除员工</span>
-                                </a>
-                            </li>
-                        </ul>
-                    </li>
-                    <!--员工管理-->
+<div id='wrapper'>
+    <div id='main-nav-bg'></div>
+    <nav class='' id='main-nav'>
+        <div class='navigation'>
+            <!--左侧导航栏-->
+            <ul class='nav nav-stacked'>
+                <!--组织结构维护-->
+                <li class=''>
+                    <a class='dropdown-collapse' href='#'>
+                        <i class='icon-edit'></i>
+                        <span>组织结构维护</span>
+                        <i class='icon-angle-down angle-down'></i>
+                    </a>
+                    <ul class='nav nav-stacked'>
+                        <li class=''>
+                            <a href='/zijingwang/StructManageDO'><!--链接到标签对应的html页面-->
+                                <i class='icon-caret-right'></i>
+                                <span>查询部门</span>
+                            </a>
+                        </li>
+                        <li class=''>
+                            <a href='/zijingwang/AddStruct'>
+                                <i class='icon-caret-right'></i>
+                                <span>新增部门</span>
+                            </a>
+                        </li>
+                        <li class=''>
+                            <a href='/zijingwang/StructManageDO'><!--链接到标签对应的html页面-->
+                                <i class='icon-caret-right'></i>
+                                <span>修改部门信息</span>
+                            </a>
+                        </li>
+                        <li class=''>
+                            <a href='/zijingwang/StructManageDO'><!--链接到标签对应的html页面-->
+                                <i class='icon-caret-right'></i>
+                                <span>删除部门</span>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <!--组织结构维护-->
+                <!--员工管理-->
+                <li class=''>
+                    <a class='dropdown-collapse' href='#'>
+                        <i class='icon-edit'></i>
+                        <span>员工管理</span>
+                        <i class='icon-angle-down angle-down'></i>
+                    </a>
+                    <ul class='nav nav-stacked'>
+                        <li class=''>
+                            <a href='/zijingwang/selectEmployeeDO'><!--链接到标签对应的html页面-->
+                                <i class='icon-caret-right'></i>
+                                <span>查询员工</span>
+                            </a>
+                        </li>
+                        <li class=''>
+                            <a href='/zijingwang/AddEmployee'>
+                                <i class='icon-caret-right'></i>
+                                <span>新增员工</span>
+                            </a>
+                        </li>
+                        <li class=''>
+                            <a href='/zijingwang/selectEmployeeDO'><!--链接到标签对应的html页面-->
+                                <i class='icon-caret-right'></i>
+                                <span>修改员工信息</span>
+                            </a>
+                        </li>
+                        <li class=''>
+                            <a href='/zijingwang/selectEmployeeDO'><!--链接到标签对应的html页面-->
+                                <i class='icon-caret-right'></i>
+                                <span>删除员工</span>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <!--员工管理-->
 
-                    <!--会员等级管理-->
-                    <li class=''>
-                        <a class='dropdown-collapse' href='#'>
-                            <i class='icon-edit'></i>
-                            <span>会员等级管理</span>
-                            <i class='icon-angle-down angle-down'></i>
-                        </a>
-                        <ul class='nav nav-stacked'>
-                            <li class=''>
-                                <a href='/VipLevelSearch'><!--链接到标签对应的html页面-->
-                                    <i class='icon-caret-right'></i>
-                                    <span>会员等级查询</span>
-                                </a>
-                            </li>
-                            <li class=''>
-                                <a href='/VipListDO'><!--链接到标签对应的html页面-->
-                                    <i class='icon-caret-right'></i>
-                                    <span>会员等级修改</span>
-                                </a>
-                            </li>
-                        </ul>
-                    </li>
-                    <!--会员等级管理-->
-
-
-                    <!--售票时间管理-->
-                    <li class=''>
-                        <a class='dropdown-collapse' href='#'>
-                            <i class='icon-edit'></i>
-                            <span>售票时间管理</span>
-                            <i class='icon-angle-down angle-down'></i>
-                        </a>
-                        <ul class='nav nav-stacked'>
-                            <li class=''>
-                                <a href='/TicketTimeManageDO'><!--链接到标签对应的html页面-->
-                                    <i class='icon-caret-right'></i>
-                                    <span>查询售票时间</span>
-                                </a>
-                            </li>
-                            <li class=''>
-                                <a href='/TicketTimeManageDO'><!--链接到标签对应的html页面-->
-                                    <i class='icon-caret-right'></i>
-                                    <span>修改售票时间</span>
-                                </a>
-                            </li>
-                        </ul>
-                    </li>
-                    <!--售票时间管理-->
+                <!--会员等级管理-->
+                <li class=''>
+                    <a class='dropdown-collapse' href='#'>
+                        <i class='icon-edit'></i>
+                        <span>会员等级管理</span>
+                        <i class='icon-angle-down angle-down'></i>
+                    </a>
+                    <ul class='nav nav-stacked'>
+                        <li class=''>
+                            <a href='/zijingwang/VipLevelSearch'><!--链接到标签对应的html页面-->
+                                <i class='icon-caret-right'></i>
+                                <span>会员等级查询</span>
+                            </a>
+                        </li>
+                        <li class=''>
+                            <a href='/zijingwang/VipListDO'><!--链接到标签对应的html页面-->
+                                <i class='icon-caret-right'></i>
+                                <span>会员等级修改</span>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <!--会员等级管理-->
 
 
-                    <!--用户管理-->
-                    <li class=''>
-                        <a class='dropdown-collapse' href='#'>
-                            <i class='icon-edit'></i>
-                            <span>用户管理</span>
-                            <i class='icon-angle-down angle-down'></i>
-                        </a>
-                        <ul class='nav nav-stacked'>
-                            <li class=''>
-                                <a href='/AddUser'><!--链接到标签对应的html页面-->
-                                    <i class='icon-caret-right'></i>
-                                    <span>添加用户</span>
-                                </a>
-                            </li>
-                            <li class=''>
-                                <a href='/UserListDO'><!--链接到标签对应的html页面-->
-                                    <i class='icon-caret-right'></i>
-                                    <span>删除用户</span>
-                                </a>
-                            </li>
-                            <li class=''>
-                                <a href='/UserList.do'><!--链接到标签对应的html页面-->
-                                    <i class='icon-caret-right'></i>
-                                    <span>修改用户资料</span>
-                                </a>
-                            </li>
-                            <li class=''>
-                                <a href='/ResetPassword'><!--链接到标签对应的html页面-->
-                                    <i class='icon-caret-right'></i>
-                                    <span>重置密码</span>
-                                </a>
-                            </li>
-                        </ul>
-                    </li>
-                    <!--用户管理-->
+                <!--售票时间管理-->
+                <li class=''>
+                    <a class='dropdown-collapse' href='#'>
+                        <i class='icon-edit'></i>
+                        <span>售票时间管理</span>
+                        <i class='icon-angle-down angle-down'></i>
+                    </a>
+                    <ul class='nav nav-stacked'>
+                        <li class=''>
+                            <a href='/zijingwang/TicketTimeManageDO'><!--链接到标签对应的html页面-->
+                                <i class='icon-caret-right'></i>
+                                <span>查询售票时间</span>
+                            </a>
+                        </li>
+                        <li class=''>
+                            <a href='/zijingwang/TicketTimeManageDO'><!--链接到标签对应的html页面-->
+                                <i class='icon-caret-right'></i>
+                                <span>修改售票时间</span>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <!--售票时间管理-->
 
-                    <!--用户查询及统计-->
+
+                <!--用户管理-->
+                <li class=''>
+                    <a class='dropdown-collapse' href='#'>
+                        <i class='icon-edit'></i>
+                        <span>用户管理</span>
+                        <i class='icon-angle-down angle-down'></i>
+                    </a>
+                    <ul class='nav nav-stacked'>
+                        <li class=''>
+                            <a href='/zijingwang/AddUser'><!--链接到标签对应的html页面-->
+                                <i class='icon-caret-right'></i>
+                                <span>添加用户</span>
+                            </a>
+                        </li>
+                        <li class=''>
+                            <a href='/zijingwang/UserListDO'><!--链接到标签对应的html页面-->
+                                <i class='icon-caret-right'></i>
+                                <span>删除用户</span>
+                            </a>
+                        </li>
+                        <li class=''>
+                            <a href='/zijingwang/UserList.do'><!--链接到标签对应的html页面-->
+                                <i class='icon-caret-right'></i>
+                                <span>修改用户资料</span>
+                            </a>
+                        </li>
+                        <li class=''>
+                            <a href='/zijingwang/ResetPassword'><!--链接到标签对应的html页面-->
+                                <i class='icon-caret-right'></i>
+                                <span>重置密码</span>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <!--用户管理-->
 
 
 
 
-                </ul>
-            </div>
-        </nav>
+
+            </ul>
+        </div>
+    </nav>
     <!--核心显示区-->
     <section id='content'>
         <%--自适应屏幕--%>
@@ -335,7 +334,7 @@
                             <div class='page-header'>
                                 <h1 class='pull-left'>
                                     <i class='icon-edit'></i>
-                                    员工管理
+                                    修改员工资料
                                 </h1>
                             </div>
                             <!--第一部分-->
@@ -349,56 +348,61 @@
                                             <a href="#" class="btn box-collapse btn-mini btn-link"><i></i></a>
                                         </div>
                                     </div>
+                                    <%
+                                        Employee employee = (Employee) request.getAttribute("employee");
+                                    %>
                                     <div class='box-content'>
-                                        <strong>请填写员工信息</strong>
-                                        <div class='box-content'>
-                                            <form accept-charset="UTF-8" action="/AddEmployeeDO" class="form form-horizontal" method="get" style="margin-bottom: 0;" >
-                                                <div class='control-group'>
+                                        <form accept-charset="UTF-8" action="/EmployeeDetailUpdateDO" class="form form-horizontal" method="get" style="margin-bottom: 0;" >
+                                            <div class='control-group'>
+                                                <div class="controls">
+                                                    <input value="${employee.userid}"  type="hidden" name="id"/><br>
+                                                </div>
+                                            </div>
+                                            <div class='control-group'>
                                                 <label class="control-label">员工姓名：</label>
-                                                    <div class="controls">
-                                                        <input type="text" name="name"/><br>
-                                                    </div>
+                                                <div class="controls">
+                                                    <input value="${employee.username}" type="text" name="name"/><br>
                                                 </div>
-                                                <div class='control-group'>
-                                                    <label class="control-label">员工年龄：</label>
-                                                    <div class="controls">
-                                                        <input type="text" name="age"/><br>
-                                                    </div>
+                                            </div>
+                                            <div class='control-group'>
+                                                <label class="control-label">员工年龄：</label>
+                                                <div class="controls">
+                                                    <input value="${employee.age}" type="text" name="age"/><br>
                                                 </div>
-                                                <div class='control-group'>
-                                                    <label class="control-label">员工性别：</label>
-                                                    <div class="controls">
-                                                        <select id = "gender">
-                                                            <option>male</option>
-                                                            <option>female</option>
-                                                        </select><br>
-                                                    </div>
+                                            </div>
+                                            <div class='control-group'>
+                                                <label class="control-label">员工性别：</label>
+                                                <div class="controls">
+                                                    <select value="${employee.gender}" name = "gender">
+                                                        <option>male</option>
+                                                        <option>female</option>
+                                                    </select><br>
                                                 </div>
-                                                <div class='control-group'>
-                                                    <label class="control-label">员工职称：</label>
-                                                    <div class="controls">
-                                                        <input type="text" name="title"/><br>
-                                                    </div>
+                                            </div>
+                                            <div class='control-group'>
+                                                <label class="control-label">员工职称：</label>
+                                                <div class="controls">
+                                                    <input value="${employee.title}" type="text" name="title"/><br>
                                                 </div>
-                                                <div class='control-group'>
-                                                    <label class="control-label">所属部门：</label>
-                                                    <div class="controls">
-                                                        <input type="text" name="department"/><br>
-                                                    </div>
                                                 </div>
-                                                <div class='control-group'>
-                                                    <label class="control-label">部门领导：</label>
-                                                    <div class="controls">
-                                                        <input type="text" name="leader"/><br>
-                                                    </div>
+                                            <div class='control-group'>
+                                                <label class="control-label">所属部门：</label>
+                                                <div class="controls">
+                                                    <input value="${employee.department}" type="text" name="department"/><br>
                                                 </div>
-                                                <div class='form-actions'>
-                                                    <button class='btn btn-primary' type='submit'>
-                                                        <i class='icon-save'> 提交</i>
-                                                    </button>
+                                            </div>
+                                            <div class='control-group'>
+                                                <label class="control-label">部门领导：</label>
+                                                <div class="controls">
+                                                    <input value="${employee.leader}" type="text" name="leader"/><br>
                                                 </div>
-                                            </form>
-                                        </div>
+                                            </div>
+                                            <div class='form-actions'>
+                                                <button class='btn btn-primary' type='submit'>
+                                                    <i class='icon-save'> 提交</i>
+                                                </button>
+                                            </div>
+                                        </form>
                                     </div>
                                 </div>
                             </div>
@@ -411,7 +415,7 @@
 
 
 
-    </div>
+</div>
 
 <!-- / jquery -->
 <script src=' assets/javascripts/jquery/jquery.min.js' type='text/javascript'></script>
