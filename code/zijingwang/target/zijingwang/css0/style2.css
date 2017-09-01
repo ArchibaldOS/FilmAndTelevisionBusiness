@@ -1,0 +1,94 @@
+body{
+    padding:0;
+    margin:0;
+    font-family: 'Hind Vadodara', sans-serif;
+    background:#fff;
+    position:relative;
+}
+h1,h2,h3,h4,h5,h6{
+    margin:0;
+    font-family: 'Exo 2', sans-serif;
+}
+
+ul{
+     margin:10px;
+     padding:0;
+ }
+.cl-effect-1 a::before,
+.cl-effect-1 a::after {
+    display: inline-block;
+    opacity: 0;
+    -webkit-transition: -webkit-transform 0.3s, opacity 0.2s;
+    -moz-transition: -moz-transform 0.3s, opacity 0.2s;
+    transition: transform 0.3s, opacity 0.2s;
+}
+
+.cl-effect-1 a::before {
+    margin-right: 10px;
+    content: '[';
+    -webkit-transform: translateX(20px);
+    -moz-transform: translateX(20px);
+    transform: translateX(20px);
+}
+.cl-effect-1 a::after {
+    margin-left: 10px;
+    content: ']';
+    /*-- w3layouts --*/
+    -webkit-transform: translateX(-20px);
+    -moz-transform: translateX(-20px);
+    transform: translateX(-20px);
+}
+.cl-effect-1 a:hover::before,
+.cl-effect-1 a:hover::after,
+.cl-effect-1 a:focus::before,
+.cl-effect-1 a:focus::after,.navbar-nav li.active a::before,.navbar-nav li.active a::after,
+.navbar-nav li.active a:focus::before,
+.navbar-nav li.active a:focus::after{
+    opacity: 1;
+    -webkit-transform: translateX(0px);
+    -moz-transform: translateX(0px);
+    transform: translateX(0px);
+}
+/*-- //nav-effect --*/
+.navbar-default {
+    background: none;
+    border: none;
+}
+.navbar-nav {
+    float:right;
+    padding-right: 200px;
+}
+.navbar-default .navbar-brand,.navbar-default .navbar-brand:hover, .navbar-default .navbar-brand:focus {
+    color: #111;
+    padding: 11px 0px !important;
+}
+.navbar-brand {
+    font-size: 1em;
+}
+.navbar-default .navbar-nav > li > a {
+    color: #111;
+}
+/*-- agileits --*/
+.navbar-brand span {
+    transform: rotate(-180deg);
+    -webkit-transform: rotate(-180deg);
+    -moz-transform: rotate(-180deg);
+    -o-transform: rotate(-180deg);
+    -ms-transform: rotate(-180deg);
+    display: inline-block;
+    color: #22e27d;
+}
+.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
+    background: none;
+    color:#22e27d;
+}
+.navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
+     color:#22e27d;
+ }
+
+.header-bottom {
+    position: relative;
+    padding: 1em 0;
+}
+
+

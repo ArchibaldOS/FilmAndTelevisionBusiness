@@ -38,7 +38,7 @@ public class BackLoginController {
 
         for (Admin admin:admins){
             if (username.equals(admin.getAdminusername()) && password.equals(admin.getAdminpassword())){
-                return "redirect:/index";
+                return "redirect:/backIndex";
             }
         }
         return "redirect:/AdminLogin";

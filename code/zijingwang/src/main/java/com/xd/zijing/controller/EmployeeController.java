@@ -28,7 +28,7 @@ public class EmployeeController {
         return "chy/BackSite/AddEmployee";
     }
 
-    @RequestMapping(value = "/AddEmployeeDO",method = {RequestMethod.GET})
+    @RequestMapping(value = "/AddEmployeeDO")
     public String addEmployee(HttpServletRequest request){
         Employee employee = new Employee();
 

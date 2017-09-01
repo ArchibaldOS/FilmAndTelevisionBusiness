@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.xd.zijing.mapper.HallDao">
+
+    <resultMap id="hallMap" type="Hall">
+        <id property="hallId" column="hallId"/>
+        <result property="hallName" column="hallName"/>
+        <association property="cinema" javaType="Cinema">
+            <id property="cinemaName" column="cinemaName"/>
+        </association>
+    </resultMap>
+
+    <select id="findAll" resultMap="hallMap" parameterType="int">
+        select
+            hallId,hallName,cinemaName
+        from
+            sys_hall
+        order by hallId
+        limit #{offset},#{size}
+    </select>
+
+    <select id="count" resultType="int">
+        select
+            count(1)
+        from
+            sys_hall
+    </select>
+
+    <delete id="deleteById" parameterType="int">
+        delete
+        from
+            sys_hall
+        where
+            hallId=#{hallId}
+    </delete>
+
+    <select id="queryHallById" parameterType="int" resultMap="hallMap">
+        select hallId,hallName,cinemaName
+        from sys_hall
+        where hallId=#{hallId}
+    </select>
+
+    <update id="updateHall" parameterType="Hall">
+        update
+          sys_hall
+        set
+          hallName=#{hallName},
+          cinemaName=#{cinema.cinemaName}
+        where hallId=#{hallId}
+    </update>
+
+    <insert id="addHall" parameterType="Hall">
+        insert into
+           sys_hall(hallName,cinemaName)
+        values
+           (#{hallName},#{cinema.cinemaName})
+    </insert>
+</mapper>

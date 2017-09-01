@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.xd.zijing.mapper.CommentDao">
+
+    <select id="findAll" resultType="Comment" parameterType="int">
+        select
+            id,nickname,name,review
+        from
+            review
+        order by id
+        limit #{offset},#{size}
+    </select>
+
+    <select id="count" resultType="int">
+        select
+            count(1)
+        from
+            review
+    </select>
+
+    <delete id="deleteById" parameterType="int">
+        delete
+        from
+            review
+        where
+            id=#{id}
+    </delete>
+
+    <select id="queryById" parameterType="int" resultType="Comment">
+        select
+            id,nickname,name,review
+        from review
+        where id=#{id}
+    </select>
+
+</mapper>
