@@ -28,7 +28,7 @@ public class StructController {
         return "AddStruct";
     }
 
-    @RequestMapping(value = "/AddStruct.do",method = {RequestMethod.GET})
+    @RequestMapping(value = "/AddStructDO",method = {RequestMethod.GET})
     public String addStruct(HttpServletRequest request){
         Struct struct = new Struct();
         List<Struct> structs = structManage.selectAllStruct(0,5);
@@ -49,7 +49,7 @@ public class StructController {
         }
 
         structManage.insertStruct(struct);
-        return "redirect:/StructManage.do";
+        return "redirect:/StructManageDO";
     }
 
     @RequestMapping("/StructManage")
@@ -57,7 +57,7 @@ public class StructController {
         return "StructManage";
     }
 
-    @RequestMapping(value = "/StructManage.do")
+    @RequestMapping(value = "/StructManageDO")
     public String StructManage( HttpSession session){
         List<Struct> structs = structManage.selectAllStruct(0,5);
         session.setAttribute("structs",structs);
@@ -69,7 +69,7 @@ public class StructController {
         return "StructDetail";
     }
 
-    @RequestMapping(value = "/StructDetail.do")
+    @RequestMapping(value = "/StructDetailDO")
     public String StructDetail(HttpServletRequest request){
         Struct struct = structManage.selectStructById(Long.parseLong(request.getParameter("departmentID")));
         request.setAttribute("struct",struct);
@@ -84,7 +84,7 @@ public class StructController {
     }
 
 
-    @RequestMapping(value = "/StructDetailUpdate.do")
+    @RequestMapping(value = "/StructDetailUpdateDO")
     public String StructDetailUpdate(HttpServletRequest request){
 
         Struct struct = structManage.selectStructById(Long.parseLong(request.getParameter("departmentID")));
@@ -108,13 +108,13 @@ public class StructController {
 
 
         structManage.updateStruct(struct);
-        return "redirect:/StructManage.do";
+        return "redirect:/StructManageDO";
     }
 
-    @RequestMapping(value = "/StructDetailDelete.do",method = {RequestMethod.GET})
+    @RequestMapping(value = "/StructDetailDeleteDO",method = {RequestMethod.GET})
     public String deleteStruct(HttpServletRequest request){
         structManage.deleteStruct(Long.parseLong(request.getParameter("departmentID")));
-        return "redirect:/StructManage.do";
+        return "redirect:/StructManageDO";
     }
 
 }

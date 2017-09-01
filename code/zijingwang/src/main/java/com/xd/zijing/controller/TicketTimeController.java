@@ -41,21 +41,21 @@ public class TicketTimeController {
     }
 
 
-    @RequestMapping(value = "/TicketTimeManage.do")
+    @RequestMapping(value = "/TicketTimeManageDO")
     public String TicketTimeManage( HttpSession session){
         List<Screening> screenings = screeningManage.selectAllScreening(0,11);
         session.setAttribute("screenings",screenings);
         return "redirect:/TicketTimeManage";
     }
 
-    @RequestMapping(value = "/MovieDetail.do")
+    @RequestMapping(value = "/MovieDetailDO")
     public String MovieDetail(HttpServletRequest request){
         Screening screening = screeningManage.selectScreeningById(Integer.valueOf(request.getParameter("screeningnumber")));
         request.setAttribute("screening",screening);
         return "/MovieDetail";
     }
 
-    @RequestMapping(value = "/TicketTimeUpdate.do")
+    @RequestMapping(value = "/TicketTimeUpdateDO")
     public String TicketTimeUpdate(HttpServletRequest request){
         Screening screening = screeningManage.selectScreeningById(Integer.valueOf(request.getParameter("screeningnumber")));
         DateFormat df = new SimpleDateFormat("yyyy-MM-dd");//日期格式可以在这里改
@@ -72,13 +72,13 @@ public class TicketTimeController {
 
         System.out.println(time);
         screeningManage.updateScreening(screening);
-        return "redirect:/TicketTimeManage.do";
+        return "redirect:/TicketTimeManageDO";
     }
 //// TODO: 8/31/2017
-    @RequestMapping(value = "/TicketTimeDelete.do",method = {RequestMethod.GET})
+    @RequestMapping(value = "/TicketTimeDeleteDO",method = {RequestMethod.GET})
     public String TicketTimeDelete(HttpServletRequest request){
         screeningManage.deleteScreening(Long.parseLong(request.getParameter("id")));
-        return "redirect:/TicketTimeManage.do";
+        return "redirect:/TicketTimeManageDO";
     }
 
 }

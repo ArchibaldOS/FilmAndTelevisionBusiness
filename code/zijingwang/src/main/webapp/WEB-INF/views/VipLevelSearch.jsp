@@ -166,7 +166,7 @@
                     </a>
                     <ul class='nav nav-stacked'>
                         <li class=''>
-                            <a href='/StructManage.do'><!--链接到标签对应的html页面-->
+                            <a href='/StructManageDO'><!--链接到标签对应的html页面-->
                                 <i class='icon-caret-right'></i>
                                 <span>查询部门</span>
                             </a>
@@ -178,13 +178,13 @@
                             </a>
                         </li>
                         <li class=''>
-                            <a href='/StructManage.do'><!--链接到标签对应的html页面-->
+                            <a href='/StructManageDO'><!--链接到标签对应的html页面-->
                                 <i class='icon-caret-right'></i>
                                 <span>修改部门信息</span>
                             </a>
                         </li>
                         <li class=''>
-                            <a href='/StructManage.do'><!--链接到标签对应的html页面-->
+                            <a href='/StructManageDO'><!--链接到标签对应的html页面-->
                                 <i class='icon-caret-right'></i>
                                 <span>删除部门</span>
                             </a>
@@ -201,7 +201,7 @@
                     </a>
                     <ul class='nav nav-stacked'>
                         <li class=''>
-                            <a href='/selectEmployee.do'><!--链接到标签对应的html页面-->
+                            <a href='/selectEmployeeDO'><!--链接到标签对应的html页面-->
                                 <i class='icon-caret-right'></i>
                                 <span>查询员工</span>
                             </a>
@@ -213,13 +213,13 @@
                             </a>
                         </li>
                         <li class=''>
-                            <a href='/selectEmployee.do'><!--链接到标签对应的html页面-->
+                            <a href='/selectEmployeeDO'><!--链接到标签对应的html页面-->
                                 <i class='icon-caret-right'></i>
                                 <span>修改员工信息</span>
                             </a>
                         </li>
                         <li class=''>
-                            <a href='/selectEmployee.do'><!--链接到标签对应的html页面-->
+                            <a href='/selectEmployeeDO'><!--链接到标签对应的html页面-->
                                 <i class='icon-caret-right'></i>
                                 <span>删除员工</span>
                             </a>
@@ -243,7 +243,7 @@
                             </a>
                         </li>
                         <li class=''>
-                            <a href='/VipList.do'><!--链接到标签对应的html页面-->
+                            <a href='/VipListDO'><!--链接到标签对应的html页面-->
                                 <i class='icon-caret-right'></i>
                                 <span>会员等级修改</span>
                             </a>
@@ -262,13 +262,13 @@
                     </a>
                     <ul class='nav nav-stacked'>
                         <li class=''>
-                            <a href='/TicketTimeManage.do'><!--链接到标签对应的html页面-->
+                            <a href='/TicketTimeManageDO'><!--链接到标签对应的html页面-->
                                 <i class='icon-caret-right'></i>
                                 <span>查询售票时间</span>
                             </a>
                         </li>
                         <li class=''>
-                            <a href='/TicketTimeManage.do'><!--链接到标签对应的html页面-->
+                            <a href='/TicketTimeManageDO'><!--链接到标签对应的html页面-->
                                 <i class='icon-caret-right'></i>
                                 <span>修改售票时间</span>
                             </a>
@@ -293,7 +293,7 @@
                             </a>
                         </li>
                         <li class=''>
-                            <a href='/UserList.do'><!--链接到标签对应的html页面-->
+                            <a href='/UserListDO'><!--链接到标签对应的html页面-->
                                 <i class='icon-caret-right'></i>
                                 <span>删除用户</span>
                             </a>
@@ -338,7 +338,7 @@
                         </div>
                     </div>
                     <!--第一部分-->
-                    <form accept-charset="UTF-8" action="/VipSearchResult.do" class="form form-horizontal" method="post" style="margin-bottom: 0;" >
+                    <form accept-charset="UTF-8" action="/VipSearchResultDO" class="form form-horizontal" method="post" style="margin-bottom: 0;" >
                          <div class='control-group'>
                             <label class='control-label' for='inputSelect'>影院</label>
                             <div class='controls'>

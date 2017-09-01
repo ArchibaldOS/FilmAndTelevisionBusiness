@@ -28,7 +28,7 @@ public class EmployeeController {
         return "AddEmployee";
     }
 
-    @RequestMapping(value = "/AddEmployee.do",method = {RequestMethod.GET})
+    @RequestMapping(value = "/AddEmployeeDO",method = {RequestMethod.GET})
     public String addEmployee(HttpServletRequest request){
         Employee employee = new Employee();
 
@@ -52,7 +52,7 @@ public class EmployeeController {
         return "EmployeeManage";
     }
 
-    @RequestMapping(value = "/selectEmployee.do")
+    @RequestMapping(value = "/selectEmployeeDO")
     public String selectEmployee( HttpSession session){
         List<Employee> employees = employeeManage.selectAllEmployee(0,5);
         session.setAttribute("employees",employees);
@@ -69,7 +69,7 @@ public class EmployeeController {
 
 
 
-    @RequestMapping(value = "/EmployeeDetailUpdate.do",method = {RequestMethod.GET})
+    @RequestMapping(value = "/EmployeeDetailUpdateDO",method = {RequestMethod.GET})
     public String updateEmployee(HttpServletRequest request){
         Employee employee = employeeManage.selectEmployeeById(Long.parseLong(request.getParameter("id")));
 
@@ -81,14 +81,14 @@ public class EmployeeController {
         employee.setLeader(request.getParameter("leader"));
 
         employeeManage.updateEmployee(employee);
-        return "redirect:/selectEmployee.do";
+        return "redirect:/selectEmployeeDO";
     }
 
 
-    @RequestMapping(value = "/deleteEmployee.do",method = {RequestMethod.GET})
+    @RequestMapping(value = "/deleteEmployeeDO",method = {RequestMethod.GET})
     public String deleteEmployee(HttpServletRequest request){
         employeeManage.deleteEmployee(Long.parseLong(request.getParameter("userid")));
-        return "redirect:/selectEmployee.do";
+        return "redirect:/selectEmployeeDO";
     }
 
 }

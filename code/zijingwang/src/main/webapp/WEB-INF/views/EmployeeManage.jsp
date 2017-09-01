@@ -173,7 +173,7 @@
                         </a>
                         <ul class='nav nav-stacked'>
                             <li class=''>
-                                <a href='/StructManage.do'><!--链接到标签对应的html页面-->
+                                <a href='/StructManageDO'><!--链接到标签对应的html页面-->
                                     <i class='icon-caret-right'></i>
                                     <span>查询部门</span>
                                 </a>
@@ -185,13 +185,13 @@
                                 </a>
                             </li>
                             <li class=''>
-                                <a href='/StructManage.do'><!--链接到标签对应的html页面-->
+                                <a href='/StructManageDO'><!--链接到标签对应的html页面-->
                                     <i class='icon-caret-right'></i>
                                     <span>修改部门信息</span>
                                 </a>
                             </li>
                             <li class=''>
-                                <a href='/StructManage.do'><!--链接到标签对应的html页面-->
+                                <a href='/StructManageDO'><!--链接到标签对应的html页面-->
                                     <i class='icon-caret-right'></i>
                                     <span>删除部门</span>
                                 </a>
@@ -208,7 +208,7 @@
                         </a>
                         <ul class='nav nav-stacked'>
                             <li class=''>
-                                <a href='/selectEmployee.do'><!--链接到标签对应的html页面-->
+                                <a href='/selectEmployeeDO'><!--链接到标签对应的html页面-->
                                     <i class='icon-caret-right'></i>
                                     <span>查询员工</span>
                                 </a>
@@ -220,13 +220,13 @@
                                 </a>
                             </li>
                             <li class=''>
-                                <a href='/selectEmployee.do'><!--链接到标签对应的html页面-->
+                                <a href='/selectEmployeeDO'><!--链接到标签对应的html页面-->
                                     <i class='icon-caret-right'></i>
                                     <span>修改员工信息</span>
                                 </a>
                             </li>
                             <li class=''>
-                                <a href='/selectEmployee.do'><!--链接到标签对应的html页面-->
+                                <a href='/selectEmployeeDO'><!--链接到标签对应的html页面-->
                                     <i class='icon-caret-right'></i>
                                     <span>删除员工</span>
                                 </a>
@@ -250,7 +250,7 @@
                                 </a>
                             </li>
                             <li class=''>
-                                <a href='/VipList.do'><!--链接到标签对应的html页面-->
+                                <a href='/VipListDO'><!--链接到标签对应的html页面-->
                                     <i class='icon-caret-right'></i>
                                     <span>会员等级修改</span>
                                 </a>
@@ -269,13 +269,13 @@
                         </a>
                         <ul class='nav nav-stacked'>
                             <li class=''>
-                                <a href='/TicketTimeManage.do'><!--链接到标签对应的html页面-->
+                                <a href='/TicketTimeManageDO'><!--链接到标签对应的html页面-->
                                     <i class='icon-caret-right'></i>
                                     <span>查询售票时间</span>
                                 </a>
                             </li>
                             <li class=''>
-                                <a href='/TicketTimeManage.do'><!--链接到标签对应的html页面-->
+                                <a href='/TicketTimeManageDO'><!--链接到标签对应的html页面-->
                                     <i class='icon-caret-right'></i>
                                     <span>修改售票时间</span>
                                 </a>
@@ -300,7 +300,7 @@
                                 </a>
                             </li>
                             <li class=''>
-                                <a href='/UserList.do'><!--链接到标签对应的html页面-->
+                                <a href='/UserListDO'><!--链接到标签对应的html页面-->
                                     <i class='icon-caret-right'></i>
                                     <span>删除用户</span>
                                 </a>
@@ -423,7 +423,7 @@
                                                     <td><c:out value="${employee.department}"></c:out></td>
                                                     <td><c:out value="${employee.leader}"></c:out></td>
                                                     <td><button id="update" class="btn btn-warning" name="button" style="margin-bottom:5px" type="submit" onclick="location='/EmployeeDetailUpdate?userid=${employee.userid}'">修改</button></td>
-                                                    <td><button id="delete" class="btn btn-danger" name="button" style="margin-bottom:5px" type="submit" onclick="location='/deleteEmployee.do?userid=${employee.userid}'">删除</button></td>
+                                                    <td><button id="delete" class="btn btn-danger" name="button" style="margin-bottom:5px" type="submit" onclick="location='/deleteEmployeeDO?userid=${employee.userid}'">删除</button></td>
                                                 </tr>
                                             </c:forEach>
 

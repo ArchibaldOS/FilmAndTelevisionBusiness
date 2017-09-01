@@ -24,7 +24,7 @@ public class BackLoginController {
     public String login (){
         return "AdminLogin";
     }
-    @RequestMapping(value = "/AdminLogin.do")
+    @RequestMapping(value = "/AdminLoginDO")
     public String Login (HttpServletRequest request){
 
         List<Admin> admins = adminManage.selectAllAdmin(0,5);

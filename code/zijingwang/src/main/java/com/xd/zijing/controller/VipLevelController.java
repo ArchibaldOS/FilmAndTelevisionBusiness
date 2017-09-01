@@ -30,7 +30,7 @@ public class VipLevelController {
         return "VipList";
     }
 
-    @RequestMapping(value = "/VipList.do")
+    @RequestMapping(value = "/VipListDO")
     public String selectStruct( HttpSession session){
         List<Vip> vips = vipManage.selectAllVip(0,11);
         session.setAttribute("vips",vips);
@@ -42,7 +42,7 @@ public class VipLevelController {
         return "VipSearchResult";
     }
 
-    @RequestMapping("/VipSearchResult.do")
+    @RequestMapping("/VipSearchResultDO")
     public String VipSearchResult(HttpServletRequest request,HttpSession session){
         List<Vip> vips = vipManage.selectAllVip(0,11);
         String viplevel = request.getParameter("vipLevel");

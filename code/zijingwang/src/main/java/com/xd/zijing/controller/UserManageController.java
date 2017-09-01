@@ -33,14 +33,14 @@ public class UserManageController {
         return "UserList";
     }
 
-    @RequestMapping(value = "/UserList.do")
+    @RequestMapping(value = "/UserListDO")
     public String selectUser(HttpSession session){
         List<Vip> vips = vipManage.selectAllVip(0,11);
         session.setAttribute("vips",vips);
         return "redirect:/UserList";
     }
 
-    @RequestMapping(value = "/UserDetail.do")
+    @RequestMapping(value = "/UserDetailDO")
     public String UserDetail(HttpServletRequest request){
         Vip vip = vipManage.selectVipById(Integer.valueOf(request.getParameter("vipid")));
         request.setAttribute("vip",vip);
@@ -55,7 +55,7 @@ public class UserManageController {
         return "UserDetail";
     }
 
-    @RequestMapping("/AddUser.do")
+    @RequestMapping("/AddUserDO")
     public String AddUser(HttpServletRequest request){
         Vip vip = new Vip();
         vip.setVipusername(request.getParameter("u_username"));
@@ -69,7 +69,7 @@ public class UserManageController {
         return "redirect:/AddUser";
     }
 
-    @RequestMapping(value = "/UserDetailUpdate.do")
+    @RequestMapping(value = "/UserDetailUpdateDO")
     public String UserDetailUpdate(HttpServletRequest request){
         Vip vip = vipManage.selectVipById(Integer.valueOf(request.getParameter("u_vip")));
         vip.setVipusername(request.getParameter("u_username"));
@@ -79,7 +79,7 @@ public class UserManageController {
 //        vip.setVipbirthday(request.getParameter("u_birthday"));
         vip.setViptelephone(request.getParameter("u_telephone"));
         vipManage.updateVip(vip);
-        return "redirect:/UserList.do";
+        return "redirect:/UserListDO";
     }
     @RequestMapping("/UserDetailUpdate")
     public String userDetailUpdate(HttpServletRequest request){
@@ -100,7 +100,7 @@ public class UserManageController {
     }
 
 
-    @RequestMapping("/ResetPassword.do")
+    @RequestMapping("/ResetPasswordDO")
     public String ResetPassword(HttpServletRequest request){
         Vip vip = vipManage.selectVipById(Integer.valueOf(request.getParameter("userID")));
         String oldPassword = request.getParameter("oldPassword");
@@ -120,10 +120,10 @@ public class UserManageController {
         }
     }
 
-    @RequestMapping(value = "/DeleteUser.do",method = {RequestMethod.GET})
+    @RequestMapping(value = "/DeleteUserDO",method = {RequestMethod.GET})
     public String DeleteUser(HttpServletRequest request){
         vipManage.deleteVip(Long.parseLong(request.getParameter("vipid")));
-        return "redirect:/UserList.do";
+        return "redirect:/UserListDO";
     }
 
 

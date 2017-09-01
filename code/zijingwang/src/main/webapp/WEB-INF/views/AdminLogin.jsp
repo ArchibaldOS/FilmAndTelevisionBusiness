@@ -18,7 +18,7 @@
         <p>www.zijingwang.com</p>
     </div>
 
-    <form action="/AdminLogin.do" method="post" id="loginForm">
+    <form action="/AdminLoginDO" method="post" id="loginForm">
         <div>
             <input type="text" name="vipUsername" class="username" placeholder="用户名"
                    autocomplete="off"/>
