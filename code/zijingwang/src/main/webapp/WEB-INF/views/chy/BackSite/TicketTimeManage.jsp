@@ -401,9 +401,9 @@
                                                         <td><c:out value="${screening.filmname}"></c:out></td>
                                                         <td><c:out value="${screening.hallname}"></c:out></td>
                                                         <td><c:out value="${screening.saletime}"></c:out></td>
-                                                        <td><button class="btn btn-success" name="button" style="margin-bottom:5px" type="submit" onclick="location='/MovieDetailDO?screeningnumber=${screening.screeningnumber}'">查看</button></td>
-                                                        <td><button class="btn btn-warning" name="button" style="margin-bottom:5px" type="submit" onclick="location='/TicketTimeUpdate?screeningnumber=${screening.screeningnumber}'">修改</button></td>
-                                                        <td><button class="btn btn-danger" name="button" style="margin-bottom:5px" type="submit" onclick="location='/TicketTimeDeleteDO?screeningnumber=${screening.screeningnumber}'">删除</button></td>
+                                                        <td><button class="btn btn-success" name="button" style="margin-bottom:5px" type="submit" onclick="location='/zijingwang/MovieDetailDO?screeningnumber=${screening.screeningnumber}'">查看</button></td>
+                                                        <td><button class="btn btn-warning" name="button" style="margin-bottom:5px" type="submit" onclick="location='/zijingwang/TicketTimeUpdate?screeningnumber=${screening.screeningnumber}'">修改</button></td>
+                                                        <td><button class="btn btn-danger" name="button" style="margin-bottom:5px" type="submit" onclick="location='/zijingwang/TicketTimeDeleteDO?screeningnumber=${screening.screeningnumber}'">删除</button></td>
                                                     </tr>
                                                 </c:forEach>
                                             </tbody>

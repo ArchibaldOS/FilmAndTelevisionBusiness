@@ -401,7 +401,7 @@
                                                     <td><c:out value="${vip.vipbalance}"></c:out></td>
                                                     <td><c:out value="${vip.viptotal}"></c:out></td>
                                                     <td><c:out value="${vip.viprank}"></c:out></td>
-                                                    <td><button class="btn btn-warning" name="button" style="margin-bottom:5px" type="submit" onclick="location='/UserDetailUpdate?vipid=${vip.vipid}'">修改</button></td>
+                                                    <td><button class="btn btn-warning" name="button" style="margin-bottom:5px" type="submit" onclick="location='/zijingwang/UserDetailUpdate?vipid=${vip.vipid}'">修改</button></td>
                                                     <td><button class="btn btn-danger" name="button" style="margin-bottom:5px" type="submit">删除</button></td>
                                                 </tr>
                                             </c:forEach>

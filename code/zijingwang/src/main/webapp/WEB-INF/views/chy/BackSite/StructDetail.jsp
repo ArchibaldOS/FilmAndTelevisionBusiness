@@ -404,7 +404,7 @@
 
                             <!--保存重置-->
                             <div class='form-actions'>
-                                <button class='btn btn-primary' type='submit'onclick="location='/StructDetailUpdate?departmentID=${struct.departmentID}'">
+                                <button class='btn btn-primary' type='submit'onclick="location='/zijingwang/StructDetailUpdate?departmentID=${struct.departmentID}'">
                                     <i class='icon-save'></i>
                                     修改
                                 </button>

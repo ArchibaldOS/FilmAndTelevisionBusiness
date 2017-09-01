@@ -422,8 +422,8 @@
                                                     <td><c:out value="${employee.title}"></c:out></td>
                                                     <td><c:out value="${employee.department}"></c:out></td>
                                                     <td><c:out value="${employee.leader}"></c:out></td>
-                                                    <td><button id="update" class="btn btn-warning" name="button" style="margin-bottom:5px" type="submit" onclick="location='/EmployeeDetailUpdate?userid=${employee.userid}'">修改</button></td>
-                                                    <td><button id="delete" class="btn btn-danger" name="button" style="margin-bottom:5px" type="submit" onclick="location='/deleteEmployeeDO?userid=${employee.userid}'">删除</button></td>
+                                                    <td><button id="update" class="btn btn-warning" name="button" style="margin-bottom:5px" type="submit" onclick="location='/zijingwang/EmployeeDetailUpdate?userid=${employee.userid}'">修改</button></td>
+                                                    <td><button id="delete" class="btn btn-danger" name="button" style="margin-bottom:5px" type="submit" onclick="location='/zijingwang/deleteEmployeeDO?userid=${employee.userid}'">删除</button></td>
                                                 </tr>
                                             </c:forEach>
 

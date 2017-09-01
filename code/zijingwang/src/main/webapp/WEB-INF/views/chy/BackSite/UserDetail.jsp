@@ -418,7 +418,7 @@
                                     <i class='icon-save'></i>
                                     修改
                                 </button>
-                                <button class='btn' onclick="location='/UserListDO'">返回</button>
+                                <button class='btn' onclick="location='/zijingwang/UserListDO'">返回</button>
                             </div>
                             <!--保存重置-->
                         </form>
