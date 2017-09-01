@@ -246,11 +246,7 @@
                     <!--页面内标签-->
                     <div class='row-fluid'>
                     		<c:set var="a" value="${requestScope.article }" />
-                            <form accept-charset="UTF-8" action="#" class="form form-horizontal" method="post" style="margin-bottom: 0;" />
-                            <div style="margin:0;padding:0;display:inline">
-                                <input name="utf8" type="hidden" value="&#x2713;" />
-                                <input name="authenticity_token" type="hidden" value="CFC7d00LWKQsSahRqsfD+e/mHLqbaVIXBvlBGe/KP+I=" />
-                            </div>
+                            <form accept-charset="UTF-8" class="form form-horizontal" style="margin-bottom: 0;" >
                             <div class='control-group'>
                                 <label class='control-label' for='inputText1'><b>标题</b></label>
                                 <div class='controls' style="margin-top: 5px;">
@@ -276,10 +272,11 @@
                                 	${a.articleContent }
                                 </div>
                             </div>
-							<div class='form-actions'>
-                                    <button class='btn' type='submit' onclick="javascript:history.go(-1)">返回</button>
+                           </form>
+							<div class='form-actions' style="margin-left: 140px;">
+                                    <button class='btn'  onclick="javascript:history.go(-1)">返回</button>
                                 </div>
-                        </form>
+                                 
                 </div>
                 <!--页面内标签-->
 <hr class='hr-double' />
