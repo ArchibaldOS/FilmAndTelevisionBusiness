@@ -27,6 +27,13 @@ public class InfomationController {
 		return "ylds/FilmInfo";
 	}
 	
+	@RequestMapping(value="/skip1",method=RequestMethod.GET)
+	public String skip1(){
+		return "ylds/hotmovie";
+	}
+
+
+	
 	
 	@RequestMapping(value="/redirect", method=RequestMethod.POST)
 	public String search(String name,Model model){
@@ -46,7 +53,7 @@ public class InfomationController {
 		List<Information> informations=searchService.get(id);
 			model.addAttribute("pic",informations.get(0).getPost());
 			model.addAttribute("infos",informations);
-			return "ylds/detail";
+			return "ylds/link";
 	}
 	
 	@RequestMapping(value="/review/{name}", method=RequestMethod.GET)
@@ -58,11 +65,19 @@ public class InfomationController {
 	
 	@RequestMapping(value="/insert", method=RequestMethod.POST)
 		public String insert( String nickname,String name, String review,Model model){
-		searchService.insert(nickname, name, review);
-		List<Filmreview> informations=searchService.review(name);
-		model.addAttribute("name",informations);
-		return "ylds/FilmReview";
+		List<Information> infos = searchService.search(name);
+		if(infos.size()>0)
+		{	
+			System.out.println(searchService.search(name));
+			searchService.insert(nickname, name, review);
+			List<Filmreview> informations=searchService.review(name);
+			model.addAttribute("name",informations);
+			return "ylds/FilmReview";
+		}
+		else {
+			return "ylds/error";
        }
+	}
 //	@RequestMapping(value="/FilmReviewAction", method=RequestMethod.POST)
 //	public String reviewAction(Model model,String name){
 //		Filmreview filmreview =searchService.review(name);
