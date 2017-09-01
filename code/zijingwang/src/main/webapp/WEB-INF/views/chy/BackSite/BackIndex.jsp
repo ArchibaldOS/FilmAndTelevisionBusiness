@@ -320,11 +320,7 @@
         </div>
     </nav>
         <section id='content'>
-            <div class='container-fluid'>
-                <div class='row-fluid' id='content-wrapper'>
-                    <img src=" assets/images/avatar.jpg">
-                </div>
-            </div>
+
         </section>
     </div>
 <!-- / jquery -->
