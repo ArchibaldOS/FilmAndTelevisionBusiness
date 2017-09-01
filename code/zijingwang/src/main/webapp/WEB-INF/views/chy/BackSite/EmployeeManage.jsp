@@ -306,7 +306,7 @@
                                 </a>
                             </li>
                             <li class=''>
-                                <a href='/zijingwang/UserList.do'><!--链接到标签对应的html页面-->
+                                <a href='/zijingwang/UserListDO'><!--链接到标签对应的html页面-->
                                     <i class='icon-caret-right'></i>
                                     <span>修改用户资料</span>
                                 </a>
@@ -453,7 +453,7 @@
     <%--<script>--%>
         <%--document.getElementById("delete").onclick = function () {--%>
             <%--var request = new XMLHttpRequest();--%>
-            <%--request.open("GET","/deleteEmployee.do?id=" + document.getElementById("id").value);--%>
+            <%--request.open("GET","/deleteEmployeeDO?id=" + document.getElementById("id").value);--%>
             <%--request.send();--%>
             <%--request.onreadystatechange = function () {--%>
                 <%--if(request.readyState === 4){--%>
