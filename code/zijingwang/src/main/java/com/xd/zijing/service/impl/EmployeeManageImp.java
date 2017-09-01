@@ -1,8 +1,8 @@
-package com.six.FilmAndTelevisionBusiness.service.impl;
+package com.xd.zijing.service.impl;
 
-import com.six.FilmAndTelevisionBusiness.entity.Employee;
-import com.six.FilmAndTelevisionBusiness.mapper.EmployeeMapper;
-import com.six.FilmAndTelevisionBusiness.service.EmployeeManage;
+import com.xd.zijing.entity.Employee;
+import com.xd.zijing.mapper.EmployeeMapper;
+import com.xd.zijing.service.EmployeeManage;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -64,7 +64,7 @@ public class EmployeeManageImp implements EmployeeManage {
          *
          * @Description: 通过ID查找一个Employee
          * @Param: [id]
-         * @Return: com.six.FilmAndTelevisionBusiness.entity.Employee
+         * @Return: Employee
          */
 
         return employeeMapper.selectByPrimaryKey(id);
@@ -76,7 +76,7 @@ public class EmployeeManageImp implements EmployeeManage {
          *
          * @Description: 查找offset后的所有Employee的信息，每页显示size个
          * @Param: [offset：起始ID值, size：每页显示数]
-         * @Return: java.util.List<com.six.FilmAndTelevisionBusiness.entity.Employee>
+         * @Return: java.util.List<Employee>
          */
         List<Employee> employees = employeeMapper.selectAll(offset, size);
         return employees;

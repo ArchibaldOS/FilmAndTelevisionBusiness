@@ -1,4 +1,4 @@
-package com.six.FilmAndTelevisionBusiness.entity;
+package com.xd.zijing.entity;
 
 import java.util.Date;
 

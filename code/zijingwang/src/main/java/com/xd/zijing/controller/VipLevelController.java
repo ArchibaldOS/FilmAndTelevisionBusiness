@@ -1,13 +1,12 @@
-package com.six.FilmAndTelevisionBusiness.controller;
+package com.xd.zijing.controller;
 
-import com.six.FilmAndTelevisionBusiness.entity.Vip;
-import com.six.FilmAndTelevisionBusiness.service.VipManage;
+import com.xd.zijing.entity.Vip;
+import com.xd.zijing.service.VipManage;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 import javax.servlet.http.HttpServletRequest;
-import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 import java.util.Iterator;
 import java.util.List;

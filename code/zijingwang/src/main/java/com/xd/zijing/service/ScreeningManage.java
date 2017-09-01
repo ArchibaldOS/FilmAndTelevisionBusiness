@@ -1,6 +1,6 @@
-package com.six.FilmAndTelevisionBusiness.service;
+package com.xd.zijing.service;
 
-import com.six.FilmAndTelevisionBusiness.entity.Screening;
+import com.xd.zijing.entity.Screening;
 
 import java.util.List;
 
@@ -47,7 +47,7 @@ public interface ScreeningManage {
      *
      * @Description: 通过ID查找一个Screening
      * @Param: [id]
-     * @Return: com.six.FilmAndTelevisionBusiness.entity.Screening
+     * @Return: Screening
      */
 
     List<Screening> selectAllScreening(int offset, int size);
@@ -57,7 +57,7 @@ public interface ScreeningManage {
      *
      * @Description: 查找offset后的所有Screening的信息，每页显示size个
      * @Param: [offset：起始ID值, size：每页显示数]
-     * @Return: java.util.List<com.six.FilmAndTelevisionBusiness.entity.Screening>
+     * @Return: java.util.List<Screening>
      */
 
 }

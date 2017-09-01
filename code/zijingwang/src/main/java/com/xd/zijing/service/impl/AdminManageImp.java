@@ -1,8 +1,8 @@
-package com.six.FilmAndTelevisionBusiness.service.impl;
+package com.xd.zijing.service.impl;
 
-import com.six.FilmAndTelevisionBusiness.entity.Admin;
-import com.six.FilmAndTelevisionBusiness.mapper.AdminMapper;
-import com.six.FilmAndTelevisionBusiness.service.AdminManage;
+import com.xd.zijing.entity.Admin;
+import com.xd.zijing.mapper.AdminMapper;
+import com.xd.zijing.service.AdminManage;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -64,7 +64,7 @@ public class AdminManageImp implements AdminManage{
          *
          * @Description: 通过ID查找一个Admin
          * @Param: [id]
-         * @Return: com.six.FilmAndTelevisionBusiness.entity.Admin
+         * @Return: Admin
          */
 
         return adminMapper.selectByPrimaryKey((int) id);
@@ -76,7 +76,7 @@ public class AdminManageImp implements AdminManage{
          *
          * @Description: 查找offset后的所有Admin的信息，每页显示size个
          * @Param: [offset：起始ID值, size：每页显示数]
-         * @Return: java.util.List<com.six.FilmAndTelevisionBusiness.entity.Admin>
+         * @Return: java.util.List<Admin>
          */
         List<Admin> admins = adminMapper.selectAll(offset, size);
         return admins;

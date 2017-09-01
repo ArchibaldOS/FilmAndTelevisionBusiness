@@ -1,8 +1,8 @@
-package com.six.FilmAndTelevisionBusiness.service.impl;
+package com.xd.zijing.service.impl;
 
-import com.six.FilmAndTelevisionBusiness.entity.Struct;
-import com.six.FilmAndTelevisionBusiness.mapper.StructMapper;
-import com.six.FilmAndTelevisionBusiness.service.StructManage;
+import com.xd.zijing.entity.Struct;
+import com.xd.zijing.mapper.StructMapper;
+import com.xd.zijing.service.StructManage;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -65,7 +65,7 @@ public class StructManageImp implements StructManage{
          *
          * @Description: 通过ID查找一个Struct
          * @Param: [id]
-         * @Return: com.six.FilmAndTelevisionBusiness.entity.Struct
+         * @Return: Struct
          */
 
         return structMapper.selectByPrimaryKey((int) id);
@@ -77,7 +77,7 @@ public class StructManageImp implements StructManage{
          *
          * @Description: 查找offset后的所有Struct的信息，每页显示size个
          * @Param: [offset：起始ID值, size：每页显示数]
-         * @Return: java.util.List<com.six.FilmAndTelevisionBusiness.entity.Struct>
+         * @Return: java.util.List<Struct>
          */
         List<Struct>structs = structMapper.selectAll(offset, size);
         return structs;

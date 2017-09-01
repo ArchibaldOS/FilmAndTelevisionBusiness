@@ -1,7 +1,8 @@
-package com.six.FilmAndTelevisionBusiness.mapper;
+package com.xd.zijing.mapper;
 
-import com.six.FilmAndTelevisionBusiness.entity.Vip;
+import com.xd.zijing.entity.Vip;
 import java.util.List;
+
 import org.apache.ibatis.annotations.Param;
 
 public interface VipMapper {

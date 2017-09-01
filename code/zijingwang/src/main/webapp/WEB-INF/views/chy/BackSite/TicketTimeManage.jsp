@@ -1,5 +1,5 @@
 <%@ page import="java.util.List" %>
-<%@ page import="com.six.FilmAndTelevisionBusiness.entity.Screening" %>
+<%@ page import="com.xd.zijing.entity.Screening" %>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 <%@ page isELIgnored="false"%>

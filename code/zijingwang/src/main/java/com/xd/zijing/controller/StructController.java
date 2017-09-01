@@ -1,14 +1,13 @@
-package com.six.FilmAndTelevisionBusiness.controller;
+package com.xd.zijing.controller;
 
-import com.six.FilmAndTelevisionBusiness.entity.Struct;
-import com.six.FilmAndTelevisionBusiness.service.StructManage;
+import com.xd.zijing.entity.Struct;
+import com.xd.zijing.service.StructManage;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
 import javax.servlet.http.HttpServletRequest;
-import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 import java.util.List;
 

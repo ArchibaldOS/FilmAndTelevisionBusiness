@@ -1,6 +1,6 @@
-package com.six.FilmAndTelevisionBusiness.service;
+package com.xd.zijing.service;
 
-import com.six.FilmAndTelevisionBusiness.entity.Admin;
+import com.xd.zijing.entity.Admin;
 
 import java.util.List;
 
@@ -47,7 +47,7 @@ public interface AdminManage {
      *
      * @Description: 通过ID查找一个Admin
      * @Param: [id]
-     * @Return: com.six.FilmAndTelevisionBusiness.entity.Admin
+     * @Return: Admin
      */
 
     List<Admin> selectAllAdmin(int offset, int size);/**
@@ -56,7 +56,7 @@ public interface AdminManage {
      *
      * @Description: 查找offset后的所有Admin的信息，每页显示size个
      * @Param: [offset：起始ID值, size：每页显示数]
-     * @Return: java.util.List<com.six.FilmAndTelevisionBusiness.entity.Admin>
+     * @Return: java.util.List<Admin>
      */
 
 }

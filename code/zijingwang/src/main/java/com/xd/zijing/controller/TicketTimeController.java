@@ -1,19 +1,15 @@
-package com.six.FilmAndTelevisionBusiness.controller;
+package com.xd.zijing.controller;
 
-import com.six.FilmAndTelevisionBusiness.entity.Screening;
-import com.six.FilmAndTelevisionBusiness.service.ScreeningManage;
+import com.xd.zijing.entity.Screening;
+import com.xd.zijing.service.ScreeningManage;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
-import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
 import javax.servlet.http.HttpServletRequest;
-import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
-import java.sql.Date;
 import java.text.DateFormat;
-import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.List;
 

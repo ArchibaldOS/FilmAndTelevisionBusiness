@@ -1,6 +1,6 @@
-package com.six.FilmAndTelevisionBusiness.mapper;
+package com.xd.zijing.mapper;
 
-import com.six.FilmAndTelevisionBusiness.entity.Screening;
+import com.xd.zijing.entity.Screening;
 
 import java.util.List;
 import org.apache.ibatis.annotations.Param;

@@ -1,7 +1,7 @@
-package com.six.FilmAndTelevisionBusiness.controller;
+package com.xd.zijing.controller;
 
-import com.six.FilmAndTelevisionBusiness.entity.Admin;
-import com.six.FilmAndTelevisionBusiness.service.AdminManage;
+import com.xd.zijing.entity.Admin;
+import com.xd.zijing.service.AdminManage;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;

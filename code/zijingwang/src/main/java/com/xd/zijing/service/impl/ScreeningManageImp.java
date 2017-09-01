@@ -1,8 +1,8 @@
-package com.six.FilmAndTelevisionBusiness.service.impl;
+package com.xd.zijing.service.impl;
 
-import com.six.FilmAndTelevisionBusiness.entity.Screening;
-import com.six.FilmAndTelevisionBusiness.mapper.ScreeningMapper;
-import com.six.FilmAndTelevisionBusiness.service.ScreeningManage;
+import com.xd.zijing.entity.Screening;
+import com.xd.zijing.mapper.ScreeningMapper;
+import com.xd.zijing.service.ScreeningManage;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
