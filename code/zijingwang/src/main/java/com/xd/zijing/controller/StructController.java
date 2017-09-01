@@ -74,7 +74,7 @@ public class StructController {
         Struct struct = structManage.selectStructById(Long.parseLong(request.getParameter("departmentID")));
         request.setAttribute("struct",struct);
 
-        return "redirect:/StructDetail";
+        return "chy/BackSite/StructDetail";
     }
     @RequestMapping("/StructDetailUpdate")
     public String structDetailUpdate(HttpServletRequest request) {

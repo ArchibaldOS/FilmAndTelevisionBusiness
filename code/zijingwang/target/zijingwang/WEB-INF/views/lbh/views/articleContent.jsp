@@ -108,7 +108,7 @@
             <div class="collapse navbar-collapse nav-wil" id="bs-example-navbar-collapse-1">
                 <nav class="cl-effect-1" id="cl-effect-1">
                     <ul class="nav navbar-nav">
-                        <li><a href="index.html" class="scroll">首&nbsp;&nbsp;&nbsp;&nbsp;页</a></li>
+                        <li><a href="/zijingwang" class="scroll">首&nbsp;&nbsp;&nbsp;&nbsp;页</a></li>
                         <li><a href="#about" class="hvr-bounce-to-bottom scroll">正在上映</a></li>
                         <li><a href="#services" class="hvr-bounce-to-bottom scroll">选座购票</a></li>
                         <li class="active"><a href="/zijingwang/article" class="hvr-bounce-to-bottom scroll">影视资讯</a></li>
