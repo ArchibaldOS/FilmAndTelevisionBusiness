@@ -45,7 +45,7 @@ public class TicketTimeController {
     public String TicketTimeManage( HttpSession session){
         List<Screening> screenings = screeningManage.selectAllScreening(0,11);
         session.setAttribute("screenings",screenings);
-        return "chy/BackSite/redirect:/TicketTimeManage";
+        return "redirect:/TicketTimeManage";
     }
 
     @RequestMapping(value = "/MovieDetailDO")
@@ -72,13 +72,13 @@ public class TicketTimeController {
 
         System.out.println(time);
         screeningManage.updateScreening(screening);
-        return "chy/BackSite/redirect:/TicketTimeManageDO";
+        return "redirect:/TicketTimeManageDO";
     }
 //// TODO: 8/31/2017
     @RequestMapping(value = "/TicketTimeDeleteDO",method = {RequestMethod.GET})
     public String TicketTimeDelete(HttpServletRequest request){
         screeningManage.deleteScreening(Long.parseLong(request.getParameter("id")));
-        return "chy/BackSite/redirect:/TicketTimeManageDO";
+        return "redirect:/TicketTimeManageDO";
     }
 
 }

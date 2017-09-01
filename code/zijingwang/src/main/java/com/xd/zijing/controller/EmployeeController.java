@@ -56,7 +56,7 @@ public class EmployeeController {
     public String selectEmployee( HttpSession session){
         List<Employee> employees = employeeManage.selectAllEmployee(0,5);
         session.setAttribute("employees",employees);
-        return "chy/BackSite/redirect:/EmployeeManage";
+        return "redirect:/EmployeeManage";
     }
 
     @RequestMapping("/EmployeeDetailUpdate")
@@ -81,14 +81,14 @@ public class EmployeeController {
         employee.setLeader(request.getParameter("leader"));
 
         employeeManage.updateEmployee(employee);
-        return "chy/BackSite/redirect:/selectEmployeeDO";
+        return "redirect:/selectEmployeeDO";
     }
 
 
     @RequestMapping(value = "/deleteEmployeeDO",method = {RequestMethod.GET})
     public String deleteEmployee(HttpServletRequest request){
         employeeManage.deleteEmployee(Long.parseLong(request.getParameter("userid")));
-        return "chy/BackSite/redirect:/selectEmployeeDO";
+        return "redirect:/selectEmployeeDO";
     }
 
 }

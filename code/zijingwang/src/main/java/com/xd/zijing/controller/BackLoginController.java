@@ -38,10 +38,10 @@ public class BackLoginController {
 
         for (Admin admin:admins){
             if (username.equals(admin.getAdminusername()) && password.equals(admin.getAdminpassword())){
-                return "chy/BackSite/redirect:/index";
+                return "redirect:/index";
             }
         }
-        return "chy/BackSite/redirect:/AdminLogin";
+        return "redirect:/AdminLogin";
     }
 
     @RequestMapping(value = "/UserStatistics")

@@ -34,7 +34,7 @@ public class VipLevelController {
     public String selectStruct( HttpSession session){
         List<Vip> vips = vipManage.selectAllVip(0,11);
         session.setAttribute("vips",vips);
-        return "chy/BackSite/redirect:/VipList";
+        return "redirect:/VipList";
     }
 
     @RequestMapping("/VipSearchResult")
@@ -56,6 +56,6 @@ public class VipLevelController {
             }
         }
         session.setAttribute("vips",vips);
-        return "chy/BackSite/redirect:VipSearchResult";
+        return "redirect:VipSearchResult";
     }
 }

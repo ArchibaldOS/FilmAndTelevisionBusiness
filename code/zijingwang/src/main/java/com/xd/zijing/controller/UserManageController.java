@@ -37,7 +37,7 @@ public class UserManageController {
     public String selectUser(HttpSession session){
         List<Vip> vips = vipManage.selectAllVip(0,11);
         session.setAttribute("vips",vips);
-        return "chy/BackSite/redirect:/UserList";
+        return "redirect:/UserList";
     }
 
     @RequestMapping(value = "/UserDetailDO")
@@ -66,7 +66,7 @@ public class UserManageController {
         vip.setViptelephone(request.getParameter("u_telephone"));
         vip.setVipregisterdate(new Date());
         vipManage.insertVip(vip);
-        return "chy/BackSite/redirect:/AddUser";
+        return "redirect:/AddUser";
     }
 
     @RequestMapping(value = "/UserDetailUpdateDO")
@@ -79,7 +79,7 @@ public class UserManageController {
 //        vip.setVipbirthday(request.getParameter("u_birthday"));
         vip.setViptelephone(request.getParameter("u_telephone"));
         vipManage.updateVip(vip);
-        return "chy/BackSite/redirect:/UserListDO";
+        return "redirect:/UserListDO";
     }
     @RequestMapping("/UserDetailUpdate")
     public String userDetailUpdate(HttpServletRequest request){
@@ -123,7 +123,7 @@ public class UserManageController {
     @RequestMapping(value = "/DeleteUserDO",method = {RequestMethod.GET})
     public String DeleteUser(HttpServletRequest request){
         vipManage.deleteVip(Long.parseLong(request.getParameter("vipid")));
-        return "chy/BackSite/redirect:/UserListDO";
+        return "redirect:/UserListDO";
     }
 
 

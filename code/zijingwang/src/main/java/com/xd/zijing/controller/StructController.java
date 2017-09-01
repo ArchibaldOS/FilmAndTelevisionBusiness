@@ -49,7 +49,7 @@ public class StructController {
         }
 
         structManage.insertStruct(struct);
-        return "chy/BackSite/redirect:/StructManageDO";
+        return "redirect:/StructManageDO";
     }
 
     @RequestMapping("/StructManage")
@@ -61,7 +61,7 @@ public class StructController {
     public String StructManage( HttpSession session){
         List<Struct> structs = structManage.selectAllStruct(0,5);
         session.setAttribute("structs",structs);
-        return "chy/BackSite/redirect:/StructManage";
+        return "redirect:/StructManage";
     }
 
     @RequestMapping("/StructDetail")
@@ -108,13 +108,13 @@ public class StructController {
 
 
         structManage.updateStruct(struct);
-        return "chy/BackSite/redirect:/StructManageDO";
+        return "redirect:/StructManageDO";
     }
 
     @RequestMapping(value = "/StructDetailDeleteDO",method = {RequestMethod.GET})
     public String deleteStruct(HttpServletRequest request){
         structManage.deleteStruct(Long.parseLong(request.getParameter("departmentID")));
-        return "chy/BackSite/redirect:/StructManageDO";
+        return "redirect:/StructManageDO";
     }
 
 }
