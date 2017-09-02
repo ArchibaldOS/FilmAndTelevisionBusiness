@@ -4,7 +4,9 @@ import java.io.UnsupportedEncodingException;
 import java.util.List;
 
 import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpSession;
 
+import com.xd.zijing.entity.*;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -15,10 +17,6 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.servlet.ModelAndView;
 
 import com.xd.zijing.dto.Page;
-import com.xd.zijing.entity.Cinema;
-import com.xd.zijing.entity.Order1;
-import com.xd.zijing.entity.Seating;
-import com.xd.zijing.entity.Timing;
 import com.xd.zijing.service.FilmInformationService;
 
 @Controller
@@ -121,13 +119,14 @@ public class InformationController {
 		return "dyk/seat";
 	}
 	@RequestMapping(value="/login1",method=RequestMethod.POST)
-	public  String get(String seat,String cinema,String filmHall,String filmName,String filmTime,String account)
+	public  String get(String seat,String cinema,String filmHall,String filmName,String filmTime,HttpSession session)
 	{
 		String cinema1=cinema;
 		String filmHall1=filmHall;
 		String filmName1=filmName;
 		String filmTime1=filmTime;
-        String account1=account;
+        VipData vipData= (VipData) session.getAttribute("vipData");
+        String account1=vipData.getVipName();
 		
 		System.out.println(cinema1);
 		System.out.println(filmHall1);

@@ -91,7 +91,6 @@
                     <ul class="nav navbar-nav">
                         <li ><a href="/zijingwang/" class="scroll">首&nbsp;&nbsp;&nbsp;&nbsp;页</a></li>
                         <li><a href="/zijingwang/hotmovie">正在上映</a></li>
-                        <li><a href="#services" class="hvr-bounce-to-bottom scroll">选座购票</a></li>
                         <li class="active"><a href="/zijingwang/article">影视资讯</a></li>
                         <li><a href="/zijingwang/wchUserlogin" >个人中心</a></li>
                         <li><a href="/zijingwang/message">用户留言</a></li>

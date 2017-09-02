@@ -234,7 +234,7 @@
         /*display: block;*/
         position: absolute;
         top: 90%;
-        left: 30%;
+        left: 22%;
         font-size: 25px;
         color: white;
         width: 60%;
@@ -246,7 +246,7 @@
         /*display: block;*/
         position: absolute;
         top: 90%;
-        left: 30%;
+        left: 22%;
         font-size: 25px;
         color: white;
         width: 60%;
@@ -258,7 +258,7 @@
         /*display: block;*/
         position: absolute;
         top: 90%;
-        left: 30%;
+        left: 22%;
         font-size: 25px;
         color: white;
         width: 60%;

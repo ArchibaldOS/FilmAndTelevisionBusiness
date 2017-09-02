@@ -26,7 +26,7 @@ public class RegisterController {
 		}catch(Exception e){
 			System.out.println("返回注册");
 			e.printStackTrace();
-			return "redirect:/Userregister.jsp";
+			return "redirect:/Userlogin.jsp";
 		}	
 	}
 

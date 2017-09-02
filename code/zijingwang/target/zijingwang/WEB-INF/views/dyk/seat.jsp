@@ -156,7 +156,6 @@
 							<input type="hidden" name="filmHall" value="${param.filmHall}">
 							<input type="hidden" name="filmName" value="${param.filmName}">
 							<input type="hidden" name="filmTime" value="${param.filmTime}">
-                            <input type="hidden" name="account" value="${ sessionScope.vipData.vipUsername}">
 							<input type="submit" value="确认提交" align=＂right＂
 								style="width: 100px; height: 40px;" />
 							<div class="notice">
