@@ -341,7 +341,7 @@
                     <!--页面内标签-->
                     <div class='row-fluid'>
                         <div class="tab-pane active" id="retab1"><!--p>学校用户列表</p-->
-                            <form accept-charset="UTF-8" action="#" class="form form-horizontal" method="post" style="margin-bottom: 0;" />
+                            <form accept-charset="UTF-8" action="/zijingwang/StructDetailUpdate" class="form form-horizontal" method="post" style="margin-bottom: 0;" >
                             <div style="margin:0;padding:0;display:inline">
                                 <input name="utf8" type="hidden" value="&#x2713;" />
                                 <input name="authenticity_token" type="hidden" value="CFC7d00LWKQsSahRqsfD+e/mHLqbaVIXBvlBGe/KP+I=" />
@@ -351,7 +351,7 @@
                             %>
                             <div class='control-group'>
                                 <div class='controls'>
-                                    <input id='inputText1' value="${struct.departmentid}" type='hidden' readonly/><!--修改name与数据库英文名称统一-->
+                                    <input id='inputText1' value="${struct.departmentid}"  name="departmentID" type='hidden' readonly/><!--修改name与数据库英文名称统一-->
                                 </div>
                             </div>
                             <div class='control-group'>
@@ -378,7 +378,7 @@
                                 <label class='control-label' for='inputText1'>是否是顶级部门</label>
                                 <div class='controls'>
                                     <c:choose>
-                                        <c:when test="${struct.istop == 1}">
+                                        <c:when test="${struct.istop eq 1}">
                                             <p>是</p>
                                         </c:when>
                                         <c:otherwise>
@@ -387,28 +387,28 @@
                                     </c:choose>
                                 </div>
                             </div>
-                            <c:choose>
-                                <c:when test="${struct.isTop == 1}">
-                                    <div class='control-group'>
-                                        <label class='control-label' for='inputText1'>上级部门ID</label>
-                                        <div class='controls'>
-                                            <input id='inputText1' value="${struct.higherdepartmentid}" type='text'  readonly/>
-                                        </div>
-                                    </div>
+                             <c:choose>
+                                <c:when test="${struct.istop eq 1}">
                                 </c:when>
-                                <c:otherwise>
-
+                                <c:otherwise>      
+                                <div class='control-group'>
+                                <label class='control-label' for='inputText1'>上级部门ID</label>
+                                <div class='controls'>
+                                    <input id='inputText1' value="${struct.higherdepartmentid}" type='text'  readonly/>
+                                </div>
+                           		 </div>
                                 </c:otherwise>
                             </c:choose>
+                           
                             <hr class='hr-normal' />
 
                             <!--保存重置-->
                             <div class='form-actions'>
-                                <button class='btn btn-primary' type='submit'onclick="location='/zijingwang/StructDetailUpdate?departmentID=${struct.departmentID}'">
+                                <button class='btn btn-primary' type='submit'>
                                     <i class='icon-save'></i>
-                                    修改
+                                    	修改
                                 </button>
-                                <button class='btn' type='submit'>返回</button>
+                                <button class='btn' type="button" onclick="location='/zijingwang/StructManageDO'">返回</button>
                             </div>
                             <!--保存重置-->
                             </form>

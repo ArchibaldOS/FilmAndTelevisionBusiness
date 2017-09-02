@@ -37,7 +37,7 @@ public class StructController {
         struct.setDepartmentname(request.getParameter("departmentName"));
         struct.setLeader(request.getParameter("leader"));
         String higherDepartment = request.getParameter("higherDepartment");
-        if (higherDepartment.equals("无")){
+        if ( higherDepartment.equals("") || higherDepartment.equals("无")){
             struct.setIstop(1);
         }else {
             struct.setIstop(0);
@@ -95,7 +95,7 @@ public class StructController {
         struct.setLeader(request.getParameter("leader"));
 
         String higherDepartment = request.getParameter("higherDepartment");
-        if (higherDepartment.equals("无") || higherDepartment == null){
+        if ( higherDepartment.equals("")|| higherDepartment.equals("无") ){
             struct.setIstop(1);
         }else {
             struct.setIstop(0);
