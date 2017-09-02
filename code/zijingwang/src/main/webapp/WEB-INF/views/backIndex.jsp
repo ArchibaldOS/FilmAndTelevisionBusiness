@@ -238,7 +238,8 @@
         font-size: 25px;
         color: white;
         width: 60%;
-        height: 10%;
+        height:
+            10%;
         font-family: sans-serif;
     }
 
