@@ -4,14 +4,14 @@
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.xd.zijing.mapper.CinemaDao">
 
-    <select id="queryCinemaInfo" resultType="Cinema">
+    <select id="queryCinemaInfo" resultType="Cinema1">
         select
             cinemaName,payOnline,address,telephone,introduction
         from
             sys_cinema
     </select>
 
-    <update id="updateCinema" parameterType="Cinema" >
+    <update id="updateCinema" parameterType="Cinema1" >
         update
             sys_cinema
         set

@@ -1,6 +1,6 @@
 package com.xd.zijing.controller;
 
-import com.xd.zijing.entity.Cinema;
+import com.xd.zijing.entity.Cinema1;
 import com.xd.zijing.service.CinemaService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -26,7 +26,7 @@ public class CinemaController {
     @RequestMapping(value = "/cinema/cinemaDetail", method = RequestMethod.GET)
     public String cinemaDetail(Model model) {
 
-        Cinema cinema = cinemaService.queryCinemaInfo();
+        Cinema1 cinema = cinemaService.queryCinemaInfo();
         model.addAttribute("cinema", cinema);
         return "lbq/fbms/cinemaDetail";
     }
@@ -34,14 +34,14 @@ public class CinemaController {
     @RequestMapping(value = "/cinema/cinemaDetailUpdate", method = RequestMethod.GET)
     public String cinemaDetailUpdate(Model model) {
 
-        Cinema cinema = cinemaService.queryCinemaInfo();
+        Cinema1 cinema = cinemaService.queryCinemaInfo();
         model.addAttribute("cinema", cinema);
         return "lbq/fbms/cinemaDetailUpdate";
     }
 
     @RequestMapping(value = "/cinema/cinemaUpdate", method = RequestMethod.POST)
-    public String cinemaUpdate(@ModelAttribute Cinema cinema){
+    public String cinemaUpdate(@ModelAttribute Cinema1 cinema){
         cinemaService.updateCinema(cinema);
-        return "lbq/fbms/cinemaDetail";
+        return "redirect:/cinema/cinemaDetail";
     }
 }

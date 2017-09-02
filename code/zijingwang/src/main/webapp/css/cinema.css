@@ -1,0 +1,432 @@
+/*--------------------------------middle宸�-----------------------------------*/
+.topbanner {
+	width: 1000px;
+	height: 90px;
+	margin-top: 5px;
+}
+
+.bodymain {
+	width: 1000px;
+	height: 1088px;
+	margin: -45px auto 0;
+	background: #fff;
+	border: 1px solid #eee;
+	padding-top: 20px;
+	border-bottom: none;
+}
+
+.lside {
+	width: 300px;
+	height: 100%;
+	border: 1px solid #eee;
+	border-top: none;
+	padding-left: 10px;
+	border-bottom: none;
+	box-shadow: 2px 2px 2px #ccc;
+}
+
+.poster {
+	width: 273px;
+	height: 500px;
+	border: 1px solid #aaa;
+	padding: 7px;
+	border-radius: 5px;
+}
+
+.poster a {
+	border: 1px solid #333;
+	border-radius: 3px;
+	overflow: hidden;
+	display: inline-block;
+}
+
+.poster span {
+	line-height: 30px;
+	font-size: 15px;
+}
+
+.morehot {
+	width: 100%;
+	height: 1000px;
+	margin-top: 30px;
+}
+
+.morehot .moreh {
+	font-size: 20px;
+	font-weight: bold;
+	margin-bottom: 20px;
+}
+
+.morehot .moremovie {
+	width: 100%;
+	height: 128px;
+	margin: 20px 0;
+}
+
+.morehot .moremovie a {
+	display: inline-block;
+}
+
+.morehot .moremovie .movieinfo {
+	width: 190px;
+	height: 100%;
+}
+
+.morehot .moremovie .movieinfo label {
+	font-size: 16px;
+}
+
+.morehot .moremovie .movieinfo label b {
+	width: 30px;
+	height: 20px;
+	display: inline-block;
+	background: #71A64E;
+	color: #fff;
+	margin: 0 0 20px 20px;
+	line-height: 20px;
+	text-align: center;
+}
+
+.morehot .moremovie .movieinfo p {
+	font-size: 13px;
+}
+
+.morehot .moremovie .movieinfo a, .morehot .moremovie .movieinfo span {
+	font-size: 16px;
+	color: #2FB2F2;
+}
+
+.morehot .moremovie .movieinfo a:hover {
+	text-decoration: underline;
+}
+
+/*----------------------------------middle鍙充笂---------------------------------*/
+.rside {
+	width: 666px;
+	height: 1020px;
+	padding-left: 20px;
+}
+
+.rside .filmname {
+	font-size: 38px;
+}
+
+.rside .filme {
+	font-size: 25px;
+	line-height: 40px;
+}
+
+.rside .filmdate {
+	width: 100%;
+	height: 100px;
+	border-bottom: 1px solid #eee;
+	margin-top: 10px;
+}
+
+.rside .filmdate .fdate {
+	width: 666px;
+	height: 45px;
+	background: #136D97;
+	overflow: hidden;
+	position: relative;
+	line-height: 45px;
+	padding-left: 20px;
+	margin-left: -20px;
+}
+
+.rside .filmdate .fdate ul {
+	overflow: hidden;
+	width: 1066px;
+	height: 100%;
+	margin-left: -160px;
+}
+
+.rside .filmdate .fdate ul li {
+	float: left;
+	width: 160px;
+	height: 100%;
+	font-size: 16px;
+	color: #fff;
+	text-align: center;
+	cursor: pointer;
+}
+
+.rside .filmdate .fdate ul li.dtp {
+	background: #fff;
+	color: #333;
+}
+
+.rside .filmdate .fdate #prevdays {
+	width: 26px;
+	height: 45px;
+	position: absolute;
+	left: 0;
+	top: 0;
+	background: #136D97;
+}
+
+.rside .filmdate .fdate #prevdays .prev {
+	width: 18px;
+	height: 24px;
+	margin: 10px 4px;
+	font-size: 16px;
+	line-height: 24px;
+	text-align: center;
+	color: #fff;
+	background: #004e61;
+	cursor: pointer;
+	border-radius: 3px 0 0 3px;
+}
+
+.rside .filmdate .fdate #nextdays {
+	width: 26px;
+	height: 45px;
+	position: absolute;
+	right: 0;
+	top: 0;
+	background: #136D97;
+}
+
+.rside .filmdate .fdate #nextdays .nextd {
+	width: 18px;
+	height: 24px;
+	margin: 10px 4px;
+	font-size: 16px;
+	line-height: 24px;
+	text-align: center;
+	color: #fff;
+	background: #004e61;
+	cursor: pointer;
+	border-radius: 0 3px 3px 0;
+}
+
+.rside .filmdate .fdate #prevdays .prev:hover, .rside .filmdate .fdate #nextdays .nextd:hover
+	{
+	background: #003C61;
+}
+
+.rside .filmdate .cinema {
+	width: 100%;
+	height: 50px;
+	line-height: 30px;
+}
+
+.subway {
+	width: 130px;
+	height: 30px;
+	margin-top: 15px;
+	display: inline-block;
+	border-right: 1px solid #aaa;
+	padding-left: 10px;
+	cursor: pointer;
+	position: relative;
+}
+
+.subwbor {
+	border: 1px solid #ccc;
+	border-radius: 3px 3px 0 0;
+	border-bottom: 1px solid #fff;
+}
+
+.subway i {
+	width: 0;
+	height: 0;
+	border-top: 6px solid #333;
+	border-left: 5px solid #fff;
+	border-right: 5px solid #fff;
+	border-bottom: 5px solid #fff;
+	margin: 13px;
+}
+/* 鍟嗗湀鍙婂湴閾佹部绾� ....................................................................................... */
+.blank3 {
+	width: 140px;
+	height: 2px;
+	position: absolute;
+	top: 29px;
+	left: 0px;
+	background: #fff;
+	z-index: 150;
+}
+
+.subwa {
+	width: 400px;
+	height: 140px;
+	display: none;
+	position: absolute;
+	top: 30px;
+	left: -1px;
+	border: 1px solid #ccc;
+	border-radius: 0 3px 3px;
+	background: #fff;
+	box-shadow: 1px 1px 1px #eee;
+}
+
+/*----------------------------------middle鍙充笅---------------------------------*/
+.subway1 {
+	display: inline-block;
+	width: 300px;
+	height: 30px;
+	border-right: 1px solid #aaa;
+	line-height: 30px;
+}
+
+.subway1 label {
+	margin-left: 15px;
+	vertical-align: middle;
+	cursor: pointer;
+}
+
+.searcnm {
+	width: 160px;
+	height: 30px;
+	border: 1px solid #aaa;
+	border-radius: 15px;
+	margin-top: 10px;
+	margin-right: 15px;
+	background: #f5f5f5;
+	box-shadow: 2px 2px 2px #aaa;
+}
+
+.searbox {
+	width: 100px;
+	background: transparent;
+	line-height: 30px;
+	border: none;
+	outline: medium;
+	margin-left: 20px;
+}
+
+.searbtn {
+	width: 30px;
+	height: 20px;
+	border: none;
+	background: transparent url(../img/topbar.png) -152px -109px no-repeat;
+	cursor: pointer;
+}
+
+.cinemalist {
+	width: 666px;
+	height: 100%;
+	font-size: 13px;
+}
+
+.cinemali {
+	width: 656;
+	height: 100px;
+	border-bottom: 1px solid #ccc;
+	padding-left: 10px;
+	padding-top: 30px;
+}
+
+.cinamea {
+	font-size: 25px;
+	color: #222;
+	cursor: pointer;
+}
+
+.alwgo {
+	display: inline-block;
+	line-height: 22px;
+	font-size: 12px;
+	width: 50px;
+	height: 22px;
+	background: url(../img/newfilm_ico.png) -106px 0 no-repeat;
+	color: #fff;
+	border-radius: 5px;
+	vertical-align: top;
+	padding-left: 23px;
+	display: none;
+	margin-left: 10px;
+}
+
+.cinamea:hover {
+	color: #2FB2F2;
+}
+
+.cicoin {
+	width: 22px;
+	height: 22px;
+	display: inline-block;
+	margin-left: 10px;
+	border-radius: 4px;
+	background: #68A042;
+	color: #fff;
+	text-align: center;
+}
+
+.cinemali p {
+	line-height: 40px;
+	width: 400px;
+}
+
+.cienable {
+	font-style: normal;
+	width: 480px;
+	height: 45px;
+	line-height: 22px;
+}
+
+.longcoin {
+	width: 50px;
+	height: 22px;
+	display: inline-block;
+	background: #68A042;
+	color: #fff;
+	text-align: center;
+	margin-left: 15px;
+	border-radius: 4px;
+}
+
+.coin-1, .coin-2, .coin-3, .coin-4 {
+	background: url(../img/infrastructure_icon.png) no-repeat;
+	vertical-align: bottom;
+}
+
+.coin-1 {
+	background-position: -5px -40px;
+}
+
+.coin-2 {
+	background-position: -75px -40px;
+}
+
+.coin-3 {
+	background-position: -40px -40px;
+}
+
+.coin-4 {
+	background-position: -110px -40px;
+}
+
+.cicheck {
+	width: 140px;
+	height: 80px;
+	text-align: center;
+	line-height: 40px;
+}
+
+.cicheck {
+	height: 40px;
+}
+
+.cicost {
+	color: #F77903;
+}
+
+.cicost b {
+	font-size: 30px;
+}
+
+.seatpick {
+	width: 130px;
+	height: 40px;
+	border-radius: 20px;
+	background: #0074A9;
+	color: #fff;
+	font-size: 16px;
+	cursor: pointer;
+}
+
+.seatpick:hover {
+	background: #004C7F;
+}

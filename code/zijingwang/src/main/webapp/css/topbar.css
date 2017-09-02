@@ -1,0 +1,130 @@
+
+html body{font: 12px/150% helvetica,"微软雅黑","microsoft  yahei",verdana,lucida,arial,sans-serif,"黑体";color:#333;}
+.fl{float: left;}.fr{float: right;}
+.clr{height: 0;clear: both;}
+/*----------------------------------------top左-----------------------------------------*/
+
+.header{width: 100%;height: 15px;position: relative;background: url(../img/logo.png) 0 8px no-repeat;}
+.toplogo{width: 210px;height: 50px;text-align:center;background: #fff;border-radius: 0 0 5px 5px;
+		 position: absolute;top: 0;left: 605px;padding-top: 15px;}
+.toplogo span{width:135px;height:43px;display:inline-block;background:#fff url(../img/logo.png) 0 -10px no-repeat;}
+.bodytop{width: 100%;height: 220px;background:-moz-linear-gradient(top,#004C7E,#fff); } /*#68A042;#136D97;#158216;#004C7E*/
+.bodypart{width: 1000px;height: 1000px;margin:0 auto;}
+.topbar{width: 100%;height: 50px;padding:19px 0 0;color:#fff;line-height: 29px;position: relative;}
+.topnav{width: 34px;height: 29px;font-size:12px;display:inline-block;border-radius:3px;
+		background: #fff url(../img/topbar.png) -133px -155px no-repeat;overflow: hidden;}
+.topnav0{width:34px;height: 10px;background: #fff;display: none; position: absolute;top:45px;left: 0;}
+.topnav:hover .topnav0{display: block;z-index: 100;}	
+.topindex{width: 120px;height: 305px;display:none;background: #fff;position: absolute;top:54px;left:0;border-radius:0 3px 3px ;z-index: 100;overflow: hidden;border: 1px solid #eee;border-top: none;}
+.topindex li{height: 50px;border-bottom: 1px solid #eee;padding-left: 20px;line-height: 50px}
+.topindex li .topina{font-size:14px;color:#333;}
+.topindex li:hover .topina{color:#127BAB}
+.topindex li:hover .topina .index-coin1{background-position: -216px -298px;}
+.topindex li:hover .topina .index-coin2{background-position: -268px -297px;}
+.topindex li:hover .topina .index-coin3{background-position: -319px -298px;}
+.topindex li:hover .topina .index-coin4{background-position: -474px -297px;}
+.topindex li:hover .topina .index-coin5{background-position: -370px -298px;}
+.topindex li:hover .topina .index-coin6{background-position: -421px -297px;}
+.topindex li .topina i{width: 30px;height: 20px;display: inline-block;vertical-align: middle;}
+.topindex .index-coin1{background: url(../img/topbar.png) -12px -298px no-repeat;}
+.topindex .index-coin2{background: url(../img/topbar.png) -64px -297px no-repeat;}
+.topindex .index-coin3{background: url(../img/topbar.png) -115px -298px no-repeat;}
+.topindex .index-coin4{background: url(../img/topbar.png) -474px -348px no-repeat;}
+.topindex .index-coin5{background: url(../img/topbar.png) -166px -298px no-repeat;}
+.topindex .index-coin6{background: url(../img/topbar.png) -421px -348px no-repeat;}
+.searcher{width: 300px;height: 28px;margin-left:5px;display: inline-block; font-size:12px;
+		  border: 1px solid #fff;border-radius: 3px;padding-left: 15px;}
+.searcher span{cursor: pointer;}
+.searcher i{width: 15px;height: 10px;display: inline-block;background: url(../img/topbar.png) -380px -360px no-repeat;}
+.searcher .searform{display: inline-block;width: 248px;height: 27px;}
+.searcher #sear{width: 190px;outline: medium;border: none;background-color:transparent;color:#fff;}
+.searcher .searbtn{width: 33px;height: 20px;margin-top:4px;cursor: pointer;display:inline-block;background: url(../img/topbar_01.png) 0 -2px no-repeat;border:none;}
+.allclassify{width:55px;height: 170px;display:none;border-radius: 3px 3px 6px 6px;background: #fff;position: absolute;top: 50px;left: 40px;z-index: 50;border: 1px solid #eee;}
+.allclassify ul{overflow: hidden;}
+.allclassify li{height: 33px;color:#333;border-bottom: 1px solid #eee;text-align: center;}
+.allclassify li:hover{background: #E5F2FB;overflow: hidden;}
+
+/*---------------------------------top右----------------------------------------------*/
+
+.shopcar{ width: 26px;height: 26px;border:1px solid #fff;border-radius: 5px;background: url(../img/topbar.png) -359px -150px no-repeat;position: relative;cursor: pointer;}
+.shopcar .car1{width: 28px;height: 15px;background: #fff;position: absolute;top: 21px;right: -1px;display: none;}
+.shopcar .car2{width: 350px;height: 200px;font-size:14px;line-height: 200px;text-align: center;color: #666;border: 1px solid #eee;border-radius: 5px;border-top:none;position: absolute;top:32px;right: -1px;background: #fff;display: none;}
+.shopcar:hover{background:#fff url(../img/topbar.png) -359px -171px  no-repeat;}
+.shopcar:hover .car1,.shopcar:hover .car2{display: block;z-index: 100;}
+#login{width: 80px;height: 26px;line-height:26px;border: 1px solid #fff;border-radius: 3px;font-size: 14px;cursor: pointer;padding-left: 10px; margin-right: 5px;position: relative;}
+.login i{width: 28px;height: 100%;display:inline-block;border-left: 1px solid #fff;background: url(../img/topbar_03.png) 0 2px no-repeat;}
+.blank1{width: 92px;height: 10px;display:none;position: absolute;top:23px;left: -1px;background: #fff;z-index: 50;}
+.loginfo{width: 290px;height: 270px;display:none;position: absolute;top: 32px;right:-34px;border:1px solid #eee;border-top: none;border-radius: 5px 0 5px 5px;background: #fff;z-index: 50; }
+.loginfo .login-1{width: 250px;height: 50px;margin: 20px auto 10px;background: url(../img/topbar.png) 0 -203px;}
+.loginfo .loginform{width: 250px;height: 200px;margin:0 auto;}
+.loginfo .loginform input{outline: medium;border: none;line-height: 38px;vertical-align: top;padding-left: 10px;}
+.loginfo .login-2{width: 248px;height: 38px;border: 1px solid #aaa;border-radius: 5px;overflow: hidden;margin-bottom: 10px;}
+.loginfo .loginform i{width: 55px;height: 100%;display: inline-block;background:#F9F9F9  url(../img/topbar.png) no-repeat;border-right: 1px solid #aaa;}
+.loginfo .loginform .login-2-1{background-position:-247px -203px;}
+.loginfo .loginform .login-2-2{background-position:-305px -203px;}
+.loginfo .loginform .login-3{color: #333;}
+.loginfo .loginform .login-3-1{width: 27px;height: 27px;display:inline-block;background-position:-172px -156px;border:none;}
+.loginfo .loginform .login-3 span{vertical-align: top;line-height: 28px;}
+.loginfo .loginform .login-4 span{width:110px;height: 30px;display:inline-block;border-radius: 14px;line-height: 30px;text-align: center;font-size: 16px;margin-top: 10px;}
+.loginfo .loginform .login-4 .login-4-1{margin-right: 20px;color: #fff;border:1px solid #0074be;background: #0074be;}
+.loginfo .loginform .login-4 .login-4-2{color: #666;background: #F9F9F9;border:1px solid #aaa;}
+.loginfo .loginform .login-4 span:hover{background: #0074A9;color:#fff;}
+.location{width:95px;height: 26px;line-height:26px;border: 1px solid #fff;border-radius: 3px;padding-left: 10px;margin-right:5px;font-size: 14px;color: #fff;cursor: pointer;position: relative;}
+#location{width:35px;height:20px;outline: medium;border: none;background-color:transparent;color: #fff;font-size: 14px;}
+.location i{width: 18px;height: 100%;background: url(../img/topbar_02.png) no-repeat;}
+.blank2{width: 107px;height: 10px;display:none;background: #fff;position: absolute;left: -1px;top: 23px;}
+.location .locate{width: 350px;height: 100px;display:none;background: #fff;position: absolute;right: -131px;top: 32px;z-index: 50;border:1px solid #eee;border-top:none;border-radius: 5px;color: #333;}
+.location .locate ul{height: 50px;width: 100%;border-bottom:1px solid #DCDCDD; }
+.location .locate ul li{float: left;width: 60px;height: 50px;line-height: 50px;text-align: center;margin-left: 10px;position: relative;}
+.location .locate ul li b{width: 20px;height: 12px;display: none;background:#fff url(../img/topbar.png) -174px -182px no-repeat;position: absolute;left: 19px;bottom: -1px;}
+.location .locate .locate-0{width: 350px;height: 42px;position: absolute;top:51px;left: 0;display:none;padding-left: 5px;}
+#locate-1{display: block;}
+.location .locate .locate-0 a{width: 45px;display: inline-block;line-height:42px;margin:0 10px;}
+.location .locate .locate-0 a:hover{text-decoration: underline;}
+.location .locate ul li:hover span,.location .locate ul li.cur span{color:#66AAE0;}
+.location .locate ul li.cur b,.location .locate ul li:hover b{display: block;}
+
+
+/*----------------------------------下----------------------------------------*/
+
+
+
+.footer{width: 100%;height: 360px;font-size: 13px;}
+.footimg{width: 1000px;height:90px;margin:0 auto;}
+.footimg img{margin-top: -5px;cursor:pointer;}
+.banline{width: 100%;height: 5px;margin-top: 20px;background: url(../img/logo.png);}
+.foot{width:1000px;height: 320px;margin: 40px auto 0;padding-left: 20px;}
+.relate{width:200px;height: 160px;}
+.footlogo{width: 140px;height: 50px;background: url(../img/foot.png) 0 -10px no-repeat;}
+.relate dd{width:180px;}
+.relate dd a{color: #333;display:inline-block;margin-right: 30px;line-height: 25px;}
+.relate dd a:hover{color: #0074A9;}
+.footn{width: 370px;height: 160px;border-left:1px solid #eee;border-right:1px solid #eee; padding-left: 20px;}
+.footnav{display:inline-block;line-height: 30px;}
+.footnav dd{font-size:16px;}
+.footnav a{display: inline-block;margin-right: 30px;color: #333;}
+.footnav dd a:hover{color:#0074A9; }
+.atteu{width: 55px;height: 100%;margin-right: 30px; }
+.atteu div{width: 30px;height: 30px;margin-top: 10px;background: url(../img/foot.png) no-repeat;cursor:pointer;}
+.footn .atteu .focoin-1{background-position:-140px -9px;}
+.footn .atteu .focoin-2{background-position:-170px -9px;}
+.footn .atteu .focoin-3{background-position:-200px -9px;}
+.magazine{width: 175px;height: 155px;margin-left: 20px;}
+.magazine a{display: inline-block;margin:15px 0;}
+.subscribe{width: 100%;height: 24px;line-height:24px;border:1px solid #ddd;box-shadow:inset 2px 2px 2px #eee;border-radius:12px;text-align: center;}
+.subsmail{width: 100px;border: none;outline: medium;}
+.subsbtn{width: 55px;height:24px;border: none;border-radius: 12px;background: #0074A9;color: #fff;}
+.tdcode{width: 150px;height: 165px;}
+.footr{font-size:20px;}
+.maweekly{color: #7d7d7d;}
+.twodcode{width:100px;height: 100px;margin: 15px 25px;background: url(../img/logo.png) -797px -10px;}
+.footline{width:100%;text-align: center;margin-top: 200px;color: #7e7e7f;clear:both;line-height: 25px;}
+.footline a{color: #7e7e7f;display: inline-block;margin-right: 10px;}
+.footline a:hover{color:#0074A9; }
+.licenselogo{width: 160px;margin:20px auto;}
+.licenselogo i{width: 68px;height: 25px;display: inline-block;cursor: pointer;}
+.licenselogo .lice-1{background: url(../img/allicon.gif) 1px -120px;}
+.licenselogo .lice-2{background: url(../img/allicon.gif) -68px -120px;}
+
+
+/*------------------------------------end------------------------------------------*/

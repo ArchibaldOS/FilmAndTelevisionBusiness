@@ -1,7 +1,7 @@
 package com.xd.zijing.service.serviceImpl;
 
 import com.xd.zijing.mapper.CinemaDao;
-import com.xd.zijing.entity.Cinema;
+import com.xd.zijing.entity.Cinema1;
 import com.xd.zijing.service.CinemaService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -17,14 +17,14 @@ public class CinemaServiceImpl implements CinemaService {
     private CinemaDao cinemaDao;
 
     @Override
-    public Cinema queryCinemaInfo() {
+    public Cinema1 queryCinemaInfo() {
 
         return cinemaDao.queryCinemaInfo();
     }
 
     @Override
     @Transactional
-    public int updateCinema(Cinema cinema) {
+    public int updateCinema(Cinema1 cinema) {
         return cinemaDao.updateCinema(cinema);
     }
 }

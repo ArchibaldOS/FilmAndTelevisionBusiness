@@ -398,9 +398,9 @@
                                     <div class='form-actions'>
                                         <button class='btn btn-primary' type='submit'>
                                             <i class='icon-save'></i>
-                                            修改
+                                          		  修改
                                         </button>
-                                        <button class='btn' type='submit'>重置</button>
+                                        <button class='btn' type='reset'>重置</button>
                                     </div>
                                     <!--保存重置-->
                                     </form>

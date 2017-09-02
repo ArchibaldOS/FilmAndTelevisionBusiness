@@ -1,0 +1,120 @@
+.bodywrap{width: 100%;height: 1400px;margin-bottom: -20px;}
+.bodymain{width: 1000px;height: 1320px;margin:-140px auto -120px;border:1px solid #eee;border-bottom: none;background: #fff;border-radius:3px;}
+.lside{width: 300px;height: 1300px;margin-top: 20px;border:1px solid #eee;border-top:none;padding-left:10px;border-bottom:none;box-shadow:2px 0 2px #eee;}
+
+.poster{width: 273px;height: 500px;border: 1px solid #aaa;padding: 7px;border-radius: 8px;background: #F4F4F4;overflow: hidden;}
+.poster .ci-logo{width: 287px;margin:-7px;height: 115px;background: #fff url(../img/img2/1.jpg) 98px 0 no-repeat;border-bottom: 1px solid #bbb;}
+.poster .ci-lv{width: 270px;height: 102px;font-size: 14px;}
+.poster .ci-lv .lv-le{width: 145px;height: 72px;border-right: 1px solid #aaa;margin-top: 30px;}
+.poster .ci-lv .lv-le span{display: inline-block;margin: 25px 10px auto 10px;}
+.poster .ci-lv .lv-le .lv-level{display: inline-block;width: 71px;height: 71px;background: url(../img/img2/2.png) no-repeat;}
+.poster .ci-lv .ci-has{width: 105px;height: 60px;line-height: 25px;margin-top: 35px;margin-left: 15px;}
+.poster .ci-lv .ci-has span{font-size: 25px;}
+.poster .ci-treat{width: 250px;height: 150px;border: 1px solid #aaa;border-radius: 6px;background: #fff;padding-top:20px;padding-left: 6px;margin-top:15px;margin-left: 8px;}
+.poster .ci-treat .treat{height: 35px;line-height: 25px;}
+.poster .ci-treat .treat a,.poster .ci-treat .treat b,.poster .ci-treat .treat i{margin-left: 4px;margin-right: 8px;vertical-align: bottom;border-radius: 3px;height: 25px;display: inline-block;color: #fff;background: #679F42;text-align: center;}
+.poster .ci-treat .treat a,.poster .ci-treat .treat b{width: 50px;}
+.poster .ci-treat .treat b{font-size: 14px;}
+.poster .ci-treat .treat i{width: 25px;background: url(../img/infrastructure_icon.png) no-repeat;}
+.poster .ci-treat .treat .ci-coin-1{background-position: -3px -38px;}
+.poster .ci-treat .treat .ci-coin-2{background-position: -109px -38px;}
+.poster .ci-treat .treat .ci-coin-3{background-position: -73px -38px;}
+.poster .ci-treat .treat .ci-coin-4{background-position: -38px -38px;}
+.poster .ci-treat .treat .ci-coin-5{background-position: -143px -38px;}
+.poster .ci-treat .treat .ci-coin-6{background-position: -458px -38px;}
+.poster .ci-treat .treat .ci-coin-7{background-position: -249px -38px;}
+.poster .ci-treat .treat .ci-coin-8{background-position: -283px -38px;}
+.poster .ci-treat .treat .ci-coin-9{background-position: -317px -38px;}
+.poster .ci-notice{width: 220px;margin:20px 0 0 10px;position: relative;;border-top: 1px solid #aaa;padding: 15px 0 0 35px;}
+.poster .ci-notice span{display: inline-block;width: 30px;color: #f61;position: absolute;left: 2px;top:15px;}
+.l-img-1{width: 290px;border-radius:4px;margin-top: 20px;}
+
+
+.morehot{width: 100%;height: 480px;margin-top: 30px;}
+.morehot .moreh{font-size: 20px;font-weight: bold;margin-bottom: 20px;}
+.morehot .moremovie{width: 220px;height:140px;margin:10px 0 5px; padding-left: 80px;position: relative;}
+.morehot .moremovie .play-film{position: relative;;display: inline-block;width: 80px;height: 120px;padding-top:5px; }
+.morehot .moremovie .play-film .play-co{position: absolute;top:39px;left: 22px;display: inline-block;width:32px;height: 32px;background: url(../img/img2/bg2.png) -206px 0 no-repeat;}
+.morehot .moremovie .play-film:hover .play-co{background: url(../img/img2/bg2.png) -237px 0 no-repeat;}
+.morehot .moremovie .movieinfo{width:130px;height: 120px;padding-top:5px;}
+.morehot .moremovie .movieinfo label{font-size: 15px;}
+.morehot .moremovie .movieinfo label b{width: 30px;height: 20px;display: inline-block;background:#71A64E;color:#fff;margin:0 0 20px 20px;line-height: 20px;text-align: center;}
+.morehot .moremovie .movieinfo p{font-size: 13px;line-height: 25px;}
+.morehot .moremovie .movieinfo a,.morehot .moremovie .movieinfo span{font-size: 16px;color:#2FB2F2;}
+.morehot .moremovie .movieinfo a:hover{text-decoration: underline;}
+.morehot .moremovie .date-idx{height:138px;width:58px;padding-top:5px;position: absolute;top:0;left: 10px;background: url(../img/img2/upmovie_01.png) 48px 0 repeat-y;}
+.morehot .moremovie .date-idx p{font-size: 16px;color:#aaa; }
+.morehot .moremovie .date-idx i{display: inline-block;width:15px;height: 15px;margin-top:-6px;background: url(../img/img2/bg2.png) -47px -111px no-repeat;}
+.morehot .moremovie .date-idx span{font-size: 30px!important;line-height: 40px;}
+
+/*----------------------------------middle右上---------------------------------*/
+
+.rside .show-li{display: block!important;}
+.rside{width: 656px;height: 100%;padding-left: 30px;margin-top: 40px;}
+.rside .filmname{font-size: 38px;}
+.rside .ciloca{font-size: 14px;line-height:60px; }
+.rside .ciloca a{display: inline-block;margin-left:20px;color: #127BAB;}
+.rside .ciloca a:hover{text-decoration: underline;}
+.rside .ciloca .morestore{display: inline-block;width: 100px;height: 20px;font-size: 16px;line-height: 18px;margin:20px 20px 0 5px;cursor: pointer;}
+.rside .ciloca .morestore span{display: inline-block;vertical-align: middle;width: 15px;margin-bottom: 2px;margin-left: 3px;height: 20px;color: #fff;background: #bbb;border-radius: 1px;text-align: center;}
+.rside .ciloca .morestore:hover span{background: #666;}
+.rside .filme{font-size: 25px;line-height:40px; }
+.rside .filmdate{width: 100%;height: 60px;margin-top: 10px;}
+.rside .filmdate .fdate{width:666px;height: 45px;margin-left: -30px;background:#136D97;overflow: hidden;position: relative;line-height: 45px;padding-left: 20px;}
+.rside .filmdate .fdate ul{overflow: hidden; width:1066px;height: 100%;}
+.rside .filmdate .fdate ul li{float: left;width:140px;height: 100%;font-size: 16px;color:#fff;text-align: center; cursor: pointer;position: relative;}
+.rside .filmdate .fdate ul li.dtp{background: #004C7E;}
+.rside .filmdate .fdate ul li.dtp .dtpc{position: absolute;bottom:0;left:62px;width: 0;height: 0;display: inline-block;border-top: 8px solid #004C7E;border-left: 8px solid #004C7E;border-right: 8px solid #004C7E;border-bottom: 8px solid #fff;}
+.rside .filmdate .fdate .prevdays{width: 30px;height: 45px;position: absolute;left: 0;top: 0;background: #136D97;}
+
+.rside .ftabs{width:100%;min-height: 1100px;display: none;}
+.rside .pickfi{position: relative;}
+.rside .pickfi .ftab-img1{margin-left: -17px;margin-bottom: 30px;}
+.rside .pickfi  .t1-total{font-size: 24px;color: #000;}
+.rside .pickfi .t1-pickday{height:50px;margin:15px 0 20px; }
+.rside .pickfi .t1-pickday a{display: inline-block; width: 130px;height: 30px;border: 1px solid #bbb;border-radius: 15px;text-align: center;line-height: 30px;color: #888;font-size: 14px;background: #F3F3F3;margin: 9px 10px;cursor: pointer;}
+.rside .pickfi .t1-pickday .sel-day{height: 36px;line-height: 36px;margin-top:6px;border-radius:18px;color: #333;font-weight: bold; position: relative;}
+.rside .pickfi .t1-pickday .sel-day i{display: inline-block;width: 15px;height: 8px;background: url(../img/img2/bg2.png) -98px -126px no-repeat;position: absolute;left: 58px;bottom: -1px;}
+.rside .pickfi .t1-flist{width: 100%;height: 247px;overflow: hidden;display: none;}
+.rside .pickfi .t1-flist .flist-ul{width: 1002px;height: 242px;margin-left: -161px;}
+.rside .pickfi .t1-flist .flist-ul li{width:152px;height: 202px;float: left;margin-right: 9px;margin-top:24px;cursor: pointer;overflow: hidden;}
+.rside .pickfi .t1-flist .flist-ul li img{border:1px solid #000;}
+.rside .pickfi .t1-flist .flist-ul li .fli-selected{border:1px solid #f73;width: 180px;height: 240px;}
+.rside .pickfi #prevfilm,.rside .pickfi #nextfilm{width: 25px;height: 60px;position: absolute;background: url(../img/img2/bg.png) no-repeat;}
+.rside .pickfi #prevfilm{top:320px;left:-29px;background-position: 0 -28px;border-radius: 4px 0 0 4px;}
+.rside .pickfi #nextfilm{top:320px;right:-29px;background-position: -25px -28px;border-radius: 0 4px 4px 0;}
+.rside .pickfi #prevfilm:hover{background-position: -52px -28px;}
+.rside .pickfi #nextfilm:hover{background-position: -76px -28px;}
+
+
+.rside .pickfi .film-time-tb{width: 100%;height:550px; overflow:hidden;margin-top:30px;}
+.rside .pickfi .schedule{width: 100%;min-height:550px;display: none;font-size: 14px;color:#666;border-top: 1px solid #aaa;padding-top:20px;}
+.rside .pickfi .schedule .film-1{width: 100%;height:100px;}
+.rside .pickfi .schedule .film-1 dl{width: 80%;height: 100%;}
+.rside .pickfi .schedule .film-1 dl dt{font-size: 25px;line-height: 40px;}
+.rside .pickfi .schedule .film-1 dl dt a{color: #333;font-weight: bold;}
+.rside .pickfi .schedule .film-1 dl dt b{display: inline-block;line-height: 27px;text-align: center;margin-left: 15px;width: 40px;height: 25px;background: #679C21;color: #fff;}
+.rside .pickfi .schedule .film-1 dl dd{width: 45%;float: left;line-height: 25px;}
+.rside .pickfi .schedule .film-1 .prevue{width: 100px;height: 40px;line-height: 40px;cursor: pointer;margin:30px 10px 0 0;}
+.rside .pickfi .schedule .film-1 .prevue i{display: inline-block;width: 42px;height: 42px;margin-right: 8px;background: url(../img/img2/bg2.png) -207px -39px no-repeat;}
+.rside .pickfi .schedule .film-1 .prevue span{vertical-align:top;}
+.rside .pickfi .schedule .film-1 .prevue:hover i{background-position:-207px -84px ;}
+
+.rside .pickfi .schedule .hr{box-shadow:2px 2px 2px #eee;width: 80%;}
+.rside .pickfi .schedule .time-table{width:100%;height: 400px;line-height: 25px;table-layout: fixed;text-align: center;}
+.rside .pickfi .schedule .time-table tr{border-bottom: 1px dashed #aaa;}
+.rside .pickfi .schedule .time-table .ontime{font-size: 28px;color: #333;font-weight: bold;}
+.rside .pickfi .schedule .time-table span{color: #aaa;}
+.rside .pickfi .schedule .time-table .lookseat{width: 25px;height: 25px;vertical-align: bottom;display: inline-block;background: url(../img/img2/bg.png) -180px -59px no-repeat;cursor: pointer;}
+.rside .pickfi .schedule .time-table .lookseat:hover{background-position: -207px -59px;}
+.rside .pickfi .schedule .time-table .ficost{color: #f72;font-size: 18px;}
+.rside .pickfi .schedule .time-table .ficost a{font-size: 30px;}
+.rside .pickfi .schedule .time-table .pickseat{width: 110px;height: 30px;display: inline-block;background: #0084ae;color: #fff;font-size: 16px;line-height: 30px;border-radius: 15px;}
+.rside .pickfi .schedule .time-table .pickseat:hover{background: #0074A9;}
+
+
+/*======================================影院介绍===========================================================*/
+.rside .ftabs .subtitle{font-size: 16px;margin-top: 20px;}
+.rside .ftabs .ci-speci{margin-left: 15px;line-height: 40px;}
+.rside .ftabs .ci-speci span{display: inline-block;height: 25px;line-height: 25px;padding: auto 8px;background: #679F42;color: #fff;font-size: 13px;border-radius: 3px;}
+.rside .ftabs .ci-speci .ci-intro{text-indent: 2em;line-height: 25px;font-size: 13px;margin-right: 10px;}

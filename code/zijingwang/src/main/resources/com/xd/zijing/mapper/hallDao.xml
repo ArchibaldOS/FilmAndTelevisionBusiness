@@ -7,7 +7,7 @@
     <resultMap id="hallMap" type="Hall">
         <id property="hallId" column="hallId"/>
         <result property="hallName" column="hallName"/>
-        <association property="cinema" javaType="Cinema">
+        <association property="cinema" javaType="Cinema1">
             <id property="cinemaName" column="cinemaName"/>
         </association>
     </resultMap>

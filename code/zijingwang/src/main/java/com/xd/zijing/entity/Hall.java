@@ -9,7 +9,7 @@ public class Hall {
 
     private String hallName;
 
-    private Cinema cinema;
+    private Cinema1 cinema;
 
     public int getHallId() {
         return hallId;
@@ -27,11 +27,11 @@ public class Hall {
         this.hallName = hallName;
     }
 
-    public Cinema getCinema() {
+    public Cinema1 getCinema() {
         return cinema;
     }
 
-    public void setCinema(Cinema cinema) {
+    public void setCinema(Cinema1 cinema) {
         this.cinema = cinema;
     }
 
