@@ -136,9 +136,9 @@ public class ArticeController {
 		  ch = (char) 39; // '
 		  str = str.replace(String.valueOf(ch), "'");
 		  ch = (char) 13; // carriage return
-		  str = str.replace(String.valueOf(ch), "<br />");
+		  str = str.replace(String.valueOf(ch), "<br/>");
 		  ch = (char) 10; // new line
-		  str = str.replace(String.valueOf(ch), "<br />");
+		  str = str.replace(String.valueOf(ch), "<br/>");
 		  return str;
 		}
 }
