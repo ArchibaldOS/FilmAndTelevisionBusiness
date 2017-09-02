@@ -5,14 +5,14 @@
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-    <title>紫荆网登陆</title>
+    <title>后台登陆</title>
 
     <link rel="stylesheet" href="css/adminstyle.css">
 </head>
 <body>
 
 <div class="login-container">
-    <h1>紫荆网登陆</h1>
+    <h1>管理员登陆</h1>
 
     <div class="connect">
         <p>www.zijingwang.com</p>
