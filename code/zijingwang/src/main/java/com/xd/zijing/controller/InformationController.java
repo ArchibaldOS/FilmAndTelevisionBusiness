@@ -26,13 +26,16 @@ public class InformationController {
 	private FilmInformationService filmInformationService;
 	
 	@RequestMapping(value="/cinema1",method=RequestMethod.GET)
-	public  String cinema(@RequestParam(name="cur", defaultValue="1") int cur, Model model)
+	public  String cinema(@RequestParam(name="cur", defaultValue="1") int cur, Model model,HttpServletRequest request)
 	{
-        List<Cinema> cinema =filmInformationService.findCinema("战狼2");
+
+        System.out.println(request.getParameter("filmname"));
+        Info info=filmInformationService.findInfo(request.getParameter("filmname"));
+        List<Cinema> cinema =filmInformationService.findCinema(request.getParameter("filmname"));
 		
 		
 		model.addAttribute("cinema", cinema);
-		
+        model.addAttribute("info",info);
 		
 		return "dyk/cine";
 	}
@@ -56,7 +59,7 @@ public class InformationController {
 	@RequestMapping(value="jump",method=RequestMethod.GET)
 	public  String cine1( @RequestParam(name="cur", defaultValue="1") int cur, Model model,HttpServletRequest requeset)
 	{
-		
+        Info info1=filmInformationService.findInfo(requeset.getParameter("filmName"));
 		Cinema cin=filmInformationService.findById(Integer.valueOf(requeset.getParameter("filmId")));
 		
 	
@@ -66,7 +69,7 @@ public class InformationController {
 		
 		
 		model.addAttribute("timing", timing);
-		
+        model.addAttribute("info1",info1);
 		
 		return "dyk/cine1";
 	}

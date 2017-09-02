@@ -3,11 +3,7 @@ package com.xd.zijing.service;
 import java.util.List;
 
 import com.xd.zijing.dto.Page;
-import com.xd.zijing.entity.Cinema;
-import com.xd.zijing.entity.FilmInformation;
-import com.xd.zijing.entity.Order1;
-import com.xd.zijing.entity.Seating;
-import com.xd.zijing.entity.Timing;
+import com.xd.zijing.entity.*;
 import com.xd.zijing.mapper.FilmInformationMapper;
 
 public interface FilmInformationService {
@@ -27,4 +23,6 @@ public interface FilmInformationService {
 	 List<Timing> findTiming(String filmName, String cinema);
 
 	 Cinema findById(int filmId);
+
+    Info findInfo(String name);
 }

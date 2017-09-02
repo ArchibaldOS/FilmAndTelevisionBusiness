@@ -59,4 +59,9 @@
 	<update id="updatetotal"  parameterType="int">
 		update vipData set VipTotal = VipTotal + #{rechMoney} where vipId = #{vipId}
 	</update>
+
+    <update id="changepassword"  parameterType="VipData">
+        update vipData set VipPassword = #{vipPassword} where vipId = #{vipId}
+    </update>
+
 </mapper>

@@ -2,13 +2,8 @@ package com.xd.zijing.mapper;
 
 import java.util.List;
 
+import com.xd.zijing.entity.*;
 import org.apache.ibatis.annotations.Param;
-
-import com.xd.zijing.entity.Cinema;
-import com.xd.zijing.entity.FilmInformation;
-import com.xd.zijing.entity.Order1;
-import com.xd.zijing.entity.Seating;
-import com.xd.zijing.entity.Timing;
 
 public interface FilmInformationMapper {
 
@@ -27,4 +22,6 @@ public interface FilmInformationMapper {
 	List<Timing> findTiming(@Param("filmName") String filmName, @Param("cinema") String cinema);
 
 	Cinema findById(int filmId);
+
+    Info findInfo(String name);
 }

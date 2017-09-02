@@ -46,8 +46,8 @@
         <div class="zijing"></div>
         <div class="wrap">
             <div class="search bar5">
-                <form>
-                    <input type="text" placeholder="请输入您要搜索的内容...">
+                <form action="/zijingwang/redirect" method="POST">
+                    <input type="text" name="name" placeholder="请输入您要搜索的内容..." /><br />
                     <button type="submit"></button>
                 </form>
             </div>
@@ -199,11 +199,13 @@
                 <div role="tabpanel" class="tab-pane fade" id="amend" aria-labelledby="amend-tab">
                     <div class="vip_manage">
                          <h2>修改密码</h2>
-                        <form  action="" method="post" class="vipdata">
-                            输入手机号：<input class="vipinfo" type="text" name="VipTelephone"><br/>
-                            输入验证码：<input class="vipinfo" type="text" name="code"><br/>
-                            输入新密码：<input class="vipinfo" type="password" name="VipPassword"><br/>
-                            <input class="checkCode" type="button" id="btn" value="点击获取验证码" />
+                        <form  action="changepassword" method="post" class="vipdata">
+                            <input type="hidden" name="vipId" value="${sessionScope.vipData.vipId}">
+                            输入原密码：<input class="vipinfo" type="password" name="vipPassword"><br/>
+
+                            输入新密码：<input class="vipinfo" type="password" name="vipnewPassword"><br/>
+
+
 
                             <input class="but0" type="submit" value="确认">
 
@@ -476,4 +478,12 @@
         </div>
     </footer>
 </body>
-</html>l>
+<%
+    if(request.getAttribute("change")!=null){
+        if((boolean)request.getAttribute("change")==true) out.println("<script type=\"text/javaScript\"> alert(\"密码修改成功\");</script>");
+        else out.println("<script type=\"text/javaScript\"> alert(\"密码修改失败\");</script>");
+    }
+
+%>
+
+</html>

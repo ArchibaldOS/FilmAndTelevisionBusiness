@@ -85,5 +85,13 @@
 		
 	</select>
 
+    <select id="findInfo"  parameterType="String" resultType="Info">
+        SELECT
+        name,releasedate,filmtype,filmtime,actor,description,price,country,post,score,shabi
+        FROM info
+        WHERE
+        name = #{name}
+
+    </select>
 
 </mapper>

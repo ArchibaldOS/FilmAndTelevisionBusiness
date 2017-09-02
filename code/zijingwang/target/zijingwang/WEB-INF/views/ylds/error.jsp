@@ -21,10 +21,10 @@
 			<div class="zijing"></div>
 			<div class="wrap">
 				<div class="search bar5">
-					<form action="/zijingwang/redirect" method="POST">
-						<input type="text" name="name" placeholder="请输入您要搜索的内容..." /><br />
-						<button type="submit"></button>
-					</form>
+                    <form action="/zijingwang/redirect" method="POST">
+                        <input type="text" name="name" placeholder="请输入您要搜索的内容..." /><br />
+                        <button type="submit"></button>
+                    </form>
 				</div>
 				<div class="account_desc">
                     <%

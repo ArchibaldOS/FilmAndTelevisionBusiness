@@ -142,7 +142,7 @@
         <div class="wrap">
             <div class="search bar5">
                 <form action="/zijingwang/redirect" method="POST">
-                    <input type="text" name="name" placeholder="请输入您要搜索的内容..."/><br/>
+                    <input type="text" name="name" placeholder="请输入您要搜索的内容..." /><br />
                     <button type="submit"></button>
                 </form>
             </div>
@@ -225,8 +225,9 @@
                     <div class="y">
                         <strong>票价:￥${i.price}</strong>
                     </div>
+                        <c:set var="a" value="${requestScope.infos}"/>
                     <div class="p3">
-                        <a href="/zijingwang/cinema1" class="fc">点击购票</a><a
+                        <a href="/zijingwang/cinema1?filmname=${i.name}" class="fc">点击购票</a><a
                             href="/zijingwang/review/${i.name}" class="fc">查看影评</a>
                     </div>
                     <h style="font-size:16px">

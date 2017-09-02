@@ -152,22 +152,23 @@
 
 <div class="widget-movie-detail-intro" id="detailIntro">
     <div class="container clearfix">
+        <c:set var="a" value="${requestScope.info1}"/>
         <div class="fl poster">
-            
-            <img class="img" src="https://gss0.baidu.com/7Po3dSag_xI4khGko9WTAnF6hhy/movie/pic/item/738b4710b912c8fc6c34d366f6039245d7882151.jpg">
+
+            <img class="img" src="${a.post}">
         </div>
         <div class="info">
-            <h4 class="subtitle">战狼2</h4>
+            <h4 class="subtitle">${a.name}</h4>
 
             <div class="record clearfix">
                 <p class="star fl"><span class="star-in fl" style="width:96%;"></span></p>
                 <span class="nuomi-orange font16 fl num">9.6</span>
             </div>
             <div class="content">
-                <p class="des">犯我中华者 虽远必诛</p>
-                <p>导演：吴京 &nbsp;&nbsp;&nbsp;&nbsp;主演：吴京,弗兰克·格里罗,吴刚,张翰,卢靖姗,丁海峰,淳于珊珊,余男,于谦,石兆琪,狄安娜·希拉,Ann James,Wachukwu Kennnedy Chukwuebuka,高明,周冠廷</p>
-                <p>中国大陆 | 123分钟 &nbsp;&nbsp;&nbsp;&nbsp;2017-07-27 上映</p>
-                <p id="intro" class="intro slideup">剧情：冷锋将卷入一场非洲国家的叛乱，本可以安全撤离的他，因无法忘记军人的使命，不丢下身陷囹圄的同胞和难民们，只身犯险冲回沦陷区，带领所有被困民众向邻国大逃亡。</p>
+                <p class="des">${a.shabi}</p>
+                <p>导演：${a.actor} &nbsp;&nbsp;&nbsp;&nbsp;主演：${filmtype}</p>
+                <p>${a.country} | ${a.filmtime} &nbsp;&nbsp;&nbsp;&nbsp;${a.releasedate}上映</p>
+                <p id="intro" class="intro slideup">剧情：${a.description}</p>
                 <span class="more-btn" id="moreBtn" data-log="{'da_src':'webMovieDetailPg.introBk.moreBtn'}"></span>
             </div>
 
@@ -179,7 +180,7 @@
         <div class="hide" >
             <div class="info info-copy" id="infoCopy">
                 <h4 class="subtitle clearfix">
-                    <div class="fl">战狼2</div>
+                    <div class="fl">${a.name}</div>
                     <div class="record fl clearfix">
                         <p class="star fl"><span class="star-in fl" style="width:96%;"></span></p>
                         <span class="nuomi-orange font16 fl num">9.6</span>
@@ -187,14 +188,14 @@
                 </h4>
 
                 <div class="content">
-                    <p class="des">犯我中华者 虽远必诛</p>
+                    <p class="des">${a.shabi}</p>
 
-                    <p><span>导演：</span>吴京 </p>
-                    <p><span>主演：</span>吴京,弗兰克·格里罗,吴刚,张翰,卢靖姗,丁海峰,淳于珊珊,余男,于谦,石兆琪,狄安娜·希拉,Ann James,Wachukwu Kennnedy Chukwuebuka,高明,周冠廷</p>
-                    <p><span>剧情：</span>冷锋将卷入一场非洲国家的叛乱，本可以安全撤离的他，因无法忘记军人的使命，不丢下身陷囹圄的同胞和难民们，只身犯险冲回沦陷区，带领所有被困民众向邻国大逃亡。</p>
-                    <p><span>地区：</span>中国大陆</p>
-                    <p><span>片长：</span>123分钟</p>
-                    <p><span>上映时间：</span>2017-07-27上映</p>
+                    <p><span>导演：</span>${a.actor} </p>
+                    <p><span>主演：</span>${a.filmtype}</p>
+                    <p><span>剧情：</span>${a.description}</p>
+                    <p><span>地区：</span>${a.country}</p>
+                    <p><span>片长：</span>${a.filmtime}</p>
+                    <p><span>上映时间：</span>${a.releasedate}上映</p>
                     <span class="btn" id="contentBtn"></span>
                 </div>
                 <a class="choose-cinema" href="#cinemaCinemaFilter" id="chooseCinema">选座购票</a>

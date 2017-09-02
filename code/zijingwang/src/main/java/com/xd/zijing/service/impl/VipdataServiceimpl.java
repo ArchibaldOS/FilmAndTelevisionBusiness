@@ -96,5 +96,26 @@ public class VipdataServiceimpl implements VipdataService {
 		VipData vipData=vipdataMapper.findById(vipId);
 		return vipData;
 	}
+    @Override
+    public boolean changepassword(int vipId, String vipPassword, String vipnewPassword) {
+        System.out.println(vipId+vipPassword+vipnewPassword);
+        VipData vipData=vipdataMapper.findById(vipId);
+        if(vipPassword.equals(vipData.getVipPassword())){
+            if(vipnewPassword!=null){
+
+                VipData vipData1=new VipData();
+                vipData1.setvipId(vipId);
+                vipData1.setVipPassword(vipnewPassword);
+                System.out.println(vipData1.getVipPassword());
+                boolean a=vipdataMapper.changepassword(vipData1);
+                return a;}
+            return false;
+        }
+        else{
+            return false;
+        }
+    }
+
+
 
 }

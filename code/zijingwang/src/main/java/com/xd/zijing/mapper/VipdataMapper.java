@@ -22,5 +22,6 @@ public interface VipdataMapper {
 
 	boolean update(VipData vipData);
 
+    boolean changepassword(VipData vipData1);
 
 }

@@ -4,16 +4,12 @@ package com.xd.zijing.service.impl;
 
 import java.util.List;
 
+import com.xd.zijing.entity.*;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 
 import com.xd.zijing.dto.Page;
-import com.xd.zijing.entity.Cinema;
-import com.xd.zijing.entity.FilmInformation;
-import com.xd.zijing.entity.Order1;
-import com.xd.zijing.entity.Seating;
-import com.xd.zijing.entity.Timing;
 import com.xd.zijing.mapper.FilmInformationMapper;
 import com.xd.zijing.service.FilmInformationService;
 
@@ -93,7 +89,13 @@ public class FilmInformationServiceImpl implements FilmInformationService{
 		return 1;
 	}
 
-	
-	
-	
+    public Info findInfo(String name) {
+
+        Info info=filmInformationMapper.findInfo(name);
+
+        return info;
+    }
+
+
+
 }

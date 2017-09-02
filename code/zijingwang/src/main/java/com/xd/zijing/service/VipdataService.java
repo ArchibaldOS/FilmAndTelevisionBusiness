@@ -22,9 +22,10 @@ public interface VipdataService {
 
 	VipData findId(int vipId);
 
+    boolean changepassword(int vipId, String vipPassword, String vipnewPassword);
 
 
-	
-	
-	
+
+
+
 }
