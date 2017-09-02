@@ -24,4 +24,6 @@ public interface VipdataMapper {
 
     boolean changepassword(VipData vipData1);
 
+    void changerank(VipData vipData1);
+
 }

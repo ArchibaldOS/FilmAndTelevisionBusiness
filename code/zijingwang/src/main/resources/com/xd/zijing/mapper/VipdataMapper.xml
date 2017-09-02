@@ -64,4 +64,7 @@
         update vipData set VipPassword = #{vipPassword} where vipId = #{vipId}
     </update>
 
+    <update id="changerank"  parameterType="VipData">
+        update vipData set VipRank = #{vipRank} where vipId = #{vipId}
+    </update>
 </mapper>

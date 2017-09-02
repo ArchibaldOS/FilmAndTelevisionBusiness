@@ -73,8 +73,30 @@ public class VipdataServiceimpl implements VipdataService {
 		
 		vipdataMapper.updatebalance(vipRechargeRecord.getvipId(),vipRechargeRecord.getRechMoney());
 		 vipdataMapper.updatetotal(vipRechargeRecord.getvipId(),vipRechargeRecord.getRechMoney());
-		 
-	
+
+            System.out.println(vipData.getVipTotal());
+            if(vipData.getVipTotal()+vipRechargeRecord.getRechMoney()>=500&&vipData.getVipTotal()+vipRechargeRecord.getRechMoney()<2000){
+                VipData vipData1=new VipData();
+                vipData1.setvipId(vipRechargeRecord.getvipId());
+                vipData1.setVipRank("白银会员");
+                vipdataMapper.changerank(vipData1);
+
+            }else if(vipData.getVipTotal()+vipRechargeRecord.getRechMoney()>=2000&&vipData.getVipTotal()+vipRechargeRecord.getRechMoney()<5000){
+                VipData vipData1=new VipData();
+                vipData1.setvipId(vipRechargeRecord.getvipId());
+                vipData1.setVipRank("黄金会员");
+                vipdataMapper.changerank(vipData1);
+
+            }else if(vipData.getVipTotal()+vipRechargeRecord.getRechMoney()>=5000){
+                VipData vipData1=new VipData();
+                vipData1.setvipId(vipRechargeRecord.getvipId());
+                vipData1.setVipRank("钻石会员");
+                vipdataMapper.changerank(vipData1);
+
+            }
+
+
+
 //		VipTotalRecord vipTotalRecord =new VipTotalRecord();
 //		vipTotalRecord.setvipId(vipRechargeRecord.getvipId());
 //		vipTotalRecord.setTotalCount(vipRechargeRecord.getRechMoney());
