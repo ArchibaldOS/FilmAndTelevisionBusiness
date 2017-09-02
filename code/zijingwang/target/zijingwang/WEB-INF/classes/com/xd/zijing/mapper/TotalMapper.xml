@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.xd.zijing.mapper.TotalMapper">
+	<resultMap type="VipTotalRecord" id="viptotalrecordMap">
+ 		<id property="totalRelId" column="totalRelId"/>
+ 		<result property="totalCount" column="totalCount" />
+ 		<result property="totalWay" column="totalWay" />
+ 		<result property="totalDate" column="totalDate"/>
+ 		<association property="vipData" javaType="VipData">
+ 			<id property="vipId" column="vipId"/>
+ 		</association>
+ 	</resultMap>
+<insert id="totalrel" parameterType="VipTotalRecord" keyProperty="totalId">
+		insert into vipTotalrecord(totalCount,totalWay,totalDate,vipId)
+		values (#{totalCount},#{totalWay},curdate(),#{vipId})
+	</insert>
+	
+</mapper>

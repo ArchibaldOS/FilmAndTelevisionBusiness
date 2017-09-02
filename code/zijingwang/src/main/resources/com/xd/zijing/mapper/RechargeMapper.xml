@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.xd.zijing.mapper.RechargeMapper">
+	<resultMap type="VipRechargeRecord" id="viprechargerecordMap">
+ 		<id property="rechId" column="rechId"/>
+ 		<result property="rechMoney" column="rechMoney" />
+ 		<result property="rechWay" column="rechWay" />
+ 		<result property="rechDate" column="rechDate"/>
+ 		<association property="vipData" javaType="VipData">
+ 			<id property="vipId" column="vipId"/>
+ 		</association>
+ 	</resultMap>
+<insert id="recharge" parameterType="VipRechargeRecord" keyProperty="rechId">
+		insert into vipRechargerecord(rechMoney,rechWay,rechDate,vipId)
+		values (#{rechMoney},#{rechWay},curdate(),#{vipId})
+	</insert>
+	
+</mapper>

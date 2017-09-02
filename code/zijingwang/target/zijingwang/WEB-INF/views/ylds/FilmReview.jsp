@@ -44,10 +44,29 @@
                 </form>
             </div>
             <div class="account_desc">
+                <%
+                    try{
+                        String user = (String)session.getAttribute( "vipData" );
+
+                        if ( user == null )
+                        {
+                %>
                 <ul>
-                    <li><a href="contact.html">登陆</a></li>
-                    <li><a href="contact.html">注册</a></li>
+                    <li><a href="Userlogin.jsp">登陆</a></li>
+                    <li><a href="Userregister.jsp">注册</a></li>
                 </ul>
+                <%
+                    }
+                }catch(Exception e){
+                %>
+                <h4 style="color:#FFFFFF">	欢迎您：${ sessionScope.vipData.vipUsername}</h4>
+
+
+                <%
+                        out.println( "<a href = 'Userlogin.jsp' >退出登陆</a>" );
+
+                    }
+                %>
             </div>
             <div class="clear"></div>
         </div>
@@ -70,11 +89,11 @@
                  id="bs-example-navbar-collapse-1">
                 <nav class="cl-effect-1" id="cl-effect-1">
                     <ul class="nav navbar-nav">
-                        <li class="active"><a href="/zijingwang/" class="scroll">首&nbsp;&nbsp;&nbsp;&nbsp;页</a></li>
+                        <li ><a href="/zijingwang/" class="scroll">首&nbsp;&nbsp;&nbsp;&nbsp;页</a></li>
                         <li><a href="/zijingwang/hotmovie">正在上映</a></li>
                         <li><a href="#services" class="hvr-bounce-to-bottom scroll">选座购票</a></li>
-                        <li><a href="/zijingwang/article">影视资讯</a></li>
-                        <li><a href="#mail" class="hvr-bounce-to-bottom scroll">个人中心</a></li>
+                        <li class="active"><a href="/zijingwang/article">影视资讯</a></li>
+                        <li><a href="/zijingwang/wchUserlogin" >个人中心</a></li>
                         <li><a href="/zijingwang/message">用户留言</a></li>
                     </ul>
                 </nav>

@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.xd.zijing.mapper.VipcenterMapper">
+
+ 	<resultMap type="VipTotalRecord" id="viptotalrecordMap">
+ 		<id property="totalRelId" column="totalRelId"/>
+ 		<result property="totalCount" column="totalCount" />
+ 		<result property="totalWay" column="totalWay" />
+ 		<result property="totalDate" column="totalDate"/>
+ 		<association property="vipData" javaType="VipData">
+ 			<id property="vipId" column="vipId"/>
+ 		</association>
+ 	</resultMap>
+ 	
+ 	<resultMap type="VipRechargeRecord" id="viprechargerecordMap">
+ 		<id property="rechId" column="rechId"/>
+ 		<result property="rechMoney" column="rechMoney" />
+ 		<result property="rechWay" column="rechWay" />
+ 		<result property="rechDate" column="rechDate"/>
+ 		<association property="vipData" javaType="VipData">
+ 			<id property="vipId" column="vipId"/>
+ 		</association>
+ 	</resultMap>
+ 	
+ 	<resultMap type="VipConsumeRecord" id="vipconsumerecordMap">
+ 		<id property="buyId" column="buyId"/>
+ 		<result property="buyMoney" column="buyMoney" />
+ 		<result property="buyWay" column="buyWay" />
+ 		<result property="buyDate" column="buyDate"/>
+ 		<association property="vipData" javaType="VipData">
+ 			<id property="vipId" column="vipId"/>
+ 		</association>
+ 	</resultMap>
+ 	
+ 	<select id="countt" resultType="int">
+		SELECT
+			count(1)
+		FROM
+			viptotalrecord
+	</select>
+	<select id="countr" resultType="int">
+		SELECT
+			count(1)
+		FROM
+			viprechargerecord
+	</select>
+	
+	<select id="countc" resultType="int">
+		SELECT
+			count(1)
+		FROM
+			vipconsumerecord
+	</select>
+	
+ 	<select id="searchtotal" parameterType="int" resultMap="viptotalrecordMap">
+ 		SELECT 
+	 		 t.totalRelId,
+	 		 t.totalCount,
+	 		 t.totalWay,
+	 		 t.totalDate
+ 		FROM
+ 			 viptotalrecord t
+ 	 	where 
+ 	 	     t.vipId=#{vipId}
+ 	 	LIMIT #{offset}, #{size}
+ 	</select>
+
+	<select id="searchrecharge" parameterType="int" resultMap="viprechargerecordMap">
+ 		SELECT 
+	 		 r.rechId,
+	 		 r.rechMoney,
+	 		 r.rechWay,
+	 		 r.rechDate
+	 		
+ 		FROM
+ 			 viprechargerecord r
+ 	 	where 
+ 	 	     r.vipId=#{vipId}
+ 	 	LIMIT #{offset}, #{size}
+ 	</select>
+ 	
+ 	<select id="searchconsume" parameterType="int" resultMap="vipconsumerecordMap">
+ 		SELECT 
+	 		 c.buyId,
+	 		 c.buyMoney,
+	 		 c.buyWay,
+	 		 c.buyDate
+	 		 
+ 		FROM
+ 			 vipconsumerecord c
+ 	 	where 
+ 	 	     c.vipId=#{vipId}
+ 	 	LIMIT #{offset}, #{size}
+ 	</select>
+</mapper>

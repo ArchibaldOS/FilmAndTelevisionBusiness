@@ -27,10 +27,29 @@
 					</form>
 				</div>
 				<div class="account_desc">
-					<ul>
-						<li><a href="contact.html">登陆</a></li>
-						<li><a href="contact.html">注册</a></li>
-					</ul>
+                    <%
+                        try{
+                            String user = (String)session.getAttribute( "vipData" );
+
+                            if ( user == null )
+                            {
+                    %>
+                    <ul>
+                        <li><a href="Userlogin.jsp">登陆</a></li>
+                        <li><a href="Userregister.jsp">注册</a></li>
+                    </ul>
+                    <%
+                        }
+                    }catch(Exception e){
+                    %>
+                    <h4 style="color:#FFFFFF">	欢迎您：${ sessionScope.vipData.vipUsername}</h4>
+
+
+                    <%
+                            out.println( "<a href = 'Userlogin.jsp' >退出登陆</a>" );
+
+                        }
+                    %>
 				</div>
 				<div class="clear"></div>
 			</div>

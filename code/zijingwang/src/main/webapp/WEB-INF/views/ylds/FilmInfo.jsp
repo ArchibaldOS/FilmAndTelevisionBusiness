@@ -86,7 +86,7 @@
             </div>
             <div class="account_desc">
                 <ul>
-                    <li><a href="contact.html">登陆</a></li>
+                    <li><a href="/zijingwang/">登陆</a></li>
                     <li><a href="contact.html">注册</a></li>
                 </ul>
             </div>
@@ -115,7 +115,7 @@
                 <li><a href="/zijingwang/hotmovie">正在上映</a></li>
                 <li><a href="#services" class="hvr-bounce-to-bottom scroll">选座购票</a></li>
                 <li><a href="/zijingwang/article">影视资讯</a></li>
-                <li><a href="#mail" class="hvr-bounce-to-bottom scroll">个人中心</a></li>
+                <li><a href="/zijingwang/wchUserlogin" >个人中心</a></li>
                 <li><a href="/zijingwang/message">用户留言</a></li>
             </ul>
         </nav>

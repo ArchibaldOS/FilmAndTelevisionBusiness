@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.xd.zijing.mapper.VipdataMapper">
+
+	
+	
+	<select id="findByUsername" parameterType="String" resultType="VipData">
+	    SELECT 
+	       vipId,
+	       VipName,
+	       VipUsername,
+	       VipPassword,
+	       VipTelephone,
+	       VipRank,
+	       VipTotal,
+	       VipBalance,
+	       VipGender,
+	       VipBirthday,
+	       VipLastlogin,
+	       VipRegisterDate
+	    FROM vipData
+	    WHERE VipUsername = #{vipUsername}	
+	</select>
+	
+		<select id="findById" parameterType="int" resultType="VipData">
+	    SELECT 
+	       vipId,
+	       VipName,
+	       VipUsername,
+	       VipPassword,
+	       VipTelephone,
+	       VipRank,
+	       VipTotal,
+	       VipBalance,
+	       VipGender,
+	       VipBirthday,
+	       VipLastlogin,
+	       VipRegisterDate
+	    FROM vipData
+	    WHERE vipId = #{vipId}	
+	</select>
+	
+	<insert id="RegisterVipData" parameterType="String" keyProperty="vipId">
+		insert into vipData(VipUsername,VipPassword,VipTelephone,VipRegisterDate)
+		values (#{vipUsername},#{vipPassword},#{vipTelephone},curdate())
+	</insert>
+	
+	<update id="update"  parameterType="VipData" >
+		UPDATE vipData SET VipName=#{vipName},VipGender=#{vipGender},VipBirthday=#{vipBirthday}
+		WHERE vipId=#{vipId}
+	</update>
+
+	<update id="updatebalance"  parameterType="int">
+		update vipData set VipBalance = VipBalance + #{rechMoney} where vipId = #{vipId}
+	</update>
+	
+	<update id="updatetotal"  parameterType="int">
+		update vipData set VipTotal = VipTotal + #{rechMoney} where vipId = #{vipId}
+	</update>
+</mapper>
