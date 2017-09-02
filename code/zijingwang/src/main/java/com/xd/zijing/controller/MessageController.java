@@ -17,6 +17,7 @@ import org.springframework.web.bind.annotation.ResponseBody;
 import com.xd.zijing.entity.Message;
 import com.xd.zijing.entity.Page;
 import com.xd.zijing.entity.SenseWord;
+import com.xd.zijing.entity.VipData;
 import com.xd.zijing.service.MessageService;
 import com.xd.zijing.service.SenseService;
 
@@ -78,11 +79,8 @@ public class MessageController {
 	//前台留言
 	@RequestMapping(value="/message",method=RequestMethod.POST)
 	public String leaveMessage(String messageContent, HttpSession session,HttpServletRequest req){
-		/*
-		 * uncompleted
-		 */
-		//session.getAttribute("vipdata");
 		
+		VipData vipData = (VipData) session.getAttribute("vipData");
 		
 		Message message = new Message();
 		List<SenseWord> list = senseService.findAll();
@@ -93,12 +91,15 @@ public class MessageController {
 			req.setAttribute("set", set);
 			return "lbh/views/message";
 		}
-		else{
-			message.setUserId(5);
-			message.setMessageContent(messageContent);
-			messageService.insert(message);
-			req.setAttribute("isSucceed", 1);
+		else {
+			if (vipData != null) {
+				message.setUserId(vipData.getvipId());
+				message.setMessageContent(messageContent);
+				messageService.insert(message);
+				req.setAttribute("isSucceed", 1);
+			}
 			return "lbh/views/message";
+
 		}
 		
 		

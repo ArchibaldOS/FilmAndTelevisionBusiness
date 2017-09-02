@@ -18,6 +18,7 @@ import com.xd.zijing.entity.Article;
 import com.xd.zijing.entity.ArticleComment;
 import com.xd.zijing.entity.Page;
 import com.xd.zijing.entity.SenseWord;
+import com.xd.zijing.entity.VipData;
 import com.xd.zijing.service.ArticleCommentService;
 import com.xd.zijing.service.ArticleService;
 import com.xd.zijing.service.SenseService;
@@ -56,8 +57,7 @@ public class ArticleCommentController {
 		/*
 		 * uncompleted
 		 */
-		//session.getAttribute("vipdata");
-		
+		VipData vipData = (VipData) session.getAttribute("vipData");
 		
 		ArticleComment articleComment = new ArticleComment();
 		List<SenseWord> list = senseService.findAll();
@@ -67,12 +67,14 @@ public class ArticleCommentController {
 			req.setAttribute("isSucceed", 0);
 			req.setAttribute("set", set);
 		}
-		else{
-			articleComment.setArticleId(articleId);
-			articleComment.setUserId(5);
-			articleComment.setCommentContent(commentContent);
-			articleCommentService.insert(articleComment);
-			req.setAttribute("isSucceed", 1);
+		else {
+			if (vipData != null) {
+				articleComment.setArticleId(articleId);
+				articleComment.setUserId(vipData.getvipId());
+				articleComment.setCommentContent(commentContent);
+				articleCommentService.insert(articleComment);
+				req.setAttribute("isSucceed", 1);
+			}
 		}
 		Article article = articleService.findById(articleId);
 		

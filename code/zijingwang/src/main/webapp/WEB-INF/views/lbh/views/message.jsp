@@ -211,6 +211,10 @@
 				if(content.value == ""){
 					alert("留言内容不能为空！");
 					return false;
+				}else if ( ${sessionScope.vipData eq null } ){
+					alert('请先登录!');
+					window.location="/zijingwang/Userlogin.jsp";
+					return false;
 				}
 			}
 			
