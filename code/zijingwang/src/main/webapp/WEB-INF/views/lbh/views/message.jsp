@@ -129,7 +129,7 @@
 					<br />
 					<h3>留言列表</h3>
 					<br />
-					<table cellspacing="50px">
+					<table cellspacing="50px" style="width: 350px;">
 						<tbody>
 
 						</tbody>
