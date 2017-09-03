@@ -14,8 +14,8 @@
         window.scrollTo(0, 1);
     } </script>
     <!-- //for-mobile-apps -->
-    <link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all"/>
-    <link href="css/style.css" rel="stylesheet" type="text/css" media="all"/>
+    <link href="css0/bootstrap.css" rel="stylesheet" type="text/css" media="all"/>
+    <link href="css0/style.css" rel="stylesheet" type="text/css" media="all"/>
     <link href="css/medile.css" rel='stylesheet' type='text/css'/>
     <link href="css/single.css" rel='stylesheet' type='text/css'/>
     <link rel="stylesheet" href="css/contactstyle.css" type="text/css" media="all"/>

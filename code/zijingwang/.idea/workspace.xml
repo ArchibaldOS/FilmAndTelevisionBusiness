@@ -23,11 +23,21 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="VipdataMapper.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/xd/zijing/mapper/VipdataMapper.java">
+      <file leaf-file-name="senseUpdate.jsp" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/lbh/views/senseUpdate.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="676" max-vertical-offset="910">
-              <caret line="26" column="38" selection-start-line="26" selection-start-column="38" selection-end-line="26" selection-end-column="38" />
+            <state vertical-scroll-proportion="-7.428571" vertical-offset="6656" max-vertical-offset="10270">
+              <caret line="266" column="76" selection-start-line="266" selection-start-column="76" selection-end-line="266" selection-end-column="76" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="hotmovie.jsp" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/ylds/hotmovie.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.70047545" vertical-offset="0" max-vertical-offset="17862">
+              <caret line="17" column="20" selection-start-line="17" selection-start-column="20" selection-end-line="17" selection-end-column="20" />
               <folding />
             </state>
           </provider>
@@ -63,21 +73,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="style.css" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="style.css" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/css1/style.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.27327326" vertical-offset="4420" max-vertical-offset="6812">
+            <state vertical-scroll-proportion="0.0" vertical-offset="4420" max-vertical-offset="6812">
               <caret line="177" column="1" selection-start-line="177" selection-start-column="1" selection-end-line="177" selection-end-column="1" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="VipdataServiceimpl.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/xd/zijing/service/impl/VipdataServiceimpl.java">
+      <file leaf-file-name="articleUpdate.jsp" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/lbh/views/articleUpdate.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="1976" max-vertical-offset="3874">
-              <caret line="76" column="54" selection-start-line="76" selection-start-column="54" selection-end-line="76" selection-end-column="54" />
+            <state vertical-scroll-proportion="191.65715" vertical-offset="6994" max-vertical-offset="10764">
+              <caret line="11" column="16" selection-start-line="11" selection-start-column="16" selection-end-line="11" selection-end-column="16" />
               <folding />
             </state>
           </provider>
@@ -106,20 +116,6 @@
             <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="494">
               <caret line="6" column="17" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="17" />
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="message.jsp" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/lbh/views/message.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-9.657143" vertical-offset="3848" max-vertical-offset="6240">
-              <caret line="161" column="56" selection-start-line="161" selection-start-column="56" selection-end-line="161" selection-end-column="56" />
-              <folding>
-                <marker date="1504353350960" expanded="true" signature="5030:5070" placeholder="..." />
-                <marker date="1504353350960" expanded="false" signature="5059:5069" placeholder="..." />
-                <marker date="1504353350960" expanded="false" signature="5121:5132" placeholder="..." />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -175,7 +171,6 @@
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/dyk/index.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/ylds/FilmInfo.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/ylds/FilmReview.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/ylds/hotmovie.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/lbh/views/index.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/dyk/seat.jsp" />
         <option value="$PROJECT_DIR$/src/main/java/com/xd/zijing/controller/RegisterController.java" />
@@ -204,6 +199,7 @@
         <option value="$PROJECT_DIR$/src/main/java/com/xd/zijing/mapper/VipcenterMapper.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/xd/zijing/service/impl/VipcenterServiceimpl.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/css1/style.css" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/ylds/hotmovie.jsp" />
       </list>
     </option>
   </component>
@@ -1215,12 +1211,12 @@
       <workItem from="1504342843814" duration="6785000" />
       <workItem from="1504353844977" duration="961000" />
       <workItem from="1504399507717" duration="3986000" />
-      <workItem from="1504410592563" duration="2957000" />
+      <workItem from="1504410592563" duration="4258000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="60726000" />
+    <option name="totallyTimeSpent" value="62027000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -1516,13 +1512,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/ylds/hotmovie.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-49.028572" vertical-offset="1690" max-vertical-offset="17862">
-          <caret line="131" column="0" selection-start-line="131" selection-start-column="0" selection-end-line="131" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/ylds/link.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-76.057144" vertical-offset="3266" max-vertical-offset="6786">
@@ -1565,13 +1554,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/lbh/views/articleUpdate.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="286" max-vertical-offset="10764">
-          <caret line="11" column="16" selection-start-line="11" selection-start-column="16" selection-end-line="11" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/lbh/views/backIndex.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="2522" max-vertical-offset="8762">
@@ -1607,14 +1589,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/lbh/views/senseUpdate.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="6396" max-vertical-offset="10270">
-          <caret line="201" column="66" selection-start-line="201" selection-start-column="66" selection-end-line="201" selection-end-column="66" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/xd/zijing/service/VipdataService.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="884">
@@ -1641,12 +1615,12 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/lbh/views/message.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-9.657143" vertical-offset="3848" max-vertical-offset="6240">
-          <caret line="161" column="56" selection-start-line="161" selection-start-column="56" selection-end-line="161" selection-end-column="56" />
+        <state vertical-scroll-proportion="-9.657143" vertical-offset="3874" max-vertical-offset="6240">
+          <caret line="162" column="43" selection-start-line="162" selection-start-column="43" selection-end-line="162" selection-end-column="43" />
           <folding>
-            <marker date="1504353350960" expanded="true" signature="5030:5070" placeholder="..." />
-            <marker date="1504353350960" expanded="false" signature="5059:5069" placeholder="..." />
-            <marker date="1504353350960" expanded="false" signature="5121:5132" placeholder="..." />
+            <marker date="1504425834675" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1504425834675" expanded="false" signature="-1:-1" placeholder="..." />
+            <marker date="1504425834675" expanded="false" signature="-1:-1" placeholder="..." />
           </folding>
         </state>
       </provider>
@@ -1717,8 +1691,32 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/css1/style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.27327326" vertical-offset="4420" max-vertical-offset="6812">
+        <state vertical-scroll-proportion="0.0" vertical-offset="4420" max-vertical-offset="6812">
           <caret line="177" column="1" selection-start-line="177" selection-start-column="1" selection-end-line="177" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/lbh/views/articleUpdate.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="191.65715" vertical-offset="6994" max-vertical-offset="10764">
+          <caret line="11" column="16" selection-start-line="11" selection-start-column="16" selection-end-line="11" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/lbh/views/senseUpdate.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-7.428571" vertical-offset="6656" max-vertical-offset="10270">
+          <caret line="266" column="76" selection-start-line="266" selection-start-column="76" selection-end-line="266" selection-end-column="76" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/ylds/hotmovie.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.70047545" vertical-offset="0" max-vertical-offset="17862">
+          <caret line="17" column="20" selection-start-line="17" selection-start-column="20" selection-end-line="17" selection-end-column="20" />
           <folding />
         </state>
       </provider>
