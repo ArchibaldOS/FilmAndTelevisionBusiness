@@ -169,7 +169,6 @@
                         <p> 账号余额：${sessionScope.vipData.vipBalance }<p><br/>
                         <p>会员积分：${sessionScope.vipData.vipTotal }<p><br/>
                         <p> 会员等级：${sessionScope.vipData.vipRank }<p><br/>
-                        <p> 上次登陆：${sessionScope.vipData.vipLastlogin }<p><br/>
                         <p> 注册日期：${sessionScope.vipData.vipRegisterDate }<p><br/>
 
                         </form>

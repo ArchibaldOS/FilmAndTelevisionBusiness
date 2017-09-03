@@ -39,12 +39,15 @@
 			count(1)
 		FROM
 			viptotalrecord
+			 where vipId = #{vipId}
 	</select>
 	<select id="countr" resultType="int">
 		SELECT
 			count(1)
 		FROM
 			viprechargerecord
+
+		 where vipId = #{vipId}
 	</select>
 	
 	<select id="countc" resultType="int">
@@ -52,6 +55,7 @@
 			count(1)
 		FROM
 			vipconsumerecord
+			 where vipId = #{vipId}
 	</select>
 	
  	<select id="searchtotal" parameterType="int" resultMap="viptotalrecordMap">

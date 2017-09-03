@@ -13,13 +13,13 @@ public interface VipcenterMapper {
 	VipTotalRecord searchtotal(String vipId);
 
 	
-	int countr();
-	int countc();
-	int countt();
+	int countr(int vipId);
+	int countc(int vipId);
+	int countt(int vipId);
 
 	List<VipTotalRecord> searchtotal(@Param("offset") int offset, @Param("size") int size, @Param("vipId") int vipId);
 
 	List<VipRechargeRecord> searchrecharge(@Param("offset") int offset, @Param("size") int size, @Param("vipId") int vipId);
 
-	List<VipConsumeRecord> searchcomsume(@Param("offset") int offset, @Param("size") int size, @Param("vipId") int vipId);
+	List<VipConsumeRecord> searchconsume(@Param("offset") int offset, @Param("size") int size, @Param("vipId") int vipId);
 }

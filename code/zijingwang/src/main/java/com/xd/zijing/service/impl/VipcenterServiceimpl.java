@@ -28,7 +28,7 @@ public class VipcenterServiceimpl implements VipcenterService {
 	public Page getRechargeRecord(int cur,int vipId) {
 		Page page = new Page(cur);
 		
-		int count = vipcenterMapper.countr();
+		int count = vipcenterMapper.countr(vipId);
 		
 		List<VipRechargeRecord> rechargeRecords = vipcenterMapper.searchrecharge(page.getOffset(), page.getSize(),vipId);
 		
@@ -42,9 +42,9 @@ public class VipcenterServiceimpl implements VipcenterService {
 	public Page getConsumeRecord(int cur,int vipId) {
 		Page page = new Page(cur);
 		
-		int count = vipcenterMapper.countc();
+		int count = vipcenterMapper.countc(vipId);
 		
-		List<VipConsumeRecord> consumeRecords = vipcenterMapper.searchcomsume(page.getOffset(), page.getSize(),vipId);
+		List<VipConsumeRecord> consumeRecords = vipcenterMapper.searchconsume(page.getOffset(), page.getSize(),vipId);
 		
 		page.setCount(count);
 		page.setList(consumeRecords);
@@ -56,7 +56,7 @@ public class VipcenterServiceimpl implements VipcenterService {
 	public Page getTotalRecord(int cur,int vipId) {
 		Page page = new Page(cur);
 		
-		int count = vipcenterMapper.countt();
+		int count = vipcenterMapper.countt(vipId);
 		
 		List<VipTotalRecord> totalRecords = vipcenterMapper.searchtotal(page.getOffset(), page.getSize(),vipId);
 		
