@@ -33,21 +33,53 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="hotmovie.jsp" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="hotmovie.jsp" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/ylds/hotmovie.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.24722663" vertical-offset="390" max-vertical-offset="17862">
+            <state vertical-scroll-proportion="-4.457143" vertical-offset="390" max-vertical-offset="17862">
               <caret line="21" column="44" selection-start-line="21" selection-start-column="44" selection-end-line="21" selection-end-column="44" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="VipcenterMapper.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/xd/zijing/mapper/VipcenterMapper.java">
+      <file leaf-file-name="VipdataServiceimpl.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/xd/zijing/service/impl/VipdataServiceimpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="442" max-vertical-offset="806">
-              <caret line="17" column="24" selection-start-line="17" selection-start-column="24" selection-end-line="17" selection-end-column="24" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="2040" max-vertical-offset="3588">
+              <caret line="104" column="0" selection-start-line="104" selection-start-column="0" selection-end-line="104" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="TotalMapper.xml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/com/xd/zijing/mapper/TotalMapper.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="650">
+              <caret line="16" column="29" selection-start-line="16" selection-start-column="29" selection-end-line="16" selection-end-column="29" />
+              <folding>
+                <marker date="1504263477544" expanded="true" signature="683:802" placeholder="insert into ..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="TotalMapper.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/xd/zijing/mapper/TotalMapper.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="338">
+              <caret line="4" column="17" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="VipdataService.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/xd/zijing/service/VipdataService.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="13" max-vertical-offset="884">
+              <caret line="25" column="0" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -63,11 +95,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="VipCenter.jsp" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="VipCenter.jsp" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/wch/VipCenter.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="1196" max-vertical-offset="12818">
-              <caret line="63" column="11" selection-start-line="63" selection-start-column="11" selection-end-line="63" selection-end-column="11" />
+            <state vertical-scroll-proportion="0.18738739" vertical-offset="11310" max-vertical-offset="12818">
+              <caret line="439" column="60" selection-start-line="439" selection-start-column="60" selection-end-line="439" selection-end-column="60" />
               <folding />
             </state>
           </provider>
@@ -89,52 +121,6 @@
             <state vertical-scroll-proportion="0.0" vertical-offset="6994" max-vertical-offset="10764">
               <caret line="11" column="16" selection-start-line="11" selection-start-column="16" selection-end-line="11" selection-end-column="16" />
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="VipcenterMapper.xml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/com/xd/zijing/mapper/VipcenterMapper.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="530" max-vertical-offset="2756">
-              <caret line="41" column="35" selection-start-line="41" selection-start-column="35" selection-end-line="41" selection-end-column="35" />
-              <folding>
-                <marker date="1504418853670" expanded="true" signature="1438:1508" placeholder="SELECT count..viptotalrecord..." />
-                <marker date="1504418853670" expanded="true" signature="1561:1634" placeholder="SELECT count..viprechargerecord..." />
-                <marker date="1504418853670" expanded="true" signature="1689:1761" placeholder="SELECT count..vipconsumerecord..." />
-                <marker date="1504418853670" expanded="true" signature="1856:2031" placeholder="SELECT t.tot..viptotalrecord..." />
-                <marker date="1504418853670" expanded="true" signature="2131:2307" placeholder="SELECT r.rec..viprechargerecord..." />
-                <marker date="1504418853670" expanded="true" signature="2408:2580" placeholder="SELECT c.buy..vipconsumerecord..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="VipcenterService.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/xd/zijing/service/VipcenterService.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="156" max-vertical-offset="546">
-              <caret line="6" column="17" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="17" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="VipdataMapper.xml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/com/xd/zijing/mapper/VipdataMapper.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="1079" max-vertical-offset="1950">
-              <caret line="63" column="78" selection-start-line="63" selection-start-column="55" selection-end-line="63" selection-end-column="78" />
-              <folding>
-                <marker date="1504354877709" expanded="true" signature="291:593" placeholder="SELECT vipId..vipData..." />
-                <marker date="1504354877709" expanded="true" signature="679:969" placeholder="SELECT vipId..vipData..." />
-                <marker date="1504354877709" expanded="true" signature="1060:1200" placeholder="insert into ..." />
-                <marker date="1504354877709" expanded="true" signature="1264:1374" placeholder="UPDATE vipDa..." />
-                <marker date="1504354877709" expanded="true" signature="1439:1519" placeholder="update vipDa..." />
-                <marker date="1504354877709" expanded="true" signature="1583:1659" placeholder="update vipDa..." />
-                <marker date="1504354877709" expanded="true" signature="1738:1808" placeholder="update vipDa..." />
-                <marker date="1504354877709" expanded="true" signature="1886:1948" placeholder="update vipDa..." />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -193,13 +179,13 @@
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/lbh/views/message.jsp" />
         <option value="$PROJECT_DIR$/src/main/resources/com/xd/zijing/mapper/VipdataMapper.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/xd/zijing/mapper/VipdataMapper.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/xd/zijing/service/impl/VipdataServiceimpl.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/wch/VipCenter.jsp" />
         <option value="$PROJECT_DIR$/src/main/resources/com/xd/zijing/mapper/VipcenterMapper.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/xd/zijing/mapper/VipcenterMapper.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/xd/zijing/service/impl/VipcenterServiceimpl.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/css1/style.css" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/ylds/hotmovie.jsp" />
+        <option value="$PROJECT_DIR$/src/main/java/com/xd/zijing/service/impl/VipdataServiceimpl.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/wch/VipCenter.jsp" />
       </list>
     </option>
   </component>
@@ -244,7 +230,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -777,6 +762,7 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
       <pane id="PackagesPane" />
     </panes>
   </component>
@@ -1213,11 +1199,12 @@
       <workItem from="1504399507717" duration="3986000" />
       <workItem from="1504410592563" duration="4833000" />
       <workItem from="1504429851333" duration="1084000" />
+      <workItem from="1504440147066" duration="663000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="63686000" />
+    <option name="totallyTimeSpent" value="64349000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="0" />
@@ -1246,7 +1233,7 @@
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32946146" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.17643923" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.22186147" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.31601733" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -1256,11 +1243,11 @@
     <layout-to-restore>
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="true" content_ui="tabs" />
+      <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -1280,8 +1267,8 @@
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32900432" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout-to-restore>
   </component>
@@ -1330,20 +1317,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/jQuery-1.7/jquery-1.7.2.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="244296">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/css/pkg/ui.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="617">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/Userlogin.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-29.714285" vertical-offset="0" max-vertical-offset="1430">
@@ -1425,7 +1398,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="1627" max-vertical-offset="2678">
           <caret line="93" column="0" selection-start-line="93" selection-start-column="0" selection-end-line="93" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1590,20 +1562,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/xd/zijing/service/VipdataService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="884">
-          <caret line="25" column="0" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/xd/zijing/service/impl/VipdataServiceimpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="1572" max-vertical-offset="3588">
-          <caret line="76" column="54" selection-start-line="76" selection-start-column="54" selection-end-line="76" selection-end-column="54" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/xd/zijing/mapper/VipdataMapper.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="64" max-vertical-offset="806">
@@ -1623,14 +1581,14 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="1079" max-vertical-offset="1950">
           <caret line="63" column="78" selection-start-line="63" selection-start-column="55" selection-end-line="63" selection-end-column="78" />
           <folding>
-            <marker date="1504354877709" expanded="true" signature="291:593" placeholder="SELECT vipId..vipData..." />
-            <marker date="1504354877709" expanded="true" signature="679:969" placeholder="SELECT vipId..vipData..." />
-            <marker date="1504354877709" expanded="true" signature="1060:1200" placeholder="insert into ..." />
-            <marker date="1504354877709" expanded="true" signature="1264:1374" placeholder="UPDATE vipDa..." />
-            <marker date="1504354877709" expanded="true" signature="1439:1519" placeholder="update vipDa..." />
-            <marker date="1504354877709" expanded="true" signature="1583:1659" placeholder="update vipDa..." />
-            <marker date="1504354877709" expanded="true" signature="1738:1808" placeholder="update vipDa..." />
-            <marker date="1504354877709" expanded="true" signature="1886:1948" placeholder="update vipDa..." />
+            <marker date="1504354877709" expanded="true" signature="-1:-1" placeholder="SELECT vipId..vipData..." />
+            <marker date="1504354877709" expanded="true" signature="-1:-1" placeholder="SELECT vipId..vipData..." />
+            <marker date="1504354877709" expanded="true" signature="-1:-1" placeholder="insert into ..." />
+            <marker date="1504354877709" expanded="true" signature="-1:-1" placeholder="UPDATE vipDa..." />
+            <marker date="1504354877709" expanded="true" signature="-1:-1" placeholder="update vipDa..." />
+            <marker date="1504354877709" expanded="true" signature="-1:-1" placeholder="update vipDa..." />
+            <marker date="1504354877709" expanded="true" signature="-1:-1" placeholder="update vipDa..." />
+            <marker date="1504354877709" expanded="true" signature="-1:-1" placeholder="update vipDa..." />
           </folding>
         </state>
       </provider>
@@ -1640,12 +1598,12 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="530" max-vertical-offset="2756">
           <caret line="41" column="35" selection-start-line="41" selection-start-column="35" selection-end-line="41" selection-end-column="35" />
           <folding>
-            <marker date="1504418853670" expanded="true" signature="1438:1508" placeholder="SELECT count..viptotalrecord..." />
-            <marker date="1504418853670" expanded="true" signature="1561:1634" placeholder="SELECT count..viprechargerecord..." />
-            <marker date="1504418853670" expanded="true" signature="1689:1761" placeholder="SELECT count..vipconsumerecord..." />
-            <marker date="1504418853670" expanded="true" signature="1856:2031" placeholder="SELECT t.tot..viptotalrecord..." />
-            <marker date="1504418853670" expanded="true" signature="2131:2307" placeholder="SELECT r.rec..viprechargerecord..." />
-            <marker date="1504418853670" expanded="true" signature="2408:2580" placeholder="SELECT c.buy..vipconsumerecord..." />
+            <marker date="1504418853670" expanded="true" signature="-1:-1" placeholder="SELECT count..viptotalrecord..." />
+            <marker date="1504418853670" expanded="true" signature="-1:-1" placeholder="SELECT count..viprechargerecord..." />
+            <marker date="1504418853670" expanded="true" signature="-1:-1" placeholder="SELECT count..vipconsumerecord..." />
+            <marker date="1504418853670" expanded="true" signature="-1:-1" placeholder="SELECT t.tot..viptotalrecord..." />
+            <marker date="1504418853670" expanded="true" signature="-1:-1" placeholder="SELECT r.rec..viprechargerecord..." />
+            <marker date="1504418853670" expanded="true" signature="-1:-1" placeholder="SELECT c.buy..vipconsumerecord..." />
           </folding>
         </state>
       </provider>
@@ -1670,14 +1628,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1612">
           <caret line="58" column="50" selection-start-line="58" selection-start-column="50" selection-end-line="58" selection-end-column="50" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/wch/VipCenter.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="1196" max-vertical-offset="12818">
-          <caret line="63" column="11" selection-start-line="63" selection-start-column="11" selection-end-line="63" selection-end-column="11" />
           <folding />
         </state>
       </provider>
@@ -1708,8 +1658,50 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/ylds/hotmovie.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.24722663" vertical-offset="390" max-vertical-offset="17862">
+        <state vertical-scroll-proportion="-4.457143" vertical-offset="390" max-vertical-offset="17862">
           <caret line="21" column="44" selection-start-line="21" selection-start-column="44" selection-end-line="21" selection-end-column="44" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/xd/zijing/service/VipdataService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="13" max-vertical-offset="884">
+          <caret line="25" column="0" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/xd/zijing/service/impl/VipdataServiceimpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="2040" max-vertical-offset="3588">
+          <caret line="104" column="0" selection-start-line="104" selection-start-column="0" selection-end-line="104" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/com/xd/zijing/mapper/TotalMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="650">
+          <caret line="16" column="29" selection-start-line="16" selection-start-column="29" selection-end-line="16" selection-end-column="29" />
+          <folding>
+            <marker date="1504263477544" expanded="true" signature="683:802" placeholder="insert into ..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/xd/zijing/mapper/TotalMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="338">
+          <caret line="4" column="17" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/wch/VipCenter.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.18738739" vertical-offset="11310" max-vertical-offset="12818">
+          <caret line="439" column="60" selection-start-line="439" selection-start-column="60" selection-end-line="439" selection-end-column="60" />
           <folding />
         </state>
       </provider>

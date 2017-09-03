@@ -97,14 +97,14 @@ public class VipdataServiceimpl implements VipdataService {
 
 
 
-//		VipTotalRecord vipTotalRecord =new VipTotalRecord();
-//		vipTotalRecord.setvipId(vipRechargeRecord.getvipId());
-//		vipTotalRecord.setTotalCount(vipRechargeRecord.getRechMoney());
-//		vipTotalRecord.setTotalWay("充值");
-//		
-//		
-//		  totalMapper.totalrel(vipTotalRecord);
-//		 
+		VipTotalRecord vipTotalRecord =new VipTotalRecord();
+		vipTotalRecord.setvipId(vipRechargeRecord.getvipId());
+		vipTotalRecord.setTotalCount(vipRechargeRecord.getRechMoney());
+		vipTotalRecord.setTotalWay("充值");
+
+
+		  totalMapper.totalrel(vipTotalRecord);
+
 		return b;
 		}
 		else{
